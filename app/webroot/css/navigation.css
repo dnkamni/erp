@@ -1,0 +1,249 @@
+/*-----------------------------------------------------------------------------
+Web Site: Cello Electronics
+
+$CreatedDate: 2009-07-06 $
+$CreatedBy: annag $
+
+$Revision: 566 $
+$LastChangedDate: 2009-09-16 10:51:01 +0600 (Ср, 16 сен 2009) $
+$LastChangedBy: annag $
+-----------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------
+  Module:     =Primary navigation
+-----------------------------------------------------------------------------*/
+.content .primary-nav2 {
+    background: #f3dd01; 
+	width: 960px;
+	height: 35px;
+	padding: 3px 0;
+	margin: 0;
+}
+.content .primary-nav2 ul{
+	display: block;
+	list-style-type: none;
+	width: 830px;
+	height: 35px;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+.content .primary-nav2 ul li{ 
+	display: block;
+	float: left;
+	padding: 0 3px; 
+	margin: 0;
+}
+.content .primary-nav2 ul li a,
+.content .primary-nav2 ul li a:visited {
+    color: #505050;
+	font-weight: bold;
+    line-height: 35px;
+	height: 35px;
+	overflow: hidden;
+	text-decoration: none;
+	display: block;
+	float: left;
+	padding: 0 12px;
+}
+.content .primary-nav2 ul li a span,
+.content .primary-nav2 ul li a:visited span{
+	padding: 0px 12px; 
+    line-height: 35px;
+	height: 35px;
+	overflow: hidden;
+	display: block;
+	cursor: pointer;
+	float: left;
+}
+.content .primary-nav2 ul li a:hover,
+.content .primary-nav2 ul li.current a, 
+.content .primary-nav2 ul li.current a:visited {
+    color: #f3dd01;
+	background: #6c6c6c url(../images/nav-primary-bg.gif) no-repeat left top;
+	text-decoration: none;
+}
+.content .primary-nav2 ul li a:hover span,
+.content .primary-nav2 ul li.current a span, 
+.content .primary-nav2 ul li.current a:visited span {
+	background: url(../images/nav-primary-bg.gif) no-repeat right bottom transparent;
+	
+}
+
+
+/*-----------------------------------------------------------------------------
+  Module:     =Secondary navigation
+-----------------------------------------------------------------------------*/
+.content .secondaryy-nav {
+	background: #f4f4f4;
+	width: 190px;
+    padding: 0; 
+	margin: 0 0 160px;
+	border-bottom: 1px solid #fff;
+}
+.content .secondaryy-nav ul {
+	display: block;
+	list-style-type: none;
+    margin: 0;
+	padding: 10px 0 3px 9px;
+}
+.content .secondaryy-nav ul li { 
+	display: block;
+	height: 1%;
+	width: 170px;
+	padding: 0 0 7px 0; 
+	margin: 0;
+}
+.content .secondaryy-nav ul li a,
+.content .secondaryy-nav ul li a:visited {
+    color: #fff;
+    background: #4eb4bb url(../images/nav-secondary-bg.gif) no-repeat left top;
+	padding: 0; 
+	font-size: 1em;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+}
+.content .secondaryy-nav ul li a:hover,
+.content .secondaryy-nav ul li.current a, 
+.content .secondaryy-nav ul li.current a:visited {
+    color: #fff;
+    background: #6c6c6c url(../images/nav-secondary-bg.gif) no-repeat -340px top;
+	text-decoration: none;
+}
+.content .secondaryy-nav ul li a span,
+.content .secondaryy-nav ul li a:visited span{
+    background: url(../images/nav-secondary-bg.gif) no-repeat -170px bottom;
+	padding: 8px 12px; 
+	display: block;
+}
+.content .secondaryy-nav ul li a:hover span,
+.content .secondaryy-nav ul li.current a span, 
+.content .secondaryy-nav ul li.current a:visited span {
+    background: url(../images/nav-secondary-bg.gif) no-repeat right bottom;
+}
+
+
+/*-----------------------------------------------------------------------------
+  Module:     =Footer navigation
+-----------------------------------------------------------------------------*/
+.content .footer1-nav{
+	line-height: normal;
+	padding: 12px 0 0 0;
+}
+.content .footer1-nav ul{
+	display: block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0 8px 0 4px;
+	float: left;
+}
+.content .footer1-nav ul li{ 
+	display: block;
+	float: left;
+	padding: 0 0 5px 8px; 
+	margin: 0;
+}
+.content .footer1-nav ul li a,
+.content .footer1-nav ul li a:visited {
+    background: url(../images/nav-footer-separ-bg.gif) no-repeat right 3px; 
+	padding: 0 8px 0 0; 
+	text-decoration: none;
+	display: block;
+}
+.content .footer1-nav ul li a:hover,
+.content .footer1-nav ul li.current a, 
+.content .footer1-nav ul li.current a:visited {
+	text-decoration: underline;
+}
+
+
+/*-----------------------------------------------------------------------------
+  Module:     =Breadcrumbs navigation
+-----------------------------------------------------------------------------*/
+.content .breadcrumbs1 ul{
+	background: url(../images/breadcrumbs-bg.gif) repeat-x left top;
+	display: block;
+	list-style-type: none;
+	height: 28px;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+.content .breadcrumbs1 ul li{ 
+	display: block;
+	height: 28px;
+	padding: 0; 
+	margin: 0 -9px 0 0;
+	position: relative;
+	float: left;
+}
+.content .breadcrumbs1 ul li a,
+.content .breadcrumbs1 ul li a:visited,
+.content .breadcrumbs1 ul li strong {
+    color: #505050;
+	background: url(../images/breadcrumbs-left-bg.png) no-repeat right top;
+	font-weight: bold;
+	font-size: 0.8em;
+    line-height: 28px;
+	text-decoration: none;
+	height: 28px;
+	padding: 0 9px 0 0;
+	display: block;
+}
+.content .breadcrumbs1 ul li a,
+.content .breadcrumbs1 ul li a:visited {
+    color: #2598A0;
+	text-decoration: none;
+}
+.content .breadcrumbs1 ul li a:hover {
+    color: #fff;
+	background: url(../images/breadcrumbs-left-bg.png) no-repeat right bottom;
+	text-decoration: none;
+}
+.content .breadcrumbs1 ul li a span,
+.content .breadcrumbs1 ul li a:visited span,
+.content .breadcrumbs1 ul li strong span {
+	padding: 0 9px 0 17px;
+	margin: 0;
+	height: 28px;
+	display: block;
+	position: relative;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.content .breadcrumbs1 ul li a:hover span {
+    background: #6c6c6c;
+	display: block;
+	cursor: pointer;
+}
+.content .breadcrumbs1 ul li strong span {
+	padding: 0 9px 0 17px;
+	margin: 0;
+	height: 28px;
+	display: block;
+	position: relative;
+	white-space: nowrap;
+	cursor: default;
+}
+.content .breadcrumbs1 ul li:first-child a span,
+.content .breadcrumbs1 ul li:first-child  a:visited span {
+	padding: 0 9px 0 12px;
+	background: url(../images/breadcrumbs-right-bg.gif) no-repeat left top;
+}
+.content .breadcrumbs1 ul li:first-child  a:hover span {
+    background: #6c6c6c url(../images/breadcrumbs-right-bg.gif) no-repeat left bottom;
+}
+/*---------changes made----*/
+.content .primary-nav2 {
+    background: none repeat scroll 0 0 #F3DD01;
+    height: 35px;
+    margin: 0;
+    padding: 3px 0;
+    width: 960px;
+}
+
+.side{
+margin-left:10px;
+text:bold;
+}

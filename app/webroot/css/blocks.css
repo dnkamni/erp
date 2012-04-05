@@ -1,0 +1,330 @@
+/*-----------------------------------------------------------------------------
+Web Site: Cello Electronics
+
+$CreatedDate: 2009-07-07 $
+$CreatedBy: annag $
+
+$Revision: 567 $
+$LastChangedDate: 2009-09-21 18:37:39 +0600 (Пн, 21 сен 2009) $
+$LastChangedBy: annag $
+-----------------------------------------------------------------------------*/
+
+/* =Pods
+---------------------------------------- */
+.pod {
+    padding: 0 0 18px; 
+    margin: 0;
+}
+
+/* = Pager
+---------------------------------------- */
+.pager1 {
+	padding: 5px 0 15px 14px;
+	width:646px;
+	overflow:hidden;
+	font-size:.9em;
+	color:#414141;
+}
+.pager1 div {
+	float:right;
+}
+.pager1 a.page-number,
+.pager1 .page-current,
+.pager1 .prev,
+.pager1 .next {
+	display:block;
+	float:left;
+}
+.pager1 .prev,
+.pager1 .next {
+	text-indent:-9999em;
+	background:#4EB4BB url(../images/pager-prev-next.gif) no-repeat -6px 0;
+	width:6px;
+	height:8px;
+	margin:5px 0 0 9px;
+	overflow:hidden;
+}
+.pager1 .next:hover {
+	background:#6C6C6C url(../images/pager-prev-next.gif) no-repeat -6px -8px;
+}	
+.pager1 .prev {
+	background:#4EB4BB url(../images/pager-prev-next.gif) no-repeat 0 0;
+	margin:5px 9px 0 0;
+}
+.pager1 .prev:hover {
+	background:#6C6C6C url(../images/pager-prev-next.gif) no-repeat 0 -8px;
+}
+	
+.pager1 a.page-number,
+.pager1 a.page-number:visited,
+.pager1 .page-current {
+	width:20px;
+	height:19px;
+	margin:0 1px 0 2px;
+	color:#fff;
+	text-decoration:none;
+	text-align:center;
+	font-weight:bold;
+	background:#4EB4BB url(../images/pager-number.gif) no-repeat 0 0;
+}	
+.pager1 .page-current,
+.pager1 a.page-number:hover {
+	background:#6C6C6C url(../images/pager-number.gif) no-repeat 0 -19px;
+	color:#fff;
+}
+.pager1.bottom {
+	padding: 15px 0 15px 14px;
+	border-top:1px solid #F0F0F0;
+}	
+/*
+body#wide .pager {
+	width:860px;
+}
+	
+/* =Search box
+---------------------------------------- */
+.search-box {
+	width: 214px;
+	height: 25px;
+	padding: 10px 0 0 380px;
+	overflow: hidden;
+}
+.search-box div.text {
+	background: #f0f2f2 url(../images/search-bg.gif) no-repeat 0 top;
+	float: left;
+	width: 100%;
+}
+.search-box div.text input.text {
+	color: #888;
+	background: none !important;
+	border: none;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: normal;
+	float: left;
+	width: 175px;
+	height: 19px;
+	padding: 5px 0 0;
+	margin: 0 0 0 15px;
+}
+.search-box input.button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	float: left;
+	width: 24px;
+	height: 25px;
+	padding: 0 4px;
+	overflow: visible;
+	vertical-align: middle;
+}
+
+/* =Logout
+---------------------------------------- */
+.logout {
+	height: 25px;
+    overflow: hidden;
+    padding: 15px 0 0 14px;
+    text-align: right;
+    width: 580px;
+}
+
+/* =Bottom content
+---------------------------------------- */
+.bottom-content {
+    background: #f4f4f4;
+    width: 768px;
+    padding: 20px 0;
+    margin: 0;
+}
+
+/* =Partner Brands
+---------------------------------------- */
+.partner-brands {
+    background: #fff url(../images/partners-gray-bg.gif) no-repeat left top;
+	width: 340px;
+	height: 165px;
+    padding: 0;
+    margin: 0 0 0 30px;
+    float: left;
+    display: inline;
+}
+.partner-brands .partner-inner {
+    background: url(../images/partners-gray-bg.gif) no-repeat right bottom;
+	width: 280px;
+	height: 165px;
+    padding: 0 30px;
+}
+#nojs .partner-brands,
+#nojs .partner-brands .partner-inner {
+	height: auto;
+}
+.partner-brands h3 {
+	font-size: 1.7em;
+}
+.partner-brands .item-image {
+	text-align: center;
+	float: left;
+	width: 115px;
+	padding: 0 10px 0 0;
+}
+.partner-brands .item-summary {
+	width: 155px;
+	padding: 0;
+    float: left;
+}
+
+/* =Footer Latest News
+---------------------------------------- */
+.footer-latest-news {
+    background: #fff url(../images/partners-gray-bg.gif) no-repeat left top;
+	width: 340px;
+	height: 165px;
+    padding: 0;
+    margin: 0 0 0 30px;
+    float: left;
+    display: inline;
+}
+.footer-latest-news .latest-news-inner {
+    background: url(../images/partners-gray-bg.gif) no-repeat right bottom;
+	width: 280px;
+	height: 165px;
+    padding: 0 30px;
+}
+#nojs .footer-latest-news,
+#nojs .footer-latest-news .latest-news-inner {
+	height: auto;
+}
+.footer-latest-news h3 {
+	font-size: 1.7em;
+}
+.footer-latest-news .item-image {
+	text-align: center;
+	float: right;
+	width: 115px;
+	padding: 0 0 0 10px;
+}
+.footer-latest-news .item-summary {
+	width: 155px;
+	padding: 0;
+    float: left;
+}
+
+/* =Partners List
+---------------------------------------- */
+.partners-list .list-item {
+    background: url(../images/partners-list-top-bg.gif) no-repeat left top;
+	width: 425px;
+	min-height: 148px;
+    padding: 7px 0 0;
+    margin: 0 25px 30px 0;
+    float: left;
+    display: inline;
+}
+.partners-list .list-item.last {
+    margin: 0 0 30px 0;
+}
+.partners-list .list-item .item-inner{
+    background: url(../images/partners-list-top-bg.gif) no-repeat right bottom;
+	width: 425px;
+    padding: 0 0 7px;
+    margin: 0;
+}
+.partners-list .list-item .item-second-inner{
+    background: url(../images/partners-list-bg.gif) repeat-y left top;
+	width: 395px;
+    padding: 0 15px;
+    margin: 0;
+}
+.partners-list .list-item .item-image {
+	float: left;
+	width: 150px;
+	padding: 0 0 5px;
+}
+.partners-list .list-item .item-summary {
+	float: left;
+	width: 230px;
+	padding: 0 15px 0 0;
+}
+.partners-list .list-item h2 {
+	padding: 5px 0;
+}
+.partners-list .list-item h3 {
+	padding: 5px 0;
+}
+
+/* =Testimonials
+---------------------------------------- */
+.testimonial  {
+    width: 350px;
+    padding: 18px 0;
+}
+.testimonial-inner  {
+    width: 258px;
+	margin: 0 auto;
+}
+.testimonial blockquote {
+	color: #626161;
+	background: #fee700 url(../images/testimonial-bg.gif) no-repeat left top;
+    width: 218px;
+    padding: 10px 20px 7px;
+    font-weight: bold;
+}
+.testimonial cite {
+	background: url(../images/testimonial-bg.gif) no-repeat right top;
+    width: 258px;
+	padding: 15px 0 0;
+    display: block;
+    margin: 0;
+}
+.testimonial cite span.name {
+    color: #000;
+    font-weight: bold;
+    font-style: normal; 
+    display: block;
+    padding: 0 5px 0 65px;
+}
+.testimonial cite span.title {
+    font-style: normal; 
+    display: block;
+    padding: 0 5px 0 65px;
+}
+.retailer-details .link-i-container {
+    padding: 0 0 18px;
+    height: 25px;
+}
+
+/* =Content Image Gallery
+---------------------------------------- */
+#gallery-jcarousel-list .item-image {
+	padding: 0 0 6px;
+	text-align: center;
+}
+#gallery-jcarousel-list .item-title {
+	color: #414141;
+	font-family: Arial, sans-serif; 
+	font-size: 1.3em;
+	font-weight: bold;
+	line-height: normal;
+	padding: 0;
+	text-align: center;
+}
+
+/*---------changes made-----------*/
+
+.current{
+ 
+    color: #FFFFFF;
+    font-weight: bold;
+    height: 19px;
+    margin: 0 1px 0 2px;
+    text-align: center;
+    text-decoration: none;
+    /*width: 20px;*/
+}
+
+
+
+
+
+

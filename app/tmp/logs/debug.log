@@ -1,0 +1,6 @@
+2011-08-12 00:12:03 Debug: Notice (1024): Please change the value of 'Security.salt' in app/config/core.php to a salt value specific to your application in [D:\Night User\wamp\www\dealchaser\cake\libs\debugger.php, line 694]
+2011-08-12 00:12:03 Debug: Notice (1024): Please change the value of 'Security.cipherSeed' in app/config/core.php to a numeric (digits only) seed value specific to your application in [D:\Night User\wamp\www\dealchaser\cake\libs\debugger.php, line 698]
+2011-08-12 01:04:13 Debug: Notice (8): Use of undefined constant BASE_URL - assumed 'BASE_URL' in [D:\Night User\wamp\www\dealchaser\app\views\layouts\layout_front.ctp, line 24]
+2011-08-12 01:04:17 Debug: Notice (8): Use of undefined constant BASE_URL - assumed 'BASE_URL' in [D:\Night User\wamp\www\dealchaser\app\views\layouts\layout_front.ctp, line 24]
+2011-08-12 01:06:17 Debug: Notice (8): Use of undefined constant BASE_URL - assumed 'BASE_URL' in [D:\Night User\wamp\www\dealchaser\app\views\layouts\layout_front.ctp, line 24]
+2011-08-12 01:06:19 Debug: Notice (8): Use of undefined constant BASE_URL - assumed 'BASE_URL' in [D:\Night User\wamp\www\dealchaser\app\views\layouts\layout_front.ctp, line 24]

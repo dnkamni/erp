@@ -1,0 +1,414 @@
+/*-----------------------------------------------------------------------------
+Web Site: Cello Electronics
+
+$CreatedDate: 2009-07-07 $
+$CreatedBy: annag $
+
+$Revision: 566 $
+$LastChangedDate: 2009-09-16 10:51:01 +0600 (Ср, 16 сен 2009) $
+$LastChangedBy: annag $
+-----------------------------------------------------------------------------*/
+
+/* =General
+---------------------------------------- */
+legend {
+    display: none;
+}
+fieldset {
+    border: none;
+}
+input, textarea, button {
+	color:#888;
+	font-weight:bold;
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	}
+input.text {
+    border: 1px #fff solid;
+    background: #fff;
+	line-height:normal;
+	width: 219px;
+    padding: 2px 3px 3px;
+    margin: 0 0 10px;
+	}
+select {
+    border: 1px #D4D4D4 solid;
+    background: #fff;
+	width: 227px;
+	line-height:1.5em;
+	padding: 1px 1px 1px 3px;
+    margin: 0 0 10px;
+	color:#888;
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, sans-serif;    
+	}
+select option {
+	padding: 0 4px;	
+	line-height:14px;
+	}
+textarea {
+    border: 1px #fff solid;
+    background: #fff;
+	width: 219px;
+	height: 102px;
+    padding: 2px 3px;
+    margin: 0 0 10px;
+	overflow: auto;
+	}
+.error, .error-msg {
+    color:#4EB4BB;
+    font-size: 0.9em;
+}
+#form label {
+    display: block;
+    float: left;
+    width: 120px;
+}
+#form input.text {
+    padding: 3px 3px 4px;
+}
+#form input.submit,
+#form input.submit-hover {
+    margin:  0 0 0 120px;
+}
+#form span.error {
+    padding: 0 0 0 125px;
+}
+#form label span.error,
+#form p span.error {
+    display: inline;
+    padding: 0 3px;
+}
+
+fieldset br	{clear:both; height: 0; line-height:0; font-size: 0px;}
+
+
+/* =Button submit
+---------------------------------------- */
+input.submit,
+input.submit.hover,
+button.submit,
+button.submit.hover,
+.secondaryy-content .sign-up input.button,
+.secondaryy-content .sign-up input.button.hover {
+    color: #fff;
+    text-align:center;
+	border: none;
+    font-size: 12px;
+	width: 76px;
+    height: 25px;
+    padding:0 0 2px;
+    border: none;
+	cursor: pointer;
+	background:#4EB4BB url(../images/submit-bg.gif) no-repeat;
+	line-height:normal;
+	}
+input.submit.hover,
+button.submit.hover,
+.secondaryy-content .sign-up input.button.hover	 {
+	background-position:0 -25px;
+	}
+input.submit-hover,
+button.submit-hover {
+    color: #fff;
+	background-position: bottom left;
+    background-color: transparent;
+}
+
+/* =Button for links
+---------------------------------------- */
+a.button, a:visited.button {
+    color: #fff;
+	background-image: url(../images/link.gif);
+    background-color: #4eb4bb;
+    background-position: left 0;
+    background-repeat: no-repeat;
+	height: 25px;
+	overflow: hidden;
+    font-size: 12px;
+    font-weight: bold;
+	line-height: 25px;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	display: block;
+	cursor: pointer;
+}	
+a:hover.button {
+    color: #fff;
+    background-color: #505050;
+    background-position: left -50px;
+	text-decoration: none;
+}
+a.button span, a:visited.button span {
+	background-image: url(../images/link.gif);
+    background-position: right -25px;
+    background-repeat: no-repeat;
+	text-align: center;
+	height: 25px;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	display: block;
+	cursor: pointer;
+	width: 110px;
+}	
+a:hover.button span {
+    color: #fff;
+    background-position: right -75px;
+	text-decoration: none;
+	padding: 0 15px;
+}	
+a.button.find-out {width: 110px;}
+a.button.w64 {
+	width:64px;
+	} 
+	
+/* =i buttons 
+---------------------------------------- */
+a.button.link-i, 
+a:visited.button.link-i {
+    background-position: left -500px;
+	float: left;
+}
+a:hover.button.link-i {
+    background-position: left -550px;
+}
+a.button.link-i span, 
+a:visited.button.link-i span {
+    background-position: right -525px;
+	padding: 0 32px 0 15px;
+	float: left;
+}
+a:hover.button.link-i span {
+    background-position: right -575px;
+	padding: 0 32px 0 15px;
+}
+
+/* =Tables
+---------------------------------------- */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+    margin: 0 0 18px;
+}
+table td, table th {
+    padding: 4px 8px;
+	border: 1px solid #eae9e9;
+    vertical-align: top;
+}
+
+/* =CONTACT US module
+---------------------------------------- */
+div.register-form {
+	width:420px;
+	position:relative;
+	margin-left:-2px;
+	background:url(../images/contact-form-bg-bot.gif) no-repeat bottom left;
+	z-index:3;
+	overflow:hidden;
+	padding-bottom:6px;
+	}
+	fieldset.register-form {
+		background:#F0F0F0 url(../images/contact-form-bg-top.gif) no-repeat top left;
+		padding:18px 37px 7px 18px;
+		overflow:hidden;
+		}
+		fieldset.register-form .form-mandatory {
+			padding-top:3px;
+			color:#888;
+			font-weight:bold;
+			font-size:1.1em;
+			width:250px;
+    float: left;			
+			}
+		fieldset.register-form .error {
+			padding:0 0 0 138px;
+			}
+		fieldset.register-form label .error,
+		fieldset.register-form .form-mandatory .error {
+			font-size:1.2em;
+			padding:0;
+			}
+		fieldset.register-form label {
+			display:block;
+			width:138px;
+			color:#888;
+			font-size:1.1em;
+			line-height:1.6em;
+			font-weight:bold;
+			float:left;
+			}
+		fieldset.register-form label strong {
+				padding:9px 0 0;
+				display:block;
+				}
+		fieldset.register-form input.submit {
+			float:right;
+			}
+		fieldset.register-form textarea {
+			margin:0 0 13px;
+			}	
+		.roboinput input {
+			width:126px;
+			margin-bottom:13px;
+			}	
+		.roboinput {
+			float:left;
+			}	
+		.robospam {
+			float:right;
+			margin:0 25px 0 0;
+			border: 1px solid #D4D4D4;
+			}
+		div.ques {
+			/*background:#419BA1 url(../images/quiestion.gif) no-repeat;*/
+			text-indent:-9999em;
+			width:20px;
+			line-height:19px;
+			height:19px;
+			float:right;
+			position:relative;
+			margin-top:-20px;
+			/*margin-top:-35px;*/
+			/*display:none;*/
+			}
+			div.ques p{
+				width:20px;
+				height:19px;
+				padding: 0;
+				margin: 0;
+				}
+			body.contact div.ques {
+			display:block;
+			} 	
+			div.ques.promting-info	 {
+				display:none;
+				}
+		.forgotten-link {
+			font-size: 0.9em;
+			padding: 0 0 10px 138px;
+			}
+/* = CONTACT US form - slim
+---------------------------------------- */
+.secondaryy-content div.register-form,
+body.faq div.register-form {
+	width:230px;
+	margin-left:0;
+	background:url(../images/contform-bg-bot-w230.gif) no-repeat bottom left;
+	}
+	body.faq div.register-form {
+		float:right;
+		}
+	.secondaryy-content fieldset.register-form,
+	body.faq fieldset.register-form {
+		background:transparent  url(../images/contform-bg-top-w230.gif) no-repeat top left;
+		padding:12px 10px 6px 10px;
+		}
+		.secondaryy-content fieldset.register-form input.text,
+		.secondaryy-content fieldset.register-form select,
+		.secondaryy-content fieldset.register-form textarea,
+		body.faq fieldset.register-form input.text,
+		body.faq fieldset.register-form select,
+		body.faq fieldset.register-form textarea {
+			width:196px;
+			padding:3px 6px;
+			font-size:12px;
+			}
+		.secondaryy-content fieldset.register-form textarea,
+		body.faq fieldset.register-form textarea {
+			height:101px;
+			}	
+		.secondaryy-content fieldset.register-form input.submit,
+		body.faq fieldset.register-form input.submit {
+			font-size:12px;
+			}
+		.secondaryy-content div.register-form h3,
+		body.faq div.register-form h3 {
+			font-size:1.6em;
+			padding:0 0 14px 6px;
+			}
+		.secondaryy-content span.question,
+		body.faq span.question	 {
+			display:none;
+			}
+		.secondaryy-content fieldset.register-form .error,
+		body.faq fieldset.register-form .error {
+			padding:0;
+			}
+
+/* = SIGN UP form - secondaryy content
+---------------------------------------- */
+.sign-up {
+	width:230px;
+	padding:0 0 6px;
+	background:url(../images/contform-bg-bot-w230.gif) no-repeat bottom left;	
+	overflow:hidden;
+	}			
+	.sign-up-inner {
+		background:transparent  url(../images/contform-bg-top-w230.gif) no-repeat top left;
+		padding:12px 10px 6px 10px;		
+		overflow:hidden;
+		}	
+		.sign-up h2 {
+			font-size:1.3em;
+			padding:2px 0 16px 6px;
+			color:#6C6C6C;
+			}
+		.sign-up input.text{
+			width:196px;
+			padding:3px 6px;
+			font-size:12px;
+			}			
+		.sign-up input.button {
+		    float:right;
+		    font-size:12px;
+		    margin-top:2px;
+			}
+/* = NEWS SEARCH form
+---------------------------------------- */
+div.wide-search {
+	/*background:url(../images/news-search-bg-bot.gif) no-repeat bottom left;*/
+	background:#F0F0F0;
+	overflow:hidden;
+	padding:0 0 8px 0;
+	width:660px;
+	margin:0 0 10px;
+	}
+	fieldset.wide-search {
+		/*background:#f0f0f0 url(../images/news-search-bg-top.gif) no-repeat top left;*/
+		overflow:hidden;
+		padding:8px 10px 0;
+		}
+		fieldset.wide-search input.text {
+			width:256px;
+			margin:1px 27px 0 0;
+			padding:3px 10px 3px;
+			}
+		fieldset.wide-search select {
+			padding:2px 1px 2px 10px;
+			margin:1px 0 0;
+			width:227px;
+			}	
+			fieldset.wide-search select option {
+				padding:0 4px 0 10px;
+				}
+		fieldset.wide-search input.submit {
+			float:right;
+			}	
+
+/*****----------********/
+.contact_us_fields{
+ border: 1px #fff solid;
+    background: #fff;
+	line-height:normal;
+	width: 219px;
+    padding: 2px 3px 3px;
+    margin: 0 0 10px;
+}	
+.contact_us_submit{
+    float: right;
+    margin-top: 10px;
+    width: 80px;
+}		

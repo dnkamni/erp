@@ -1,0 +1,510 @@
+/* ::::: http://www.celloelectronics.com/assets/css/core.css ::::: */
+
+/* ::::: http://www.celloelectronics.com/assets/css/generic/helper.css ::::: */
+
+* { margin: 0pt; padding: 0pt; }
+:focus { outline-color: -moz-use-text-color; outline-style: none; outline-width: medium; }
+hr { display: none; }
+.align-top { vertical-align: top; }
+.align-right { text-align: right; }
+.align-left { text-align: left; }
+.align-center { text-align: center; }
+.float-left { float: left; margin-right: 18px; }
+.float-right { float: right; margin-left: 18px; }
+.left { float: left; }
+.right { float: right; }
+.clearall { clear: both; }
+.clear-left { clear: left; }
+.clear-right { clear: right; }
+br.clearall, div.clearall { clear: both; height: 0pt; line-height: 0pt; font-size: 0px; }
+img { border: 0px none ; }
+acronym { border-bottom: 1px dotted black; }
+.hide { display: none; }
+.error { color: rgb(255, 0, 0); }
+.small { font-size: 0.9em; }
+.big { font-size: 1.1em; }
+.no-pad { margin: 0pt ! important; padding: 0pt ! important; }
+.pad-left { padding-left: 15px ! important; }
+.pad-right { padding-right: 15px ! important; }
+.pad-top { padding-top: 18px ! important; }
+.pad-bottom { padding-bottom: 18px ! important; }
+.no-border { border: medium none  ! important; }
+.access-keys { position: absolute; left: -9999em; }
+body.no-title h1.title { display: none; }
+.content .primary-nav { margin: 0pt; padding: 3px 0pt; background: rgb(243, 221, 1) none repeat scroll 0% 0%; width: 960px; height: 35px; }
+.content .primary-nav ul { margin: 0pt; padding: 0pt; display: block; list-style-type: none; width: 830px; height: 35px; float: left; }
+.content .primary-nav ul li { margin: 0pt; padding: 0pt 3px; display: block; float: left; }
+.content .primary-nav ul li a, .content .primary-nav ul li a:visited { overflow: hidden; color: rgb(80, 80, 80); font-weight: bold; line-height: 35px; height: 35px; text-decoration: none; display: block; float: left; }
+.content .primary-nav ul li a span, .content .primary-nav ul li a:visited span { padding: 0px 12px; overflow: hidden; line-height: 35px; height: 35px; display: block; cursor: pointer; float: left; }
+.content .primary-nav ul li a:hover, .content .primary-nav ul li.current a, .content .primary-nav ul li.current a:visited { background: rgb(108, 108, 108) url(../images/nav-primary-bg.gif) no-repeat scroll left top; color: rgb(243, 221, 1); text-decoration: none; }
+.content .primary-nav ul li a:hover span, .content .primary-nav ul li.current a span, .content .primary-nav ul li.current a:visited span { background: transparent url(../images/nav-primary-bg.gif) no-repeat scroll right bottom; }
+.content .secondary-nav { border-bottom: 1px solid rgb(255, 255, 255); margin: 0pt 0pt 160px; padding: 0pt; background: rgb(244, 244, 244) none repeat scroll 0% 0%; width: 190px; }
+.content .secondary-nav ul { margin: 0pt; padding: 10px 0pt 3px 9px; display: block; list-style-type: none; }
+.content .secondary-nav ul li { margin: 0pt; padding: 0pt 0pt 7px; display: block; height: 1%; width: 170px; }
+.content .secondary-nav ul li a, .content .secondary-nav ul li a:visited { padding: 0pt; background: rgb(78, 180, 187) url(../images/nav-secondary-bg.gif) no-repeat scroll left top; color: rgb(255, 255, 255); font-size: 1em; font-weight: bold; text-decoration: none; display: block; }
+.content .secondary-nav ul li a:hover, .content .secondary-nav ul li.current a, .content .secondary-nav ul li.current a:visited { background: rgb(108, 108, 108) url(../images/nav-secondary-bg.gif) no-repeat scroll -340px top; color: rgb(255, 255, 255); text-decoration: none; }
+.content .secondary-nav ul li a span, .content .secondary-nav ul li a:visited span { padding: 8px 12px; background: transparent url(../images/nav-secondary-bg.gif) no-repeat scroll -170px bottom; display: block; }
+.content .secondary-nav ul li a:hover span, .content .secondary-nav ul li.current a span, .content .secondary-nav ul li.current a:visited span { background: transparent url(../images/nav-secondary-bg.gif) no-repeat scroll right bottom; }
+.content .footer-nav { padding: 12px 0pt 0pt; line-height: normal; }
+.content .footer-nav ul { margin: 0pt; padding: 0pt 8px 0pt 4px; display: block; list-style-type: none; float: left; }
+.content .footer-nav ul li { margin: 0pt; padding: 0pt 0pt 5px 8px; display: block; float: left; }
+.content .footer-nav ul li a, .content .footer-nav ul li a:visited { padding: 0pt 8px 0pt 0pt; background: transparent url(../images/nav-footer-separ-bg.gif) no-repeat scroll right 3px; text-decoration: none; display: block; }
+.content .footer-nav ul li a:hover, .content .footer-nav ul li.current a, .content .footer-nav ul li.current a:visited { text-decoration: underline; }
+.content .breadcrumbs ul { margin: 0pt; padding: 0pt; background: transparent url(../images/breadcrumbs-bg.gif) repeat-x scroll left top; display: block; list-style-type: none; height: 28px; float: left; }
+.content .breadcrumbs ul li { margin: 0pt -9px 0pt 0pt; padding: 0pt; display: block; height: 28px; position: relative; float: left; }
+.content .breadcrumbs ul li a, .content .breadcrumbs ul li a:visited, .content .breadcrumbs ul li strong { padding: 0pt 9px 0pt 0pt; background: transparent url(../images/breadcrumbs-left-bg.png) no-repeat scroll right top; color: rgb(80, 80, 80); font-weight: bold; font-size: 0.8em; line-height: 28px; text-decoration: none; height: 28px; display: block; }
+.content .breadcrumbs ul li a, .content .breadcrumbs ul li a:visited { color: rgb(37, 152, 160); text-decoration: none; }
+.content .breadcrumbs ul li a:hover { background: transparent url(../images/breadcrumbs-left-bg.png) no-repeat scroll right bottom; color: rgb(255, 255, 255); text-decoration: none; }
+.content .breadcrumbs ul li a span, .content .breadcrumbs ul li a:visited span, .content .breadcrumbs ul li strong span { margin: 0pt; padding: 0pt 9px 0pt 17px; height: 28px; display: block; position: relative; white-space: nowrap; cursor: pointer; }
+.content .breadcrumbs ul li a:hover span { background: rgb(108, 108, 108) none repeat scroll 0% 0%; display: block; cursor: pointer; }
+.content .breadcrumbs ul li strong span { margin: 0pt; padding: 0pt 9px 0pt 17px; height: 28px; display: block; position: relative; white-space: nowrap; cursor: default; }
+.content .breadcrumbs ul li:first-child a span, .content .breadcrumbs ul li:first-child a:visited span { padding: 0pt 9px 0pt 12px; background: transparent url(../images/breadcrumbs-right-bg.gif) no-repeat scroll left top; }
+.content .breadcrumbs ul li:first-child a:hover span { background: rgb(108, 108, 108) url(../images/breadcrumbs-right-bg.gif) no-repeat scroll left bottom; }
+/* ::::: http://www.celloelectronics.com/assets/css/modules/skins.css ::::: */
+
+body.yellow-page .footer .logo-small span, body.black-page .footer .logo-small span, body.cyan-page .footer .logo-small span { background: transparent url(../images/logo-small-white.png) no-repeat scroll right top; }
+body.yellow-page { background: rgb(254, 231, 0) none repeat scroll 0% 0%; }
+body.yellow-page .content .secondary-nav { border-bottom: 1px solid rgb(254, 231, 0); }
+body.yellow-page a.logo, body.yellow-page a.logo:visited, body.yellow-page strong.logo { background: transparent url(../images/logo-white.png) no-repeat scroll right bottom; }
+body.yellow-page .footer, body.yellow-page .footer a, body.yellow-page .footer a:visited, body.yellow-page .footer a:hover { color: rgb(65, 65, 65); }
+body.yellow-page .footer-nav ul li a, body.yellow-page .footer-nav ul li a:visited { background: transparent url(../images/nav-footer-separ-yellow-bg.gif) no-repeat scroll right 3px; }
+body.yellow-page .search-box div.text { background: rgb(255, 255, 255) url(../images/search-bg.gif) no-repeat scroll 0pt -25px; }
+body.yellow-page .header, body.yellow-page .header a, body.yellow-page .header a:visited, body.yellow-page .header a:hover { color: rgb(65, 65, 65); }
+body.black-page { background: rgb(56, 56, 56) none repeat scroll 0% 0%; }
+body.black-page .content .secondary-nav { border-bottom: 1px solid rgb(56, 56, 56); }
+body.black-page .content { padding: 157px 0pt 0pt; background: transparent none repeat scroll 0% 0%; width: 960px; }
+body.black-page .primary-content { padding: 85px 10px 20px 60px; }
+body#wide.black-page .primary-content { padding: 85px 40px 20px; }
+body.black-page .primary-outer-content, body.black-page .bottom-content { width: 770px; }
+body.black-page .footer, body.black-page .footer a, body.black-page .footer a:visited, body.black-page .footer a:hover { color: rgb(154, 154, 154); }
+body.black-page .footer-nav ul li a, body.black-page .footer-nav ul li a:visited { background: transparent url(../images/nav-footer-separ-black-bg.gif) no-repeat scroll right 3px; }
+body.black-page .search-box div.text { background: rgb(240, 242, 242) url(../images/search-bg.gif) no-repeat scroll 0pt -50px; }
+body.black-page .header, body.black-page .header a, body.black-page .header a:visited, body.black-page .header a:hover { color: rgb(154, 154, 154); }
+body.cyan-page { background: rgb(87, 197, 205) none repeat scroll 0% 0%; }
+body.cyan-page .content .secondary-nav { border-bottom: 1px solid rgb(87, 197, 205); }
+body.cyan-page a.logo, body.cyan-page a.logo:visited, body.cyan-page strong.logo { background: transparent url(../images/logo-white.png) no-repeat scroll right bottom; }
+body.cyan-page .content { padding: 157px 0pt 0pt; background: transparent none repeat scroll 0% 0%; width: 960px; }
+body.cyan-page .primary-content { padding: 85px 10px 20px 60px; }
+body#wide.cyan-page .primary-content { padding: 85px 40px 20px; }
+body.cyan-page .primary-outer-content, body.cyan-page .bottom-content { width: 770px; }
+body.cyan-page .content .secondary-nav, body.cyan-page .bottom-content { background: rgb(78, 180, 187) none repeat scroll 0% 0%; }
+body.cyan-page .content .secondary-nav ul li a, body.cyan-page .content .secondary-nav ul li a:visited { background: rgb(87, 197, 205) url(../images/nav-secondary-cyan-bg.gif) no-repeat scroll left top; }
+body.cyan-page .content .secondary-nav ul li a:hover, body.cyan-page .content .secondary-nav ul li.current a, body.cyan-page .content .secondary-nav ul li.current a:visited { background: rgb(108, 108, 108) url(../images/nav-secondary-cyan-bg.gif) no-repeat scroll -340px top; }
+body.cyan-page .content .secondary-nav ul li a span, body.cyan-page .content .secondary-nav ul li a:visited span { background: transparent url(../images/nav-secondary-cyan-bg.gif) no-repeat scroll -170px bottom; }
+body.cyan-page .content .secondary-nav ul li a:hover span, body.cyan-page .content .secondary-nav ul li.current a span, body.cyan-page .content .secondary-nav ul li.current a:visited span { background: transparent url(../images/nav-secondary-cyan-bg.gif) no-repeat scroll right bottom; }
+body.cyan-page .search-box div.text { background: rgb(255, 255, 255) url(../images/search-bg.gif) no-repeat scroll 0pt bottom; }
+body.cyan-page .partner-brands, body.cyan-page .footer-latest-news { background: rgb(255, 255, 255) url(../images/partners-cyan-bg.gif) no-repeat scroll left top; }
+body.cyan-page .partner-brands .partner-inner, body.cyan-page .footer-latest-news .latest-news-inner { background: transparent url(../images/partners-cyan-bg.gif) no-repeat scroll right bottom; }
+body.cyan-page .footer, body.cyan-page .footer a, body.cyan-page .footer a:visited, body.cyan-page .footer a:hover { color: rgb(65, 65, 65); }
+body.cyan-page .footer-nav ul li a, body.cyan-page .footer-nav ul li a:visited { background: transparent url(../images/nav-footer-separ-yellow-bg.gif) no-repeat scroll right 3px; }
+body.cyan-page .header, body.cyan-page .header a, body.cyan-page .header a:visited, body.cyan-page .header a:hover { color: rgb(65, 65, 65); }
+/* ::::: http://www.celloelectronics.com/assets/css/modules/forms.css ::::: */
+
+legend { display: none; }
+fieldset { border: medium none ; }
+input, textarea, button { color: rgb(136, 136, 136); font-weight: bold; font-size: 12px; font-family: Arial,sans-serif; }
+input.text { border: 1px solid rgb(255, 255, 255); margin: 0pt 0pt 10px; padding: 2px 3px 3px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; line-height: normal; width: 219px; }
+select { border: 1px solid rgb(212, 212, 212); margin: 0pt 0pt 10px; padding: 1px 1px 1px 3px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; width: 227px; line-height: 1.5em; color: rgb(136, 136, 136); font-size: 12px; font-weight: bold; font-family: Arial,sans-serif; }
+select option { padding: 0pt 4px; line-height: 14px; }
+textarea { border: 1px solid rgb(255, 255, 255); margin: 0pt 0pt 10px; padding: 2px 3px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; overflow: auto; width: 219px; height: 102px; }
+.error, .error-msg { color: rgb(78, 180, 187); font-size: 0.9em; }
+#form label { display: block; float: left; width: 120px; }
+#form input.text { padding: 3px 3px 4px; }
+#form input.submit, #form input.submit-hover { margin: 0pt 0pt 0pt 120px; }
+#form span.error { padding: 0pt 0pt 0pt 125px; }
+#form label span.error, #form p span.error { padding: 0pt 3px; display: inline; }
+fieldset br { clear: both; height: 0pt; line-height: 0pt; font-size: 0px; }
+input.submit, input.submit.hover, button.submit, button.submit.hover, .secondary-content .sign-up input.button, .secondary-content .sign-up input.button.hover { border: medium none ; padding: 0pt 0pt 2px; background: rgb(78, 180, 187) url(../images/submit-bg.gif) no-repeat scroll 0% 0%; color: rgb(255, 255, 255); text-align: center; font-size: 12px; width: 76px; height: 25px; cursor: pointer; line-height: normal; }
+input.submit.hover, button.submit.hover, .secondary-content .sign-up input.button.hover { background-position: 0pt -25px; }
+input.submit-hover, button.submit-hover { color: rgb(255, 255, 255); background-position: left bottom; background-color: transparent; }
+a.button, a.button:visited { margin: 0pt; padding: 0pt; overflow: hidden; color: rgb(255, 255, 255); background-image: url(../images/link.gif); background-color: rgb(78, 180, 187); background-position: left 0pt; background-repeat: no-repeat; height: 25px; font-size: 12px; font-weight: bold; line-height: 25px; text-decoration: none; display: block; cursor: pointer; }
+a.button:hover { color: rgb(255, 255, 255); background-color: rgb(80, 80, 80); background-position: left -50px; text-decoration: none; }
+a.button span, a.button:visited span { margin: 0pt; padding: 0pt; overflow: hidden; background-image: url(../images/link.gif); background-position: right -25px; background-repeat: no-repeat; text-align: center; height: 25px; display: block; cursor: pointer; }
+a.button:hover span { padding: 0pt 15px; color: rgb(255, 255, 255); background-position: right -75px; text-decoration: none; }
+a.button.find-out { width: 110px; }
+a.button.w64 { width: 64px; }
+a.button.link-i, a.button.link-i:visited { background-position: left -500px; float: left; }
+a.button.link-i:hover { background-position: left -550px; }
+a.button.link-i span, a.button.link-i:visited span { padding: 0pt 32px 0pt 15px; background-position: right -525px; float: left; }
+a.button.link-i:hover span { padding: 0pt 32px 0pt 15px; background-position: right -575px; }
+table { margin: 0pt 0pt 18px; border-collapse: collapse; border-spacing: 0pt; }
+table td, table th { border: 1px solid rgb(234, 233, 233); padding: 4px 8px; vertical-align: top; }
+div.register-form { background: transparent url(../images/contact-form-bg-bot.gif) no-repeat scroll left bottom; overflow: hidden; width: 420px; position: relative; margin-left: -2px; z-index: 3; padding-bottom: 6px; }
+fieldset.register-form { padding: 18px 37px 7px 18px; background: rgb(240, 240, 240) url(../images/contact-form-bg-top.gif) no-repeat scroll left top; overflow: hidden; }
+fieldset.register-form .form-mandatory { padding-top: 3px; color: rgb(136, 136, 136); font-weight: bold; font-size: 1.1em; width: 250px; }
+fieldset.register-form .error { padding: 0pt 0pt 0pt 138px; }
+fieldset.register-form label .error, fieldset.register-form .form-mandatory .error { padding: 0pt; font-size: 1.2em; }
+fieldset.register-form label { display: block; width: 138px; color: rgb(136, 136, 136); font-size: 1.1em; line-height: 1.6em; font-weight: bold; float: left; }
+fieldset.register-form label strong { padding: 9px 0pt 0pt; display: block; }
+fieldset.register-form input.submit { float: right; }
+fieldset.register-form textarea { margin: 0pt 0pt 13px; }
+.roboinput input { width: 126px; margin-bottom: 13px; }
+.roboinput { float: left; }
+.robospam { margin: 0pt 25px 0pt 0pt; float: right; }
+div.question { background: rgb(65, 155, 161) url(../images/quiestion.gif) no-repeat scroll 0% 0%; text-indent: -9999em; width: 20px; line-height: 19px; height: 19px; float: right; position: relative; margin-top: -35px; display: none; }
+div.question p { margin: 0pt; padding: 0pt; width: 20px; height: 19px; }
+body.contact div.question { display: block; }
+div.question .promting-info { display: none; }
+.forgotten-link { padding: 0pt 0pt 10px 138px; font-size: 0.9em; }
+.secondary-content div.register-form, body.faq div.register-form { background: transparent url(../images/contform-bg-bot-w230.gif) no-repeat scroll left bottom; width: 230px; margin-left: 0pt; }
+body.faq div.register-form { float: right; }
+.secondary-content fieldset.register-form, body.faq fieldset.register-form { padding: 12px 10px 6px; background: transparent url(../images/contform-bg-top-w230.gif) no-repeat scroll left top; }
+.secondary-content fieldset.register-form input.text, .secondary-content fieldset.register-form select, .secondary-content fieldset.register-form textarea, body.faq fieldset.register-form input.text, body.faq fieldset.register-form select, body.faq fieldset.register-form textarea { padding: 3px 6px; width: 196px; font-size: 12px; }
+.secondary-content fieldset.register-form textarea, body.faq fieldset.register-form textarea { height: 101px; }
+.secondary-content fieldset.register-form input.submit, body.faq fieldset.register-form input.submit { font-size: 12px; }
+.secondary-content div.register-form h3, body.faq div.register-form h3 { padding: 0pt 0pt 14px 6px; font-size: 1.6em; }
+.secondary-content span.question, body.faq span.question { display: none; }
+.secondary-content fieldset.register-form .error, body.faq fieldset.register-form .error { padding: 0pt; }
+.sign-up { padding: 0pt 0pt 6px; background: transparent url(../images/contform-bg-bot-w230.gif) no-repeat scroll left bottom; overflow: hidden; width: 230px; }
+.sign-up-inner { padding: 12px 10px 6px; background: transparent url(../images/contform-bg-top-w230.gif) no-repeat scroll left top; overflow: hidden; }
+.sign-up h2 { padding: 2px 0pt 16px 6px; font-size: 1.3em; color: rgb(108, 108, 108); }
+.sign-up input.text { padding: 3px 6px; width: 196px; font-size: 12px; }
+.sign-up input.button { float: right; font-size: 12px; margin-top: 2px; }
+div.wide-search { margin: 0pt 0pt 10px; padding: 0pt 0pt 8px; background: transparent url(../images/news-search-bg-bot.gif) no-repeat scroll left bottom; overflow: hidden; width: 660px; }
+fieldset.wide-search { padding: 8px 10px 0pt; background: rgb(240, 240, 240) url(../images/news-search-bg-top.gif) no-repeat scroll left top; overflow: hidden; }
+fieldset.wide-search input.text { margin: 1px 27px 0pt 0pt; padding: 3px 10px; width: 256px; }
+fieldset.wide-search select { margin: 1px 0pt 0pt; padding: 2px 1px 2px 10px; width: 227px; }
+fieldset.wide-search select option { padding: 0pt 4px 0pt 10px; }
+fieldset.wide-search input.submit { float: right; }
+/* ::::: http://www.celloelectronics.com/assets/css/modules/blocks.css ::::: */
+
+.pod { margin: 0pt; padding: 0pt 0pt 18px; }
+.pager { padding: 5px 0pt 15px 14px; overflow: hidden; width: 646px; font-size: 0.9em; color: rgb(65, 65, 65); }
+.pager div { float: right; }
+.pager a.page-number, .pager .page-current, .pager .prev, .pager .next { display: block; float: left; }
+.pager .prev, .pager .next { margin: 5px 0pt 0pt 9px; background: rgb(78, 180, 187) url(../images/pager-prev-next.gif) no-repeat scroll -6px 0pt; overflow: hidden; text-indent: -9999em; width: 6px; height: 8px; }
+.pager .next:hover { background: rgb(108, 108, 108) url(../images/pager-prev-next.gif) no-repeat scroll -6px -8px; }
+.pager .prev { margin: 5px 9px 0pt 0pt; background: rgb(78, 180, 187) url(../images/pager-prev-next.gif) no-repeat scroll 0pt 0pt; }
+.pager .prev:hover { background: rgb(108, 108, 108) url(../images/pager-prev-next.gif) no-repeat scroll 0pt -8px; }
+.pager a.page-number, .pager a.page-number:visited, .pager .page-current { margin: 0pt 1px 0pt 2px; background: rgb(78, 180, 187) url(../images/pager-number.gif) no-repeat scroll 0pt 0pt; width: 20px; height: 19px; color: rgb(255, 255, 255); text-decoration: none; text-align: center; font-weight: bold; }
+.pager .page-current, .pager a.page-number:hover { background: rgb(108, 108, 108) url(../images/pager-number.gif) no-repeat scroll 0pt -19px; color: rgb(255, 255, 255); }
+.pager.bottom { border-top: 1px solid rgb(240, 240, 240); padding: 15px 0pt 15px 14px; }
+body#wide .pager { width: 860px; }
+.search-box { padding: 10px 0pt 0pt 380px; overflow: hidden; width: 214px; height: 25px; }
+.search-box div.text { background: rgb(240, 242, 242) url(../images/search-bg.gif) no-repeat scroll 0pt top; float: left; width: 100%; }
+.search-box div.text input.text { border: medium none ; margin: 0pt 0pt 0pt 15px; padding: 5px 0pt 0pt; background: transparent none repeat scroll 0% 0% ! important; color: rgb(136, 136, 136); font-size: 11px; font-weight: bold; line-height: normal; float: left; width: 175px; height: 19px; }
+.search-box input.button { border: medium none ; padding: 0pt 4px; background: transparent none repeat scroll 0% 0%; overflow: visible; cursor: pointer; float: left; width: 24px; height: 25px; vertical-align: middle; }
+.logout { padding: 15px 0pt 0pt 14px; overflow: hidden; text-align: right; width: 580px; height: 25px; }
+.bottom-content { margin: 0pt; padding: 20px 0pt; background: rgb(244, 244, 244) none repeat scroll 0% 0%; width: 768px; }
+.partner-brands { margin: 0pt 0pt 0pt 30px; padding: 0pt; background: rgb(255, 255, 255) url(../images/partners-yellow-bg.gif) no-repeat scroll left top; width: 340px; height: 165px; float: left; display: inline; }
+.partner-brands .partner-inner { padding: 0pt 30px; background: transparent url(../images/partners-gray-bg.gif) no-repeat scroll right bottom; width: 280px; height: 165px;}
+#nojs .partner-brands, #nojs .partner-brands .partner-inner { height: auto; }
+.partner-brands h3 { font-size: 1.7em; }
+.partner-brands .item-image { padding: 0pt 10px 0pt 0pt; text-align: center; float: left; width: 115px; }
+.partner-brands .item-summary { padding: 0pt; width: 155px; float: left; margin-top: 10px; }
+.footer-latest-news { margin: 0pt 0pt 0pt 30px; padding: 0pt; background: rgb(255, 255, 255) url(../images/partners-gray-bg.gif) no-repeat scroll left top; width: 340px; height: 165px; float: left; display: inline; }
+.footer-latest-news .latest-news-inner { padding: 0pt 30px; background: transparent url(../images/partners-gray-bg.gif) no-repeat scroll right bottom; width: 280px; height: 165px; }
+#nojs .footer-latest-news, #nojs .footer-latest-news .latest-news-inner { height: auto; }
+.footer-latest-news h3 { font-size: 1.7em; }
+.footer-latest-news .item-image { padding: 0pt 0pt 0pt 10px; text-align: center; float: right; width: 115px; }
+.footer-latest-news .item-summary { padding: 0pt; width: 155px; float: left; }
+.partners-list .list-item { margin: 0pt 25px 30px 0pt; padding: 7px 0pt 0pt; background: transparent url(../images/partners-list-top-bg.gif) no-repeat scroll left top; width: 425px; min-height: 148px; float: left; display: inline; }
+.partners-list .list-item.last { margin: 0pt 0pt 30px; }
+.partners-list .list-item .item-inner { margin: 0pt; padding: 0pt 0pt 7px; background: transparent url(../images/partners-list-top-bg.gif) no-repeat scroll right bottom; width: 425px; }
+.partners-list .list-item .item-second-inner { margin: 0pt; padding: 0pt 15px; background: transparent url(../images/partners-list-bg.gif) repeat-y scroll left top; width: 395px; }
+.partners-list .list-item .item-image { padding: 0pt 0pt 5px; float: left; width: 150px; }
+.partners-list .list-item .item-summary { padding: 0pt 15px 0pt 0pt; float: left; width: 230px; }
+.partners-list .list-item h2 { padding: 5px 0pt; }
+.partners-list .list-item h3 { padding: 5px 0pt; }
+.testimonial { padding: 18px 0pt; width: 350px; }
+.testimonial-inner { margin: 0pt auto; width: 258px; }
+.testimonial blockquote { padding: 10px 20px 7px; background: rgb(254, 231, 0) url(../images/testimonial-bg.gif) no-repeat scroll left top; color: rgb(98, 97, 97); width: 218px; font-weight: bold; }
+.testimonial cite { margin: 0pt; padding: 15px 0pt 0pt; background: transparent url(../images/testimonial-bg.gif) no-repeat scroll right top; width: 258px; display: block; }
+.testimonial cite span.name { padding: 0pt 5px 0pt 65px; color: rgb(0, 0, 0); font-weight: bold; font-style: normal; display: block; }
+.testimonial cite span.title { padding: 0pt 5px 0pt 65px; font-style: normal; display: block; }
+.retailer-details .link-i-container { padding: 0pt 0pt 18px; height: 25px; }
+#gallery-jcarousel-list .item-image { padding: 0pt 0pt 6px; text-align: center; }
+#gallery-jcarousel-list .item-title { padding: 0pt; color: rgb(65, 65, 65); font-family: Arial,sans-serif; font-size: 1.3em; font-weight: bold; line-height: normal; text-align: center; }
+/* ::::: http://www.celloelectronics.com/assets/css/modules/lightbox.css ::::: */
+
+#lightbox { position: absolute; left: 0pt; width: 100%; z-index: 100; text-align: center; line-height: 0pt; }
+#lightbox img { width: auto; height: auto; }
+#lightbox a img { border: medium none ; }
+#outerImageContainer { margin: 0pt auto; position: relative; background-color: rgb(255, 255, 255); width: 250px; height: 250px; }
+#imageContainer { padding: 20px; }
+#loading { position: absolute; top: 40%; left: 0%; height: 25%; width: 100%; text-align: center; line-height: 0pt; }
+#prevLink, #nextLink { overflow: hidden; position: absolute; width: 24px; height: 23px ! important; background-image: url(../images/prevnextlabel.gif); background-repeat: no-repeat; display: block; line-height: 0pt; font-size: 0pt; z-index: 10; }
+#prevLink { left: -7px; top: 50%; float: left; background-position: left bottom; }
+#nextLink { right: -7px; top: 50%; float: left; background-position: left top; }
+#prevLink:hover, #prevLink:visited:hover { background-position: -24px bottom; }
+#nextLink:hover, #nextLink:visited:hover { background-position: -24px top; }
+#imageDataContainer { margin: 0pt auto; overflow: auto; font-family: Verdana,Helvetica,sans-serif; font-style: normal; font-variant: normal; font-weight: normal; font-size: 10px; font-size-adjust: none; font-stretch: normal; -x-system-font: none; background-color: rgb(255, 255, 255); line-height: 1.4em; width: 100%; }
+#imageData { padding: 0pt 20px; color: rgb(65, 65, 65); }
+#imageData #imageDetails { padding: 0pt 0pt 15px; float: left; text-align: left; }
+#imageData #caption { font-family: Arial,sans-serif; font-weight: bold; font-size: 1.8em; }
+#imageData #numberDisplay { display: none; clear: left; }
+#imageData #bottomNav {  }
+#imageData #bottomNavClose { width: 66px; float: right; padding-bottom: 0.7em; outline-color: -moz-use-text-color; outline-style: none; outline-width: medium; }
+#overlay { position: absolute; top: 0pt; left: 0pt; z-index: 90; width: 100%; height: 500px; background-color: rgb(0, 0, 0); }
+html, body { height: auto ! important; min-height: 100%; }
+body { background: rgb(255, 255, 255) none repeat scroll 0% 0%; color: rgb(69, 69, 69); font-family: Arial,sans-serif; font-size: 62.5%; line-height: 18px; text-align: center; }
+p { margin: 0pt; padding: 1px 0pt 18px; }
+a { color: rgb(37, 152, 160); text-decoration: underline; outline-color: -moz-use-text-color; outline-style: none; outline-width: medium; }
+a:visited { color: rgb(37, 152, 160); text-decoration: underline; }
+a:hover { color: rgb(37, 152, 160); text-decoration: none; }
+a:active { color: rgb(37, 152, 160); text-decoration: none; }
+#js .js { display: block; }
+#nojs .js { display: none; }
+#nojs .nojs { display: block; }
+#js .nojs { display: none; }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { /* padding: 10px 0pt 14px; */ color: rgb(65, 65, 65); font-family: Arial,sans-serif; line-height: normal; }
+h1, .h1 { margin: 0pt 0pt 0pt -35px; padding: 1px 0pt 14px; font-family: Helvetica,Arial,sans-serif; font-size: 2.2em; }
+h1 a:link, h1 a:visited { color: rgb(37, 152, 160); text-decoration: none; cursor: pointer; }
+h1 a:hover, h1 a:active { color: rgb(65, 65, 65); text-decoration: none; cursor: pointer; }
+h2, .h2 { font-size: 1.7em; }
+h2 a:link, h2 a:visited { color: rgb(37, 152, 160); text-decoration: none; cursor: pointer; }
+h2 a:hover, h2 a:active { color: rgb(65, 65, 65); text-decoration: none; cursor: pointer; }
+h3, .h3 { font-size: 1.3em; }
+h3 a:link, h3 a:visited { color: rgb(37, 152, 160); text-decoration: none; cursor: pointer; }
+h3 a:hover, h3 a:active { color: rgb(65, 65, 65); text-decoration: none; cursor: pointer; }
+h4, .h4 { font-size: 1.2em; }
+h4 a:link, h4 a:visited { color: rgb(37, 152, 160); text-decoration: none; cursor: pointer; }
+h4 a:hover, h4 a:active { color: rgb(65, 65, 65); text-decoration: none; cursor: pointer; }
+h5, .h5 { font-size: 1em; }
+h5 a:link, h5 a:visited { color: rgb(37, 152, 160); text-decoration: none; cursor: pointer; }
+h5 a:hover, h5 a:active { color: rgb(65, 65, 65); text-decoration: none; cursor: pointer; }
+h6 { font-size: 1em; }
+h6 a:link, h6 a:visited { color: rgb(37, 152, 160); text-decoration: none; cursor: pointer; }
+h6 a:hover, h6 a:active { color: rgb(65, 65, 65); text-decoration: none; cursor: pointer; }
+.container { position: relative; text-align: left; }
+.content { margin: 0pt auto; padding: 157px 1px 0pt; background: transparent url(../images/content-bg.png) no-repeat scroll 0pt 157px; text-align: left; font-size: 1.2em; width: 958px; position: relative; }
+.header { margin: 0pt; padding: 0px; overflow: hidden; color: rgb(97, 97, 97); width: 960px; height: 157px; position: absolute; left: 0pt; top: 0pt; text-align: left; }
+.secondary-content { margin: 0pt -40px 0pt 0pt; padding: 0pt 0pt 20px; width: 230px; position: relative; float: left; z-index: 2; }
+.breadcrumbs { padding: 28px 9px 0pt 27px; width: 734px; z-index: 3; position: absolute; top: 0px; right: 0pt; }
+.primary-content { margin: 0pt; padding: 85px 9px 20px 59px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; width: 700px; min-height: 550px; position: relative; z-index: 1; float: none; }
+.primary-outer-content { margin: 0pt; padding: 0pt; width: 768px; position: relative; z-index: 1; float: right; }
+.gallery-content { margin: 0pt 0pt 18px 15px; float: right; z-index: 5; position: relative; }
+.footer { margin: 0pt; padding: 40px 10px 150px; color: rgb(108, 108, 108); font-size: 0.9em; width: 940px; text-align: left; }
+body#wide .primary-content { padding: 85px 39px 20px; width: 880px; float: none; }
+body#wide .breadcrumbs { padding: 28px 39px 0pt; width: 880px; }
+body#wide.black-page.contact .breadcrumbs { padding: 28px 39px 0pt 52px; width: 867px; }
+body#wide h1, body#wide .h1 { margin: 0pt; }
+.content ul, .content ol { margin: 0pt 0pt 18px 25px; }
+.content ul ul, .content ol ol { padding: 5px 0pt 0pt; margin-bottom: 0pt; }
+.content ul li, .content ol li { padding: 0pt 0pt 5px 1px; margin-left: 0px; }
+.content ul ul li, .content ol ol li { padding: 0pt 0pt 5px 1px; }
+.breadcrumbs span { padding: 0pt 5px; }
+a.logo, a.logo:visited, strong.logo { margin: 0pt; padding: 0pt; background: transparent url(../images/logo-yellow.png) no-repeat scroll right bottom; overflow: hidden; width: 352px; height: 116px; text-indent: -9999px; text-decoration: none; display: block; float: left; }
+a.logo, a.logo:visited { cursor: pointer; }
+.resource-centre-link { padding: 5px 10px 0pt 0pt; width: 120px; float: right; }
+.resource-centre-link a.button, .resource-centre-link a.button:visited { color: rgb(255, 255, 255); background-position: left -400px; }
+.resource-centre-link a.button:hover { color: rgb(255, 255, 255); background-position: left -450px; }
+.resource-centre-link a.button span, .resource-centre-link a.button:visited span { padding: 0pt; color: rgb(255, 255, 255); background-position: right -425px; }
+.resource-centre-link a.button:hover span { padding: 0pt; color: rgb(255, 255, 255); background-position: right -475px; }
+
+.footer a.createdBy { background: transparent url(../images/fuse8.png) no-repeat scroll right top; overflow: hidden; display: block; width: 100px; height: 16px; text-indent: -9999em; }
+.footer a, .footer a:visited { color: rgb(108, 108, 108); text-decoration: none; }
+.footer a:hover { color: rgb(108, 108, 108); text-decoration: underline; }
+.footer .logo-small { padding: 0pt; float: left; }
+.footer .logo-small span { background: transparent url(../images/logo-small-gray.png) no-repeat scroll right top; overflow: hidden; display: block; width: 79px; height: 27px; text-indent: -9999em; }
+cufon { text-indent: 0pt ! important; }
+@media screen, projection {
+  cufon { display: inline-block ! important; position: relative ! important; vertical-align: middle ! important; font-size: 1px ! important; line-height: 1px ! important; }
+  cufon cufontext { overflow: hidden ! important; display: inline-block ! important; width: 0pt ! important; height: 0pt ! important; text-indent: -10000in ! important; }
+  cufon canvas { position: relative ! important; }
+}
+@media print {
+  cufon { padding: 0pt ! important; }
+  cufon canvas { display: none ! important; }
+}
+/* ::::: http://www.celloelectronics.com/assets/css/modules/homepage.css ::::: */
+
+body#homepage { background: rgb(254, 231, 0) none repeat scroll 0% 0%; }
+body#homepage .primary-content { margin: 0pt; padding: 0pt 18px 40px 0pt; background: transparent none repeat scroll 0% 0%; width: 590px; z-index: 1; float: left; }
+body#homepage .secondary-content { margin: 0pt; padding: 0pt 0pt 40px; width: 350px; float: left; z-index: 1; }
+body#homepage .home-gallery-content { margin: 0pt; padding: 0pt; overflow: hidden; line-height: 0pt; font-size: 0pt; width: 590px; height: 316px; }
+body#homepage .main-content { margin: 0pt; padding: 25px 35px 0pt; background: rgb(244, 222, 1) none repeat scroll 0% 0%; width: 520px; }
+body#homepage .main-content p { padding: 0pt 0pt 25px; color: rgb(98, 97, 97); font-size: 1.3em; font-family: Arial,sans-serif; line-height: normal; }
+body#homepage a.logo, body#homepage a.logo:visited, body#homepage strong.logo { background: transparent url(../images/logo-white.png) no-repeat scroll right bottom; }
+body#homepage .footer, body#homepage .footer a, body#homepage .footer a:visited, body#homepage .footer a:hover { color: rgb(65, 65, 65); }
+body#homepage .footer-nav ul li a, body#homepage .footer-nav ul li a:visited { background: transparent url(../images/nav-footer-separ-yellow-bg.gif) no-repeat scroll right 3px; }
+body#homepage .footer .logo-small span { background: transparent url(../images/logo-small-white.png) no-repeat scroll right top; }
+body#homepage h1, body#homepage .h1 { margin: 0pt; }
+body#homepage .search-box div.text { background: rgb(255, 255, 255) url(../images/search-bg.gif) no-repeat scroll 0pt -25px; }
+.homepage-whats-new { margin: 0pt 0pt 5px; padding: 10px 0pt 0pt; background: rgb(255, 255, 255) none repeat scroll 0% 0%; width: 350px; }
+.homepage-whats-new h2 { padding: 5px 20px; font-size: 2.2em; }
+.homepage-whats-new h3 { padding: 5px 20px; font-size: 1.5em; }
+.homepage-whats-new .whats-new-summary { padding: 5px 20px 50px; font-size: 1.3em; line-height: normal; }
+.homepage-whats-new .whats-new-img { padding: 5px 20px; }
+.homepage-whats-new .find-out-more { margin: 0pt; padding: 0pt; background: rgb(254, 231, 0) none repeat scroll 0% 0%; overflow: visible; width: 350px; height: 25px; position: absolute; bottom: 0pt; }
+#nojs .homepage-whats-new .find-out-more { position: relative; }
+.homepage-whats-new .find-out-more a.button.find-out, .homepage-whats-new .find-out-more a.button.find-out:visited { background-position: left -100px; position: relative; top: -13px; left: 215px; }
+.homepage-whats-new .find-out-more a.button.find-out:hover { background-position: left -150px; }
+.homepage-whats-new .find-out-more a.button.find-out span, .homepage-whats-new .find-out-more a.button.find-out:visited span { background-position: right -125px; }
+.homepage-whats-new .find-out-more a.button.find-out:hover span { background-position: right -175px; }
+.homepage-latest-news { margin: 0pt; padding: 0pt; width: 340px; }
+.homepage-latest-news .latest-news-inner { margin: 0pt; padding: 5px 20px 0pt; background: rgb(255, 255, 255) url(../images/home-latest-news-bg.gif) no-repeat scroll left top; width: 300px; }
+.content .homepage-latest-news ul { margin: 0pt; padding: 0pt; width: 300px; }
+.content .homepage-latest-news ul li { border-top: 1px solid rgb(240, 240, 240); margin: 0pt; padding: 12px 0pt; list-style-type: none; list-style-image: none; list-style-position: outside; width: 300px; }
+.content .homepage-latest-news ul li:first-child { border-top: medium none; padding: 0pt 0pt 12px; }
+.homepage-latest-news .news-image { padding: 0pt 0pt 0pt 10px; float: right; }
+.homepage-latest-news .news-summary { padding: 0pt; font-size: 1.1em; }
+.homepage-latest-news .news-date { padding: 0pt 0pt 5px; color: rgb(0, 0, 0); font-size: 0.9em; font-weight: bold; }
+.homepage-latest-news .find-more-news { margin: 0pt 0pt -18px; padding: 0pt; background: transparent url(../images/home-latest-news-bg.gif) no-repeat scroll right top; overflow: visible; width: 340px; height: 25px; position: relative; }
+.homepage-latest-news .find-more-news a.button.find-out, .homepage-latest-news .find-more-news a.button.find-out:visited { background-position: left -200px; position: relative; left: 215px; top: -5px; }
+.homepage-latest-news .find-more-news a.button.find-out:hover { background-position: left -250px; position: relative; left: 215px; top: -5px; }
+.homepage-latest-news .find-more-news a.button.find-out span, .homepage-latest-news .find-more-news a.button.find-out:visited span { background-position: right -225px; }
+.homepage-latest-news .find-more-news a.button.find-out:hover span { background-position: right -275px; }
+body#homepage .sign-up { margin: 0pt; padding: 5px 20px 16px; background: rgb(244, 222, 1) url(../images/home-subscribe-bg.gif) no-repeat scroll left bottom; width: 300px; }
+body#homepage .sign-up-inner { padding: 0pt; background: transparent none repeat scroll 0% 0%; }
+body#homepage .sign-up h2 { padding: 10px 0pt 5px; font-size: 1.7em; color: rgb(65, 65, 65); }
+body#homepage .sign-up p { padding: 0pt 0pt 8px; }
+body#homepage .sign-up div.text { background: transparent url(../images/subscribe-field-bg.gif) no-repeat scroll left bottom; float: left; width: 300px; }
+body#homepage .sign-up div.text.hover { background: transparent url(../images/subscribe-field-bg.gif) no-repeat scroll right bottom; }
+body#homepage .sign-up div.text input.text { border: medium none ; margin: 0pt 0pt 0pt 15px; padding: 5px 0pt 0pt; background: transparent none repeat scroll 0% 0% ! important; color: rgb(136, 136, 136); font-size: 11px; font-weight: bold; line-height: normal; float: left; width: 200px; height: 19px; }
+body#homepage .sign-up input.button { border: medium none ; padding: 0pt 0pt 2px; background: transparent none repeat scroll 0% 0%; color: rgb(255, 255, 255); cursor: pointer; float: left; width: 85px; height: 25px; vertical-align: middle; text-align: center; font-weight: bold; font-size: 12px; margin-top: 0pt; }
+body#homepage .sign-up div.text br { display: none; }
+body#homepage .sign-up div.text span.error { padding: 0pt 0pt 3px 15px; color: rgb(255, 0, 0); display: block; }
+.content .hometab-nav ul { margin: 0pt; padding: 0pt; background: rgb(244, 222, 1) none repeat scroll 0% 0%; display: block; list-style-type: none; width: 590px; height: 43px; }
+.content .hometab-nav ul li { margin: 0pt; padding: 0pt 4px 0pt 0pt; display: block; float: left; }
+.content .hometab-nav ul li a, .content .hometab-nav ul li a:visited { background: rgb(222, 201, 0) url(../images/home-tab-bg.gif) no-repeat scroll left top; color: rgb(255, 255, 255); font-weight: bold; font-size: 1.3em; line-height: 39px; height: 39px; text-decoration: none; display: block; float: left; cursor: pointer; }
+.content .hometab-nav ul li a:hover { color: rgb(98, 97, 97); }
+.content .hometab-nav ul li.ui-tabs-selected a, .content .hometab-nav ul li.ui-tabs-selected a:visited { background: rgb(254, 231, 0) none repeat scroll 0% 0%; color: rgb(98, 97, 97); height: 43px; text-decoration: none; }
+.content .hometab-nav ul li a span.tab-inner, .content .hometab-nav ul li a:visited span.tab-inner { padding: 0px 29px 0pt 30px; background: transparent url(../images/home-tab-bg.gif) no-repeat scroll right bottom; display: block; float: left; cursor: pointer; }
+.content .hometab-nav ul li.ui-tabs-selected a span.tab-inner, .content .hometab-nav ul li.ui-tabs-selected a:visited span.tab-inner { background: rgb(254, 231, 0) none repeat scroll 0% 0%; line-height: 39px; display: block; cursor: pointer; }
+.ui-tabs-hide { display: none; }
+.tab-content { padding: 20px 20px 10px 30px; }
+body#homepage .link-i-container { height: 25px; }
+body#homepage a.button.link-i, body#homepage a.button.link-i:visited { background-position: left -600px; float: left; }
+body#homepage a.button.link-i:hover { background-position: left -650px; float: left; }
+body#homepage a.button.link-i span, body#homepage a.button.link-i:visited span { background-position: right -625px; float: left; }
+body#homepage a.button.link-i:hover span { background-position: right -675px; }
+body#homepage .bottom-content { margin: 0pt; padding: 0pt; background: rgb(254, 231, 0) none repeat scroll 0% 0%; width: 960px; }
+body#homepage .partner-brands { margin: 0pt 0pt 0pt 20px; padding: 0pt; background: rgb(255, 255, 255) url(../images/partners-yellow-bg.gif) no-repeat scroll left top; width: 340px; height: 165px; }
+body#homepage .partner-brands .partner-inner { background: transparent url(../images/partners-yellow-bg.gif)  no-repeat scroll right bottom; }
+#nojs body#homepage .partner-brands, #nojs body#homepage .partner-brands .partner-inner { height: auto; }
+.lcd-tv-features { margin: 0pt 0pt 0pt 10px; padding: 0pt; background: rgb(255, 255, 255) url(../images/lcd-tv-yellow-bg.gif) no-repeat scroll left top; width: 580px; height: 165px; float: left; display: inline; }
+.lcd-tv-features .lcd-tv-inner { padding: 0pt 30px; background: transparent url(../images/lcd-tv-yellow-bg.gif) no-repeat scroll right bottom; width: 520px; height: 165px; }
+#nojs .lcd-tv-features, #nojs .lcd-tv-features .lcd-tv-inner { height: auto; }
+.lcd-tv-features h3 { font-size: 1.7em; }
+.lcd-tv-features .item-image { margin: 0pt; padding: 0pt 0pt 0pt 10px; text-align: center; float: right; width: 250px; }
+.lcd-tv-features .item-summary { padding: 0pt; width: 260px; float: left;  margin-top: 10px; }
+
+.jcarousel-container { position: relative; }
+.jcarousel-clip { margin: 0pt; padding: 0pt; overflow: hidden; z-index: 2; position: relative; }
+.jcarousel-list { margin: 0pt; padding: 0pt; overflow: hidden; z-index: 1; position: relative; top: 0pt; left: 0pt; }
+.jcarousel-list li, .jcarousel-item { float: left; list-style-type: none; list-style-image: none; list-style-position: outside; width: 75px; height: 75px; }
+.jcarousel-next { z-index: 3; display: none; }
+.jcarousel-prev { z-index: 3; display: none; }
+ul.jcarousel-skin-content-images, ul.jcarousel-skin-content-images li { margin: 0pt; padding: 0pt; list-style-type: none; }
+.jcarousel-skin-content-images .jcarousel-container {  }
+.jcarousel-skin-content-images .jcarousel-container-horizontal, .jcarousel-skin-content-images .jcarousel-container-vertical { padding: 0pt 0pt 30px; width: 350px; }
+.jcarousel-skin-content-images .jcarousel-clip-horizontal, .jcarousel-skin-content-images .jcarousel-clip-vertical { background: rgb(255, 255, 255) none repeat scroll 0% 0%; width: 350px; height: auto; }
+.jcarousel-skin-content-images .jcarousel-list { margin: 0pt; padding: 0pt; }
+.jcarousel-skin-content-images .jcarousel-item, .jcarousel-skin-content-images .jcarousel-item-horizontal, .jcarousel-skin-content-images .jcarousel-item-vertical { margin: 0pt; padding: 0pt; width: 350px; height: auto; }
+.jcarousel-skin-content-images .jcarousel-next-horizontal { background: rgb(78, 180, 187) url(../images/arrows-next-prev.gif) no-repeat scroll 0pt top; position: absolute; bottom: 0pt; right: 152px; width: 19px; height: 19px; cursor: pointer; }
+.jcarousel-skin-content-images .jcarousel-next-horizontal:hover { background-position: -19px top; background-color: rgb(80, 80, 80); }
+.jcarousel-skin-content-images .jcarousel-next-horizontal:active { background-position: -19px top; background-color: rgb(80, 80, 80); }
+.jcarousel-skin-content-images .jcarousel-next-disabled-horizontal, .jcarousel-skin-content-images .jcarousel-next-disabled-horizontal:hover, .jcarousel-skin-content-images .jcarousel-next-disabled-horizontal:active { cursor: default; background-position: -38px top; background-color: rgb(144, 144, 144); }
+.jcarousel-skin-content-images .jcarousel-prev-horizontal { background: rgb(78, 180, 187) url(../images/arrows-next-prev.gif) no-repeat scroll 0pt bottom; position: absolute; bottom: 0pt; right: 175px; width: 19px; height: 19px; cursor: pointer; }
+.jcarousel-skin-content-images .jcarousel-prev-horizontal:hover { background-position: -19px bottom; background-color: rgb(80, 80, 80); }
+.jcarousel-skin-content-images .jcarousel-prev-horizontal:active { background-position: -19px bottom; background-color: rgb(80, 80, 80); }
+.jcarousel-skin-content-images .jcarousel-prev-disabled-horizontal, .jcarousel-skin-content-images .jcarousel-prev-disabled-horizontal:hover, .jcarousel-skin-content-images .jcarousel-prev-disabled-horizontal:active { cursor: default; background-position: -38px bottom; background-color: rgb(144, 144, 144); }
+ul.jcarousel-skin-home-top, ul.jcarousel-skin-home-top li { margin: 0pt; padding: 0pt; list-style-type: none; }
+.jcarousel-skin-home-top .jcarousel-container {  }
+.jcarousel-skin-home-top .jcarousel-container-horizontal, .jcarousel-skin-home-top .jcarousel-container-vertical { padding: 0pt; width: 590px; }
+.jcarousel-skin-home-top .jcarousel-clip-horizontal, .jcarousel-skin-home-top .jcarousel-clip-vertical { background: rgb(255, 255, 255) none repeat scroll 0% 0%; width: 590px; height: auto; }
+.jcarousel-skin-home-top .jcarousel-list { margin: 0pt; padding: 0pt; }
+.jcarousel-skin-home-top .jcarousel-item, .jcarousel-skin-home-top .jcarousel-item-horizontal, .jcarousel-skin-home-top .jcarousel-item-vertical { margin: 0pt; padding: 0pt; width: 590px; height: auto; }
+.jcarousel-skin-home-top .jcarousel-next-horizontal { background: rgb(78, 180, 187) url(../images/arrows-next-prev.gif) no-repeat scroll 0pt top; position: absolute; top: -28px; right: 29px; width: 19px; height: 19px; cursor: pointer; }
+.jcarousel-skin-home-top .jcarousel-next-horizontal:hover { background-position: -19px top; background-color: rgb(80, 80, 80); }
+.jcarousel-skin-home-top .jcarousel-next-horizontal:active { background-position: -19px top; background-color: rgb(80, 80, 80); }
+.jcarousel-skin-home-top .jcarousel-next-disabled-horizontal, .jcarousel-skin-home-top .jcarousel-next-disabled-horizontal:hover, .jcarousel-skin-home-top .jcarousel-next-disabled-horizontal:active { cursor: default; background-position: -38px top; background-color: rgb(144, 144, 144); }
+.jcarousel-skin-home-top .jcarousel-prev-horizontal { background: rgb(78, 180, 187) url(../images/arrows-next-prev.gif) no-repeat scroll 0pt bottom; position: absolute; top: -28px; right: 52px; width: 19px; height: 19px; cursor: pointer; }
+.jcarousel-skin-home-top .jcarousel-prev-horizontal:hover { background-position: -19px bottom; background-color: rgb(80, 80, 80); }
+.jcarousel-skin-home-top .jcarousel-prev-horizontal:active { background-position: -19px bottom; background-color: rgb(80, 80, 80); }
+.jcarousel-skin-home-top .jcarousel-prev-disabled-horizontal, .jcarousel-skin-home-top .jcarousel-prev-disabled-horizontal:hover, .jcarousel-skin-home-top .jcarousel-prev-disabled-horizontal:active { cursor: default; background-position: -38px bottom; background-color: rgb(144, 144, 144); }
+ul.jcarousel-skin-lcd-tv, ul.jcarousel-skin-lcd-tv li { margin: 0pt; padding: 0pt; list-style-type: none; }
+#nojs ul.jcarousel-skin-lcd-tv li { padding: 0pt 0pt 18px; }
+.jcarousel-skin-lcd-tv .jcarousel-container {  }
+.jcarousel-skin-lcd-tv .jcarousel-container-horizontal, .jcarousel-skin-lcd-tv .jcarousel-container-vertical { padding: 0pt; width: 520px; }
+.jcarousel-skin-lcd-tv .jcarousel-clip-horizontal, .jcarousel-skin-lcd-tv .jcarousel-clip-vertical { background: rgb(255, 255, 255) none repeat scroll 0% 0%; width: 520px; height: auto; }
+.jcarousel-skin-lcd-tv .jcarousel-list { margin: 0pt; padding: 0pt; }
+.jcarousel-skin-lcd-tv .jcarousel-item, .jcarousel-skin-lcd-tv .jcarousel-item-horizontal, .jcarousel-skin-lcd-tv .jcarousel-item-vertical { margin: 0pt; padding: 0pt; width: 520px; height: auto; }
+.jcarousel-skin-lcd-tv .jcarousel-next-horizontal { background: rgb(78, 180, 187) url(../images/arrows-next-prev-cyan.gif) no-repeat scroll 0pt top; position: absolute; top: 20px; right: -37px; width: 24px; height: 23px; cursor: pointer; }
+body#homepage .jcarousel-skin-lcd-tv .jcarousel-next-horizontal { background-image: url(../images/arrows-next-prev-yellow.gif); margin-top: 15px;}
+.jcarousel-skin-lcd-tv .jcarousel-next-horizontal:hover { background-position: -24px top; background-color: rgb(80, 80, 80); }
+.jcarousel-skin-lcd-tv .jcarousel-next-horizontal:active { background-position: -24px top; background-color: rgb(80, 80, 80); }
+.jcarousel-skin-lcd-tv .jcarousel-next-disabled-horizontal, .jcarousel-skin-lcd-tv .jcarousel-next-disabled-horizontal:hover, .jcarousel-skin-lcd-tv .jcarousel-next-disabled-horizontal:active { cursor: default; background-position: -48px top; background-color: rgb(144, 144, 144); }
+.jcarousel-skin-lcd-tv .jcarousel-prev-horizontal { background: rgb(78, 180, 187) url(../images/arrows-next-prev-cyan.gif) no-repeat scroll 0pt bottom; position: absolute; top: 20px; left: -37px; width: 24px; height: 23px; cursor: pointer; }
+body#homepage .jcarousel-skin-lcd-tv .jcarousel-prev-horizontal { background-image: url(../images/arrows-next-prev-yellow.gif);  margin-top: 15px;}
+.jcarousel-skin-lcd-tv .jcarousel-prev-horizontal:hover { background-position: -24px bottom; background-color: rgb(80, 80, 80); }
+.jcarousel-skin-lcd-tv .jcarousel-prev-horizontal:active { background-position: -24px bottom; background-color: rgb(80, 80, 80); }
+.jcarousel-skin-lcd-tv .jcarousel-prev-disabled-horizontal, .jcarousel-skin-lcd-tv .jcarousel-prev-disabled-horizontal:hover, .jcarousel-skin-lcd-tv .jcarousel-prev-disabled-horizontal:active { cursor: default; background-position: -48px bottom; background-color: rgb(144, 144, 144); }
+ul.jcarousel-skin-partners, ul.jcarousel-skin-partners li { margin: 0pt; padding: 0pt; list-style-type: none; }
+#nojs ul.jcarousel-skin-partners li { padding: 0pt 0pt 18px; }
+.jcarousel-skin-partners .jcarousel-container {  }
+.jcarousel-skin-partners .jcarousel-container-horizontal, .jcarousel-skin-partners .jcarousel-container-vertical { padding: 0pt; width: 280px; }
+.jcarousel-skin-partners .jcarousel-clip-horizontal, .jcarousel-skin-partners .jcarousel-clip-vertical { background: rgb(255, 255, 255) none repeat scroll 0% 0%; width: 280px; height: auto; }
+.jcarousel-skin-partners .jcarousel-list { margin: 0pt; padding: 0pt; }
+.jcarousel-skin-partners .jcarousel-item, .jcarousel-skin-partners .jcarousel-item-horizontal, .jcarousel-skin-partners .jcarousel-item-vertical { margin: 0pt; padding: 0pt; width: 280px; height: auto; }
+.jcarousel-skin-partners .jcarousel-next-horizontal { background: rgb(78, 180, 187) url(../images/arrows-next-prev-gray.gif) no-repeat scroll 0pt top; position: absolute; top: 20px; right: -37px; width: 24px; height: 23px; cursor: pointer; }
+body#homepage .jcarousel-skin-partners .jcarousel-next-horizontal { background-image: url(../images/arrows-next-prev-yellow.gif); margin-top: 15px; }
+body.cyan-page .jcarousel-skin-partners .jcarousel-next-horizontal { background-image: url(../images/arrows-next-prev-cyan.gif); }
+.jcarousel-skin-partners .jcarousel-next-horizontal:hover { background-position: -24px top; background-color: rgb(80, 80, 80); }
+.jcarousel-skin-partners .jcarousel-next-horizontal:active { background-position: -24px top; background-color: rgb(80, 80, 80); }
+.jcarousel-skin-partners .jcarousel-next-disabled-horizontal, .jcarousel-skin-partners .jcarousel-next-disabled-horizontal:hover, .jcarousel-skin-partners .jcarousel-next-disabled-horizontal:active { cursor: default; background-position: -48px top; background-color: rgb(144, 144, 144); }
+.jcarousel-skin-partners .jcarousel-prev-horizontal { background: rgb(78, 180, 187) url(../images/arrows-next-prev-gray.gif) no-repeat scroll 0pt bottom; position: absolute; top: 20px; left: -37px; width: 24px; height: 23px; cursor: pointer; }
+body#homepage .jcarousel-skin-partners .jcarousel-prev-horizontal { background-image: url(../images/arrows-next-prev-yellow.gif); margin-top: 15px; }
+body.cyan-page .jcarousel-skin-partners .jcarousel-prev-horizontal { background-image: url(../images/arrows-next-prev-cyan.gif); }
+.jcarousel-skin-partners .jcarousel-prev-horizontal:hover { background-position: -24px bottom; background-color: rgb(80, 80, 80); }
+.jcarousel-skin-partners .jcarousel-prev-horizontal:active { background-position: -24px bottom; background-color: rgb(80, 80, 80); }
+.jcarousel-skin-partners .jcarousel-prev-disabled-horizontal, .jcarousel-skin-partners .jcarousel-prev-disabled-horizontal:hover, .jcarousel-skin-partners .jcarousel-prev-disabled-horizontal:active { cursor: default; background-position: -48px bottom; background-color: rgb(144, 144, 144); }
+ul.jcarousel-skin-product-media, ul.jcarousel-skin-product-media li { margin: 0pt; padding: 0pt; list-style-type: none; }
+.jcarousel-skin-product-media .jcarousel-container {  }
+.jcarousel-skin-product-media .jcarousel-container-horizontal, .jcarousel-skin-product-media .jcarousel-container-vertical { padding: 0pt; width: 650px; }
+.jcarousel-skin-product-media .jcarousel-clip-horizontal, .jcarousel-skin-product-media .jcarousel-clip-vertical { width: 650px; height: auto; }
+.jcarousel-skin-product-media .jcarousel-list { margin: 0pt; padding: 0pt; }
+.jcarousel-skin-product-media li, .jcarousel-skin-product-media .jcarousel-item, .jcarousel-skin-product-media .jcarousel-item-horizontal, .jcarousel-skin-product-media .jcarousel-item-vertical { margin: 0pt; padding: 0pt 6px 0pt 0pt; width: 160px; height: auto; float: left; cursor: pointer; }
+.retailer-products .jcarousel-skin-product-media li { cursor: default; }
+.jcarousel-skin-product-media .jcarousel-next-horizontal { background: rgb(78, 180, 187) url(../images/arrows-next-prev-circle.gif) no-repeat scroll 0pt top; position: absolute; top: 45px; right: -34px; width: 24px; height: 23px; cursor: pointer; }
+.jcarousel-skin-product-media .jcarousel-next-horizontal:hover { background-position: -24px top; background-color: rgb(80, 80, 80); }
+.jcarousel-skin-product-media .jcarousel-next-horizontal:active { background-position: -24px top; background-color: rgb(80, 80, 80); }
+.jcarousel-skin-product-media .jcarousel-next-disabled-horizontal, .jcarousel-skin-product-media .jcarousel-next-disabled-horizontal:hover, .jcarousel-skin-product-media .jcarousel-next-disabled-horizontal:active { cursor: default; background-position: -48px top; background-color: rgb(144, 144, 144); }
+.jcarousel-skin-product-media .jcarousel-prev-horizontal { background: rgb(78, 180, 187) url(../images/arrows-next-prev-circle.gif) no-repeat scroll 0pt bottom; position: absolute; top: 45px; left: -34px; width: 24px; height: 23px; cursor: pointer; }
+.jcarousel-skin-product-media .jcarousel-prev-horizontal:hover { background-position: -24px bottom; background-color: rgb(80, 80, 80); }
+.jcarousel-skin-product-media .jcarousel-prev-horizontal:active { background-position: -24px bottom; background-color: rgb(80, 80, 80); }
+.jcarousel-skin-product-media .jcarousel-prev-disabled-horizontal, .jcarousel-skin-product-media .jcarousel-prev-disabled-horizontal:hover, .jcarousel-skin-product-media .jcarousel-prev-disabled-horizontal:active { cursor: default; background-position: -48px bottom; background-color: rgb(144, 144, 144); }
+ul.jcarousel-skin-whats-new, ul.jcarousel-skin-whats-new li { margin: 0pt; padding: 0pt; list-style-type: none; }
+.jcarousel-skin-whats-new .jcarousel-container {  }
+.jcarousel-skin-whats-new .jcarousel-container-horizontal, .jcarousel-skin-whats-new .jcarousel-container-vertical { padding: 0pt; width: 350px; }
+.jcarousel-skin-whats-new .jcarousel-clip-horizontal, .jcarousel-skin-whats-new .jcarousel-clip-vertical { background: rgb(255, 255, 255) none repeat scroll 0% 0%; width: 350px; height: auto; }
+.jcarousel-skin-whats-new .jcarousel-list { margin: 0pt; padding: 0pt; }
+.jcarousel-skin-whats-new .jcarousel-item, .jcarousel-skin-whats-new .jcarousel-item-horizontal, .jcarousel-skin-whats-new .jcarousel-item-vertical { margin: 0pt; padding: 0pt; width: 350px; height: auto; }
+.jcarousel-skin-whats-new .jcarousel-next-horizontal { background: rgb(78, 180, 187) url(../images/arrows-next-prev.gif) no-repeat scroll 0pt top; position: absolute; top: -28px; right: 29px; width: 19px; height: 19px; cursor: pointer; }
+.jcarousel-skin-whats-new .jcarousel-next-horizontal:hover { background-position: -19px top; background-color: rgb(80, 80, 80); }
+.jcarousel-skin-whats-new .jcarousel-next-horizontal:active { background-position: -19px top; background-color: rgb(80, 80, 80); }
+.jcarousel-skin-whats-new .jcarousel-next-disabled-horizontal, .jcarousel-skin-whats-new .jcarousel-next-disabled-horizontal:hover, .jcarousel-skin-whats-new .jcarousel-next-disabled-horizontal:active { cursor: default; background-position: -38px top; background-color: rgb(144, 144, 144); }
+.jcarousel-skin-whats-new .jcarousel-prev-horizontal { background: rgb(78, 180, 187) url(../images/arrows-next-prev.gif) no-repeat scroll 0pt bottom; position: absolute; top: -28px; right: 52px; width: 19px; height: 19px; cursor: pointer; }
+.jcarousel-skin-whats-new .jcarousel-prev-horizontal:hover { background-position: -19px bottom; background-color: rgb(80, 80, 80); }
+.jcarousel-skin-whats-new .jcarousel-prev-horizontal:active { background-position: -19px bottom; background-color: rgb(80, 80, 80); }
+.jcarousel-skin-whats-new .jcarousel-prev-disabled-horizontal, .jcarousel-skin-whats-new .jcarousel-prev-disabled-horizontal:hover, .jcarousel-skin-whats-new .jcarousel-prev-disabled-horizontal:active { cursor: default; background-position: -38px bottom; background-color: rgb(144, 144, 144); }
+
+#features{padding-top:10px;}
+
+body.black-page .footer1-nav ul li a, body.black-page .footer1-nav ul li a:visited {
+    background: url("../images/nav-footer-separ-black-bg.gif") no-repeat scroll right 3px transparent;
+}
+
+.content .footer1-nav ul li a, .content .footer1-nav ul li a:visited {
+    background: url("../images/nav-footer-separ-bg.gif") no-repeat scroll right 3px transparent;
+    display: block;
+    padding: 0 8px 0 0;
+    text-decoration: none;
+}
+
+body.black-page .footer1, body.black-page .footer1 a, body.black-page .footer1 a:visited, body.black-page .footer1 a:hover {
+    color: #9A9A9A;
+}
+body.black-page .header2, body.black-page .header2 a, body.black-page .header2 a:visited, body.black-page .header2 a:hover {
+    color: #9A9A9A;
+}
+body.yellow-page .footer1 .logo-small span, body.black-page .footer1 .logo-small span, body.cyan-page .footer1 .logo-small span {
+    background: url("../images/logo-small-white.png") no-repeat scroll right top transparent;
+}
+#features{padding-top:10px;}
+
+body.cyan-page .partner-brands .partner-inner,
+body.cyan-page .footer-latest-news .latest-news-inner {
+    background: url(../images/partners-cyan-bg.gif) no-repeat right bottom;
+}

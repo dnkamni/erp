@@ -1,0 +1,47 @@
+/*-----------------------------------------------------------------------------
+Web Site: Cello Electronics
+
+$CreatedDate: 2009-07-20 $
+$CreatedBy: annag $
+
+$Revision: 557 $
+$LastChangedDate: 2009-09-10 18:51:04 +0600 (Чт, 10 сен 2009) $
+$LastChangedBy: annag $
+-----------------------------------------------------------------------------*/
+
+#lightbox{	position: absolute;	left: 0; width: 100%; z-index: 100; text-align: center; line-height: 0;}
+#lightbox img{ width: auto; height: auto;}
+#lightbox a img{ border: none; }
+
+#outerImageContainer{ position: relative; background-color: #fff; width: 250px; height: 250px; margin: 0 auto; }
+#imageContainer{ padding: 20px; }
+
+#loading{ position: absolute; top: 40%; left: 0%; height: 25%; width: 100%; text-align: center; line-height: 0; }
+
+#prevLink, #nextLink{ 
+	position: absolute; 
+	width: 24px; 
+	height: 23px !important; 
+	background-image: url(/images/branding/lightbox/prevnextlabel.gif); 
+	background-repeat: no-repeat; 
+	display: block; 
+	line-height: 0;
+	font-size: 0;
+	overflow: hidden;
+	z-index: 10;
+}
+#prevLink { left: -7px; top: 50%; float: left;   background-position: left bottom;}
+#nextLink { right: -7px; top: 50%; float: left; background-position: left top;}
+#prevLink:hover, #prevLink:visited:hover { background-position: -24px bottom; }
+#nextLink:hover, #nextLink:visited:hover { background-position: -24px top; }
+
+#imageDataContainer{ font: 10px Verdana, Helvetica, sans-serif; background-color: #fff; margin: 0 auto; line-height: 1.4em; overflow: auto; width: 100%	; }
+
+#imageData {padding: 0 20px; color: #414141; }
+#imageData #imageDetails{ float: left; text-align: left; padding: 0 0 15px; }	
+#imageData #caption{ font-family: Arial, sans-serif; font-weight: bold; font-size: 1.8em;}
+#imageData #numberDisplay{ display: none; clear: left;}			
+#imageData #bottomNav {}
+#imageData #bottomNavClose{ width: 66px; float: right;  padding-bottom: 0.7em; outline: none;}	 	
+
+#overlay{ position: absolute; top: 0; left: 0; z-index: 90; width: 100%; height: 500px; background-color: #000; }

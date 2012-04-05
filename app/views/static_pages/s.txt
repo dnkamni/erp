@@ -1,0 +1,11 @@
+<?php
+$javascript->link('jquery', false);
+$javascript->link('/fckeditor/fckeditor.js', false);
+?>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        var oFCKeditor = new FCKeditor('ContentBody', '100%', '400', 'Default');
+        oFCKeditor.ReplaceTextarea();
+    });
+</script>
