@@ -47,7 +47,6 @@ class WebleadsController extends AppController
     * @Return: none 
     **/
     function beforeFilter(){
-	echo "sandeep testing"	;	die;
 		if(!empty($this->params['prefix']) && $this->params['prefix'] == "admin"){
 			$this->checkUserSession();
 		}else{
