@@ -47,7 +47,7 @@ NBLS<br>
 
 <div class="v5 w10" ID="country1">
 <p class="v6 c3 f6 p21">Real Estate</p>
-<p class="c3 p22 v6 f3">realestate.stpl.biz</p>
+<p class="c3 p22 v6 f3">realestate</p>
 <p class="p23 f3">We don't just build real estate web sites,</p>
 <p class="c12 p24 f3 b">We deliver a complete marketing solution</p>
 <p class="x17 p25 b c6">Enterprise level real estate portal</p>
@@ -62,7 +62,7 @@ NBLS<br>
 </div>
 <div class="v5 w10" ID="country2">
 <p class="v7 c3 f6 p21">Social Networking</p>
-<p class="c3 p22 v7 f3">socialnetworking.stpl.biz</p>
+<p class="c3 p22 v7 f3">socialnetworking</p>
 <p class="p23 f3">Give your website a voice! </p>
 <p class="c12 p24 f3 b">We develop Social Networking web portals. </p>
 <p class="x17 p25 b c6">Invite, meet and make new friends.</p>
@@ -76,7 +76,7 @@ NBLS<br>
 </div>
 <div class="v5 w10" ID="country3">
 <p class="v8 c3 f6 p21">Health Care</p>
-<p class="c3 p22 v8 f3">healthcare.stpl.biz</p>
+<p class="c3 p22 v8 f3">healthcare</p>
 <p class="p23 f3">Transforming healthcare with better information  </p>
 <p class="c12 p24 f3 b">integration for better results/decisions: </p>
 <p class="x17 p25 b c6">Engineering web applications to simplify complex medical workflows</p>
