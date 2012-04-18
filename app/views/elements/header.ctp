@@ -5,4 +5,4 @@
 <p><img src="<?php echo BASE_URL."images/career.gif"?>" width="16" height="14" align="absmiddle" hspace="10" vspace="5"><a href="<?php echo BASE_URL."static_pages/view/career"?>">Careers</a></p>
 </div>
 </div>
-<div><a href="<?php echo BASE_URL?>"><img src="<?php echo BASE_URL."images/shared/logosel.png"?>" width="230" height="93" alt="NetSet Software"></a></div>
+<div><a href="<?php echo BASE_URL?>"><img src="<?php echo BASE_URL."images/co-name.png"?>" width="139" height="93" alt="STPD"></a></div>

@@ -1,0 +1,145 @@
+html{background:#f9f9f9}
+
+body{padding:0px;margin:0px auto;width:1002px;font-family:arial;font-size:12px;line-height:18px;background:#fff; color:#606d80;}
+
+
+
+img{border:0px;}
+
+ul,ol{margin-left:0px;padding:0px; }
+
+
+
+.li1 A{color:#2376a0;}
+
+.li1 A:Hover{color:#918e8e;text-decoration:none;}
+
+
+
+.li2 A{color:#faff03;}
+
+.li2 A:Hover{color:#faff03;text-decoration:none;}
+
+
+
+.li3 {color:#ababab}
+
+.li3 A{color:#ababab;padding:0px 5px 0px 5px}
+
+.li3 A:Hover{color:#faff03;text-decoration:none;}
+
+
+
+.li4 A{color:#2376a0; text-decoration:none}
+
+.li4 A:Hover{color:#918e8e;text-decoration:underline;}
+
+
+
+.li5 A{color:#fff; text-decoration:none}
+
+.li5 A:Hover{color:#fff;text-decoration:underline;}
+
+
+
+.f1{font-size:15px;}
+
+.f2{font-size:11px;}
+
+.f3{font-size:14px;}
+
+.f4{font-size:18px;}
+
+.f5{font-size:20px;}
+
+.f6{font-size:24px;}
+
+.f7{font-size:28px;}
+
+.f8{font-size:13px;}
+
+
+
+
+
+.b{font-weight:bold;}
+
+
+
+.cb{clear:both;}
+
+
+
+.c{text-align:center;}
+
+
+.fl{float:left;}
+
+.fr{float:right;}
+
+.c1 ul{list-style:none;margin:0px;padding:0px;}
+
+.c1 ul li{ float:left; margin:0px; padding:0px 5px 0 5px; text-align:center;}
+
+.c1 ul li a{ float:left; margin:0px; padding:5px 2px 0 2px; text-align:center; color:#fff; text-decoration:none; font-size:11px;}
+
+
+
+
+
+
+.x{background:url(../images/top-bg.gif) repeat-x; height:29px;}
+
+.x1{background:url(../images/key-benefits-bg.jpg) no-repeat;width:321px;height:181px;}
+
+.x2{background:url(../images/arw.png) no-repeat 60px 5px;}
+
+.x3{background:url(../images/request-quote-drp.jpg) no-repeat; width:321px;height:106px;}
+
+.x4{background:url(../images/arw5.png) no-repeat 20px 10px;}
+
+.x5{background:url(../images/arw.gif) no-repeat 15px 10px}
+
+.x6{background:url(../images/arw6.png) no-repeat 15px 10px}
+
+.x7{background:url(../images/ftr-bg.gif) no-repeat; width:1002px;height:100px;}
+
+.x8{background:url(../images/clnt-bg.gif) no-repeat; height:32px; }
+
+.x9{background:url(../images/arw7.gif) no-repeat 10px 0px;}
+
+.x10{background:url(../images/rt-lnk-hvr.gif) no-repeat; height:31px}
+
+.x11{background:url(../images/print.gif) no-repeat 0px 5px}
+
+.x12{background:url(../images/online-enquiry.gif) no-repeat 0px 5px}
+
+.x13{background:url(../images/hm.gif) no-repeat 0px 5px}
+
+.x14{background:url(../images/career.gif) no-repeat 0px 5px}
+
+.x15{background:url(../images/hd-bg.gif) no-repeat}
+
+.x16{background:url(../images/faq-bg.gif) repeat-x; }
+
+.x17{background:url(../images/arw1.gif) no-repeat 15px 5px; }
+
+.x18{background:url(../images/hd-bg.jpg) no-repeat; }
+
+.x19{background:url(../images/real-estate.jpg) no-repeat; height:54px; }
+
+.x20{background:url(../images/social-networking1.jpg) no-repeat; height:54px; }
+
+.x21{background:url(../images/healthcare1.jpg) no-repeat; width:207px; height:54px; }
+
+.x22{background:url(../images/bnr-bg.gif) no-repeat; width:681px; height:202px; }
+
+.x23{background:url(../images/arw7.png) no-repeat 200px 8px;}
+
+
+
+
+
+
+
+.x25{ width:681px; height:auto; }
