@@ -1,73 +1,66 @@
-<?php 
-class CommonComponent extends Object
-{
+<?php /*This Component is used for creating common function which could be reuse by other controllers*/
+class CommonComponent extends Object { //cake extends Object for creating component
 
-	/** @Date: 21-Aug-2010
-    	*@Method : licenceCode
-    	*@Purpose: This function is used to generate licence code.
-    **/
-	function licenceCode($plength='8'){
-		$code="";
-		$chars = 'ABCDEFGHJKLMNPQRTUVWXY346789ABCDEFGHJKLMNPQRTUVWXY346789';
-		mt_srand(microtime() * 1000000);
-		for($i = 0; $i < $plength; $i++)
-		{
-			$key = mt_rand(0,strlen($chars)-1);
-			$code = $code . $chars{$key};
+	/**  @Date: 21-Aug-2010
+    	*@Method : licenceCode (This 
+    	*@Purpose: This function is used to generate licence code.
+    **/
+	function randomCode($plength='8'){
+		$code="";
+		$chars = 'ABCDEFGHJKLMNPQRTUVWXY346789ABCDEFGHJKLMNPQRTUVWXY346789';//string by which new code will be generated
+		mt_srand(microtime() * 1000000);		
+		for($i = 0; $i < $plength; $i++) {
+			$key = mt_rand(0,strlen($chars)-1);
+			$code = $code . $chars{$key};
 		}
-		$code=trim($code);
+		$code=trim($code);
 		return $code ;
 	}
 	
-	/** @Date: 22-Aug-2010
-    	*@Method : getUserDropdown
-    	*@Purpose: This function is used to generate licence code.
+	/** @Date: 22-Aug-2010
+    	*@Method : getUserDropdown
+    	*@Purpose: This function is used to generate licence code.
     **/
-	function getUserDropdown(){
-		App::import('Model','User');
-		$this->User = new User();
-		$this->User->unbindModel(
-			array('hasMany' => array('Licence','Order'))
-		);
-
-		$result = $this->User->find('all', array( 
-			'fields'=>array('id','status','username'),
-			'order'=>'username ASC',
-			'conditions' => "User.id != '1'"
+	function getUserDropdown(){
+		App::import('Model','User');
+		$this->User = new User();
+		$this->User->unbindModel(array('hasMany' => array('Licence','Order')));		$result = $this->User->find('all', array( 
+			'fields'=>array('id','status','username'),
+			'order'=>'username ASC',
+			'conditions' => "User.id != '1'"
 		));
 		$return = array(''=>'Select User');
-		foreach($result as $row){
-			$return[$row['User']['id']] = ucwords($row['User']['username'])." (".(($row['User']['status'] == '1')?'Active':'Inactive').")";
+		foreach($result as $row){
+			$return[$row['User']['id']] = ucwords($row['User']['username'])." (".(($row['User']['status'] == '1')?'Active':'Inactive').")";
 		}
-		return $return;
+		return $return;
 	}
 	
-    /** @Date: 5-Feb-2010
-    	*@Method : sendHtmlEmail
-    	*@Purpose: This function is used to send email(template) using cakephp email component.
+    /** @Date: 5-Feb-2010
+    	*@Method : sendHtmlEmail
+    	*@Purpose: This function is used to send email(template) using cakephp email component.
     **/
-	function sendHtmlEmail($to = null,$subject = null,$bcc = array(),$template = null,$emailInfo = array())
-	{
-		App::import('Component', 'Email'); // Import Email component
-		$this->Email = new EmailComponent();
-		$this->Email->to       = $to;
-		$this->Email->bcc      = $bcc;
-		$this->Email->subject  = $subject;
-		$this->Email->replyTo  = "support@lurnt.com";
-		$this->Email->from     = "support@lurnt.com";
-		$this->Email->template = $template;
-		$this->Email->sendAs   = 'html';
-		$this->Email->xMailer  = "";
-		if ($this->Email->send()) {
-			return true;
-		}else{
-			return false;
-		}
+	function sendHtmlEmail($to = null,$subject = null,$bcc = array(),$template = null,$emailInfo = array())	{
+		App::import('Component', 'Email'); // Import Email component
+		$this->Email = new EmailComponent();
+		$this->Email->to       = $to;
+		$this->Email->bcc      = $bcc;
+		$this->Email->subject  = $subject;
+		$this->Email->replyTo  = "support@netsetsoftware.com";
+		$this->Email->from     = "support@netsetsoftware.com";
+		$this->Email->template = $template;
+		$this->Email->sendAs   = 'html';
+		$this->Email->xMailer  = "";
+		if ($this->Email->send()) {
+			return true;
+		}else{
+			return false;
+		}
 	}
 
     /**
-    	* @Date: 11-Nov-2009
-    	*@Method : changeDateFormat
+    	* @Date: 11-Nov-2009
+    	*@Method : changeDateFormat
     	*@Purpose:Gets Details of a Date Span . Called Via AJAX.
     	
     **/

@@ -303,10 +303,10 @@
  *	));
  *
  */
-	Cache::config('default', array('engine' => 'File'));
-        define("BASE_URL",FULL_BASE_URL.preg_replace("/^(.*)app(.*)/i","$1",$_SERVER['SCRIPT_NAME']));
-	define("DATE_FORMAT","m/d/Y");
-	define("ADMIN_EMAIL","info@netsetsolutions.com");
-	define("ADMIN_NAME","cello.com");
-	define("RECORDS_PER_PAGE","30");
-	define("SITE_NAME","Netset Software (P) Ltd.");
+  Cache::config('default', array('engine' => 'File'));
+  define("BASE_URL",FULL_BASE_URL.preg_replace("/^(.*)app(.*)/i","$1",$_SERVER['SCRIPT_NAME']));
+  define("DATE_FORMAT","m/d/Y");
+  define("ADMIN_EMAIL","info@netsetsolutions.com");
+  define("ADMIN_NAME","cello.com");
+  define("RECORDS_PER_PAGE","30");
+  define("SITE_NAME","Netset Software (P) Ltd.");
