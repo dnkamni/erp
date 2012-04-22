@@ -1,91 +1,91 @@
-/*-----------------------------------------------------------------------------
-Web Site: Cello Electronics
-
-$CreatedDate: 2009-07-06 $
-$CreatedBy: annag $
-
-$Revision: 563 $
-$LastChangedDate: 2009-09-15 17:48:08 +0600 (Вт, 15 сен 2009) $
-$LastChangedBy: annag $
------------------------------------------------------------------------------*/
-
-/* =Print css
----------------------------------------- */
-
-body {
-	width:100% !important;
-	padding:0 !important;
-	line-height: 1.4;
-	margin:0 .55in;
-	color:#000;
-	background: none;
-	font-family: "Times New Roman", serif;
-	font-size:12pt;
-	}
-
-/* =links
----------------------------------------- */
-a {
-	color:#333;
-	text-decoration:underline;
-	background: transparent;
-	}
-	
-/* =images
----------------------------------------- */
-a img {border:none;}
-	
-/* =headings
----------------------------------------- */
-h1, h2, h3, h4, h5, h6 {
-	font-family:Georgia, "Times New Roman", Serif;
-	font-weight:normal;
-	clear:both;
-	page-break-after:avoid;
-	}
-h1 {font-size:19pt;}
-h2 {font-size:17pt;}
-h3 {font-size:15pt;}
-h4,h5,h6 {font-size:12pt;}
-
-/* various
----------------------------------------- */
-p {margin:0 0 1.0em 0;}
-blockquote {font-style:italic;}
-hr {background-color: #ccc;}
-
-/* =tables
----------------------------------------- */
-thead {display: table-header-group;}
-tr {page-break-inside:avoid;}
-
-/* =blocks
----------------------------------------- */
-.content, .primary-content, .primary-content-left, .primary-content-right, primary-content-bottom {
-	width: auto;
-	padding: 0;
-	margin: 0;
-	float: none;
-}
-.content {
-    width: 85%;
-}
-
-/* =hide
----------------------------------------- */
-.header, .primary-nav, .top-nav, .secondary-content, .footer, .breadcrumbs, .category-color, .noprint {
-	display:none;
-}
-
-body {
-	width:100% !important;
-	padding:0 !important;
-	line-height: 1.4;
-	
-	color:#000;
-	background: none;
-	font-family: "Times New Roman", serif;
-	font-size:12pt;
-	}
-
+/*-----------------------------------------------------------------------------
+Web Site: Cello Electronics
+
+$CreatedDate: 2009-07-06 $
+$CreatedBy: annag $
+
+$Revision: 563 $
+$LastChangedDate: 2009-09-15 17:48:08 +0600 (Вт, 15 сен 2009) $
+$LastChangedBy: annag $
+-----------------------------------------------------------------------------*/
+
+/* =Print css
+---------------------------------------- */
+
+body {
+	width:100% !important;
+	padding:0 !important;
+	line-height: 1.4;
+	margin:0 .55in;
+	color:#000;
+	background: none;
+	font-family: "Times New Roman", serif;
+	font-size:12pt;
+	}
+
+/* =links
+---------------------------------------- */
+a {
+	color:#333;
+	text-decoration:underline;
+	background: transparent;
+	}
+	
+/* =images
+---------------------------------------- */
+a img {border:none;}
+	
+/* =headings
+---------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+	font-family:Georgia, "Times New Roman", Serif;
+	font-weight:normal;
+	clear:both;
+	page-break-after:avoid;
+	}
+h1 {font-size:19pt;}
+h2 {font-size:17pt;}
+h3 {font-size:15pt;}
+h4,h5,h6 {font-size:12pt;}
+
+/* various
+---------------------------------------- */
+p {margin:0 0 1.0em 0;}
+blockquote {font-style:italic;}
+hr {background-color: #ccc;}
+
+/* =tables
+---------------------------------------- */
+thead {display: table-header-group;}
+tr {page-break-inside:avoid;}
+
+/* =blocks
+---------------------------------------- */
+.content, .primary-content, .primary-content-left, .primary-content-right, primary-content-bottom {
+	width: auto;
+	padding: 0;
+	margin: 0;
+	float: none;
+}
+.content {
+    width: 85%;
+}
+
+/* =hide
+---------------------------------------- */
+.header, .primary-nav, .top-nav, .secondary-content, .footer, .breadcrumbs, .category-color, .noprint {
+	display:none;
+}
+
+body {
+	width:100% !important;
+	padding:0 !important;
+	line-height: 1.4;
+	
+	color:#000;
+	background: none;
+	font-family: "Times New Roman", serif;
+	font-size:12pt;
+	}
+
   

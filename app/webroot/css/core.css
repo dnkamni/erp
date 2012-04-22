@@ -1,366 +1,366 @@
-﻿/*-----------------------------------------------------------------------------
-Web Site: Cello Electronics
-
-$CreatedDate: 2009-07-06 $
-$CreatedBy: annag $
-
-$Revision: 463 $
-$LastChangedDate: 2009-08-04 14:28:15 +0600 (Вт, 04 авг 2009) $
-$LastChangedBy: annag $
------------------------------------------------------------------------------*/
-
-/* Importing generic styles */
-	@import url(generic/helper.css);
-
-/* Importing navigation styles */
-	@import url(navigation/navigation.css);
-
-/* Importing Modules styles */
-	@import url(modules/skins.css);
-	@import url(modules/forms.css);
-	@import url(modules/blocks.css);
-	@import url(modules/lightbox.css);
-
-
-/* =Typography
----------------------------------------- */
-html, body{
-	height: auto !important;
-	height: 100%;
-	min-height: 100%;
-}
-
-body {
-    color: #454545;
-    background: #fff; 
-	font-family: Arial, sans-serif; 
-	font-size: 62.5%;
-	line-height: 18px;
-	text-align: center;
-}
-
-p {
-	margin: 0;
-	padding: 1px 0 18px;
-}
-
-a			{color: #2598A0; text-decoration: underline; outline: none; }
-a:visited	{color: #2598A0; text-decoration: underline; }
-a:hover		{color: #2598A0; text-decoration: none; }
-a:active	{color: #2598A0; text-decoration: none; }
-
-
-#js   .js {display: block;}
-#nojs .js {display: none;}
-
-#nojs .nojs {display: block;}
-#js   .nojs {display: none;}
-
-/* =Headings
----------------------------------------- */
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-	color: #414141;
-	font-family: Arial, sans-serif; 
-	line-height: normal;
-	padding: 0;
-	padding: 10px 0 14px;
-	
-}
-h1, .h1{
-	font-family: Helvetica, Arial, sans-serif; 
-	font-size: 2.2em;
-	padding: 1px 0 14px;
-	margin: 0 0 0 -35px;
-}
-h1 a:link, h1 a:visited {color: #2598A0; text-decoration: none; cursor: pointer;}
-h1 a:hover, h1 a:active	{color: #414141; text-decoration: none; cursor: pointer;}
-
-h2, .h2{
-	font-size: 1.7em;
-}
-h2 a:link, h2 a:visited {color: #2598A0; text-decoration: none; cursor: pointer;}
-h2 a:hover, h2 a:active	{color: #414141; text-decoration: none; cursor: pointer;}
-
-h3, .h3{
-	font-size: 1.3em;
-}
-h3 a:link, h3 a:visited {color: #2598A0; text-decoration: none; cursor: pointer;}
-h3 a:hover, h3 a:active	{color: #414141; text-decoration: none; cursor: pointer;}
-
-h4, .h4{
-	font-size: 1.2em;
-}
-h4 a:link, h4 a:visited {color: #2598A0; text-decoration: none; cursor: pointer;}
-h4 a:hover, h4 a:active	{color: #414141; text-decoration: none; cursor: pointer;}
-
-h5, .h5{
-	font-size: 1em;
-}
-h5 a:link, h5 a:visited {color: #2598A0; text-decoration: none; cursor: pointer;}
-h5 a:hover, h5 a:active	{color: #414141; text-decoration: none; cursor: pointer;}
-
-h6{
-	font-size: 1em;
-}
-h6 a:link, h6 a:visited {color: #2598A0; text-decoration: none; cursor: pointer;}
-h6 a:hover, h6 a:active	{color: #414141; text-decoration: none; cursor: pointer;}
-
-
-
-/* =Main container boxes
----------------------------------------- */
-.container{
-	position: relative;
-	text-align: left;
-}
-.content{
-	background: url(../images/content-bg.png) no-repeat 0 157px ;
-	text-align: left;
-	font-size: 1.2em;
-	width: 958px;
-	padding: 157px 1px 0;
-	margin: 0 auto;
-	position: relative;
-}
-.header2{
-    color: #616161;
-	width: 960px;
-	height: 157px;
-	padding: 0px;
-	margin: 0;
-	overflow: hidden;
-	position: absolute;
-	left: 0;
-	top: 0;	
-	text-align: left;
-}
-.secondaryy-content{
-	width: 230px;
-	padding: 0 0 20px 0;
-	margin: 0 -40px 0 0;
-	position: relative;
-	float: left;
-	z-index: 2;
-}
-.breadcrumbs1 {
-	width: 734px;
-	padding: 28px 9px 0 27px;
-	z-index: 3;
-	position: absolute;
-	top: 157px;
-	right: 0;
-}
-.primaryy-content{
-	background: #fff;
-	width: 700px;
-	min-height: 550px;
-	padding: 85px 9px 20px 59px;
-	margin: 0 0 0 0;
-	position: relative;
-	z-index: 1;
-	float: none;
-}
-.primaryy-outer-content{
-	width: 768px;
-	padding: 0;
-	margin: 0;
-	position: relative;
-	z-index: 1;
-	float: right;
-}
-.gallery-content {
-	float: right;
-	margin: 0 0 18px 15px;
-	z-index: 5;
-	position: relative;
-}
-.footer1{
-    color: #6c6c6c;
-	font-size: 0.9em;
-	width: 940px;
-	padding: 40px 10px 150px;
-	margin: 0;
-	text-align: left;
-}
-
-/* =Wide template
----------------------------------------- */
-body#wide .primary-content{
-	width: 880px;
-	padding: 85px 39px 20px;
-	float: none;
-}
-.breadcrumbs{
-	width: 880px;
-	padding: 28px 39px 0;
-	}
-body#wide.black-page.contact .breadcrumbs 1{
-	padding: 28px 39px 0 52px;
-	width:867px;
-	}	
-/* body#wide h1,
-body#wide .h1 {
-	margin: 0;
-}*/
-
-
-/* =Content
----------------------------------------- */
-
-/* =Lists ------------------------*/
-.content ul, .content ol{	
-	margin-left: 0px;
-	margin: 0 0 18px 25px;
-}
-.content ul ul, .content ol ol{
-	margin-bottom: 0;
-	padding: 5px 0 0 0;
-}
-.content ul li, .content ol li{
-	margin-left: 0px;
-	padding: 0 0 5px 1px;
-}
-.content ul ul li, .content ol ol li{
-	padding: 0 0 5px 1px;
-}
-
-/* =Breadcrumbs
----------------------------------------- */
-.breadcrumbs span {
-	padding: 0 5px;
-}
-
-/* =Header
----------------------------------------- */
-a.logo, a:visited.logo,
-strong.logo {
-	background: url(../images/logo-yellow.png) no-repeat right bottom;
-	width: 352px;
-	height: 116px;
-	padding: 0;
-	margin: 0;
-	text-indent: -9999px;
-	text-decoration: none;
-	overflow: hidden;
-	display: block;
-	float: left;
-}	
-a.logo, a:visited.logo {
-	cursor: pointer;
-}	
-.resource-centre-link {
-	width: 120px;
-	padding: 5px 10px 0 0;
-	float: right;
-}
-.resource-centre-link a.button, 
-.resource-centre-link a:visited.button{
-	color: #FFFFFF;
-    background-position: left -400px;
-	  border: 0;
-}
-.resource-centre-link a:hover.button {
-	color: #fff;
-    background-position: left -450px;
-}
-.resource-centre-link a.button span, 
-.resource-centre-link a:visited.button span {
-	color: #fff;
-    background-position: right -425px;
-	padding: 0;
-}
-.resource-centre-link a:hover.button span {
-	color: #fff;
-    background-position: right -475px;
-	padding: 0;
-}
-	
-
-/* =Footer
----------------------------------------- */
-.footer1 .fuse8-link {
-	padding: 10px 0 0;
-	float: right;
-}
-.footer1 a.createdBy{
-	display: block;
-	width: 100px; 
-	height: 16px;
-	overflow: hidden;
-	background: url(../images/fuse8.png) no-repeat right top;
-	text-indent: -9999em;
-}
-.footer1 a,
-.footer1 a:visited {
-    color: #6c6c6c;
-    text-decoration: none;
-}
-.footer a:hover {
-    color: #6c6c6c;
-    text-decoration: underline;
-}
-.footer1 .logo-small {
-	padding: 0;
-	float: left;
-}
-.footer1 .logo-small span {
-	display: block;
-	width: 79px; 
-	height: 27px;
-	overflow: hidden;
-	background: url(../images/logo-small-gray.png) no-repeat right top;
-	text-indent: -9999em;
-	margin-right: 10px;
-}
-.breadcrumbs {
-    padding: 28px 39px 0;
-    width: 880px;
-}
-.b-f8_black, .b-f8_black .b-f8__a, .b-f8_black .b-f8__a:hover, .b-f8_black .b-f8__a:visited {
-    color: #000000 !important;
-}
-.b-f8__i {
-    display: inline-block;
-    height: 13px;
-    overflow: hidden;
-    position: relative;
-    vertical-align: text-top;
-    width: 38px;
-}
-#b-f8__i__b, .b-f8__i__b {
-    background-image: url(../images/b-f8.png);
-    height: 26px;
-    left: 0;
-    position: absolute;
-    text-indent: -9999px;
-    top: 0;
-    width: 38px;
-}
-.font_bold{
-font-weight:bold;
-}
-/* error message */
-div.error-message,.error-message{ 
-  color:#4EB4BB;
-  font-size: 0.9em;
-  padding: 0 0 9px 138px;
-}
-.captcha{
-width:45px;
-text-align:center;
-}
-.media{
-color: #E9D519;
-}
-.resource-centre-link a.button, 
-.resource-centre-link a:visited.button{
-	color: #FFFFFF;
-    background-position: left -400px;
-	  border: 0;
-	  width:110px;
-}
-.main-img{
-text-align:right;
-}
-
+﻿/*-----------------------------------------------------------------------------
+Web Site: Cello Electronics
+
+$CreatedDate: 2009-07-06 $
+$CreatedBy: annag $
+
+$Revision: 463 $
+$LastChangedDate: 2009-08-04 14:28:15 +0600 (Вт, 04 авг 2009) $
+$LastChangedBy: annag $
+-----------------------------------------------------------------------------*/
+
+/* Importing generic styles */
+	@import url(generic/helper.css);
+
+/* Importing navigation styles */
+	@import url(navigation/navigation.css);
+
+/* Importing Modules styles */
+	@import url(modules/skins.css);
+	@import url(modules/forms.css);
+	@import url(modules/blocks.css);
+	@import url(modules/lightbox.css);
+
+
+/* =Typography
+---------------------------------------- */
+html, body{
+	height: auto !important;
+	height: 100%;
+	min-height: 100%;
+}
+
+body {
+    color: #454545;
+    background: #fff; 
+	font-family: Arial, sans-serif; 
+	font-size: 62.5%;
+	line-height: 18px;
+	text-align: center;
+}
+
+p {
+	margin: 0;
+	padding: 1px 0 18px;
+}
+
+a			{color: #2598A0; text-decoration: underline; outline: none; }
+a:visited	{color: #2598A0; text-decoration: underline; }
+a:hover		{color: #2598A0; text-decoration: none; }
+a:active	{color: #2598A0; text-decoration: none; }
+
+
+#js   .js {display: block;}
+#nojs .js {display: none;}
+
+#nojs .nojs {display: block;}
+#js   .nojs {display: none;}
+
+/* =Headings
+---------------------------------------- */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	color: #414141;
+	font-family: Arial, sans-serif; 
+	line-height: normal;
+	padding: 0;
+	padding: 10px 0 14px;
+	
+}
+h1, .h1{
+	font-family: Helvetica, Arial, sans-serif; 
+	font-size: 2.2em;
+	padding: 1px 0 14px;
+	margin: 0 0 0 -35px;
+}
+h1 a:link, h1 a:visited {color: #2598A0; text-decoration: none; cursor: pointer;}
+h1 a:hover, h1 a:active	{color: #414141; text-decoration: none; cursor: pointer;}
+
+h2, .h2{
+	font-size: 1.7em;
+}
+h2 a:link, h2 a:visited {color: #2598A0; text-decoration: none; cursor: pointer;}
+h2 a:hover, h2 a:active	{color: #414141; text-decoration: none; cursor: pointer;}
+
+h3, .h3{
+	font-size: 1.3em;
+}
+h3 a:link, h3 a:visited {color: #2598A0; text-decoration: none; cursor: pointer;}
+h3 a:hover, h3 a:active	{color: #414141; text-decoration: none; cursor: pointer;}
+
+h4, .h4{
+	font-size: 1.2em;
+}
+h4 a:link, h4 a:visited {color: #2598A0; text-decoration: none; cursor: pointer;}
+h4 a:hover, h4 a:active	{color: #414141; text-decoration: none; cursor: pointer;}
+
+h5, .h5{
+	font-size: 1em;
+}
+h5 a:link, h5 a:visited {color: #2598A0; text-decoration: none; cursor: pointer;}
+h5 a:hover, h5 a:active	{color: #414141; text-decoration: none; cursor: pointer;}
+
+h6{
+	font-size: 1em;
+}
+h6 a:link, h6 a:visited {color: #2598A0; text-decoration: none; cursor: pointer;}
+h6 a:hover, h6 a:active	{color: #414141; text-decoration: none; cursor: pointer;}
+
+
+
+/* =Main container boxes
+---------------------------------------- */
+.container{
+	position: relative;
+	text-align: left;
+}
+.content{
+	background: url(../images/content-bg.png) no-repeat 0 157px ;
+	text-align: left;
+	font-size: 1.2em;
+	width: 958px;
+	padding: 157px 1px 0;
+	margin: 0 auto;
+	position: relative;
+}
+.header2{
+    color: #616161;
+	width: 960px;
+	height: 157px;
+	padding: 0px;
+	margin: 0;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;	
+	text-align: left;
+}
+.secondaryy-content{
+	width: 230px;
+	padding: 0 0 20px 0;
+	margin: 0 -40px 0 0;
+	position: relative;
+	float: left;
+	z-index: 2;
+}
+.breadcrumbs1 {
+	width: 734px;
+	padding: 28px 9px 0 27px;
+	z-index: 3;
+	position: absolute;
+	top: 157px;
+	right: 0;
+}
+.primaryy-content{
+	background: #fff;
+	width: 700px;
+	min-height: 550px;
+	padding: 85px 9px 20px 59px;
+	margin: 0 0 0 0;
+	position: relative;
+	z-index: 1;
+	float: none;
+}
+.primaryy-outer-content{
+	width: 768px;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	z-index: 1;
+	float: right;
+}
+.gallery-content {
+	float: right;
+	margin: 0 0 18px 15px;
+	z-index: 5;
+	position: relative;
+}
+.footer1{
+    color: #6c6c6c;
+	font-size: 0.9em;
+	width: 940px;
+	padding: 40px 10px 150px;
+	margin: 0;
+	text-align: left;
+}
+
+/* =Wide template
+---------------------------------------- */
+body#wide .primary-content{
+	width: 880px;
+	padding: 85px 39px 20px;
+	float: none;
+}
+.breadcrumbs{
+	width: 880px;
+	padding: 28px 39px 0;
+	}
+body#wide.black-page.contact .breadcrumbs 1{
+	padding: 28px 39px 0 52px;
+	width:867px;
+	}	
+/* body#wide h1,
+body#wide .h1 {
+	margin: 0;
+}*/
+
+
+/* =Content
+---------------------------------------- */
+
+/* =Lists ------------------------*/
+.content ul, .content ol{	
+	margin-left: 0px;
+	margin: 0 0 18px 25px;
+}
+.content ul ul, .content ol ol{
+	margin-bottom: 0;
+	padding: 5px 0 0 0;
+}
+.content ul li, .content ol li{
+	margin-left: 0px;
+	padding: 0 0 5px 1px;
+}
+.content ul ul li, .content ol ol li{
+	padding: 0 0 5px 1px;
+}
+
+/* =Breadcrumbs
+---------------------------------------- */
+.breadcrumbs span {
+	padding: 0 5px;
+}
+
+/* =Header
+---------------------------------------- */
+a.logo, a:visited.logo,
+strong.logo {
+	background: url(../images/logo-yellow.png) no-repeat right bottom;
+	width: 352px;
+	height: 116px;
+	padding: 0;
+	margin: 0;
+	text-indent: -9999px;
+	text-decoration: none;
+	overflow: hidden;
+	display: block;
+	float: left;
+}	
+a.logo, a:visited.logo {
+	cursor: pointer;
+}	
+.resource-centre-link {
+	width: 120px;
+	padding: 5px 10px 0 0;
+	float: right;
+}
+.resource-centre-link a.button, 
+.resource-centre-link a:visited.button{
+	color: #FFFFFF;
+    background-position: left -400px;
+	  border: 0;
+}
+.resource-centre-link a:hover.button {
+	color: #fff;
+    background-position: left -450px;
+}
+.resource-centre-link a.button span, 
+.resource-centre-link a:visited.button span {
+	color: #fff;
+    background-position: right -425px;
+	padding: 0;
+}
+.resource-centre-link a:hover.button span {
+	color: #fff;
+    background-position: right -475px;
+	padding: 0;
+}
+	
+
+/* =Footer
+---------------------------------------- */
+.footer1 .fuse8-link {
+	padding: 10px 0 0;
+	float: right;
+}
+.footer1 a.createdBy{
+	display: block;
+	width: 100px; 
+	height: 16px;
+	overflow: hidden;
+	background: url(../images/fuse8.png) no-repeat right top;
+	text-indent: -9999em;
+}
+.footer1 a,
+.footer1 a:visited {
+    color: #6c6c6c;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #6c6c6c;
+    text-decoration: underline;
+}
+.footer1 .logo-small {
+	padding: 0;
+	float: left;
+}
+.footer1 .logo-small span {
+	display: block;
+	width: 79px; 
+	height: 27px;
+	overflow: hidden;
+	background: url(../images/logo-small-gray.png) no-repeat right top;
+	text-indent: -9999em;
+	margin-right: 10px;
+}
+.breadcrumbs {
+    padding: 28px 39px 0;
+    width: 880px;
+}
+.b-f8_black, .b-f8_black .b-f8__a, .b-f8_black .b-f8__a:hover, .b-f8_black .b-f8__a:visited {
+    color: #000000 !important;
+}
+.b-f8__i {
+    display: inline-block;
+    height: 13px;
+    overflow: hidden;
+    position: relative;
+    vertical-align: text-top;
+    width: 38px;
+}
+#b-f8__i__b, .b-f8__i__b {
+    background-image: url(../images/b-f8.png);
+    height: 26px;
+    left: 0;
+    position: absolute;
+    text-indent: -9999px;
+    top: 0;
+    width: 38px;
+}
+.font_bold{
+font-weight:bold;
+}
+/* error message */
+div.error-message,.error-message{ 
+  color:#4EB4BB;
+  font-size: 0.9em;
+  padding: 0 0 9px 138px;
+}
+.captcha{
+width:45px;
+text-align:center;
+}
+.media{
+color: #E9D519;
+}
+.resource-centre-link a.button, 
+.resource-centre-link a:visited.button{
+	color: #FFFFFF;
+    background-position: left -400px;
+	  border: 0;
+	  width:110px;
+}
+.main-img{
+text-align:right;
+}
+

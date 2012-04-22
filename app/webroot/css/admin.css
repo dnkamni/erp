@@ -1,339 +1,339 @@
-/*************************************************************************/
-/* Admin Panel CSS */
-/*************************************************************************/
-
-/* General Style Info */
-body {
-	width: 100%; margin: 0 auto; background:#ffffff; color: #222222;
-	font-size: 12px;
-	font-family: arial, Verdana, Arial, sans-serif;
-	line-height: 18px; margin-bottom: 20px;
-}
-a {
-	text-decoration: none; color: #222;
-	border-bottom: 1px dotted #ccc;
-}
-a:hover {
-	border-bottom: 1px dotted #aaa; background: #f2f2f2; color: black;
-}
-.clear{
-clear:both;
-}
-ul li{
-list-style-type:none;
-}
-h1 a, h2 a, h3 a {background: none; border: none;}
-h1, h2, h3 {font-weight: normal;}
-input.text, input.string, input.email_address, input.password, input.search, input.integer, input.float, textarea {
-	font-size:1.1em;
-	line-height:1.3em;
-	border-top:1px solid #7c7c7c;
-	border-left:1px solid #c3c3c3;
-	border-right:1px solid #c3c3c3;
-	border-bottom:1px solid #ddd;
-	
-}
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite,
-del, dfn, font, img, ins, kbd, q, s, samp,
-small, strike, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0 auto;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	vertical-align: baseline;
-}
-.float_left{
-float:left;
-}
-.float_right{
-float:right;
-}
-a.green_link:hover{
-color:#A4B535;
-}
-/* Login page */
-body.login-page {
-margin-top: 0px;
-}
-.page-header {color: white; background: black; margin-top: 0px; padding:10px 0px 10px 50px; position: relative;height:100px;background:#fafafa;height:100px;}
-.page-header h1 {margin: 0; padding: 0 30px 30px; font-family: "Arial Black", Verdana, Arial, sans-serif; font-size: 36px; letter-spacing: -1.5pt;}
-.page-header a, .page-header a:hover {color:#666666;
-display:block;
-font-size:20px;
- border: none; background: none;}
-.page-content{
-background:#FFFFFF;
-padding-bottom:10px;
-}
-.admin_menu{
-background:#333;
-height:25px;
-color:#FFFFFF;
-font-size:16px;
-padding:3px 20px 3px 0px;
-text-align:right;
-}
-.login-page .content-header{padding-bottom: 0;}
-h2.heading {
-font-size:12px;
-font-weight:bold;
-line-height:18px;
-}
-#login_content h2.heading{
-font-size:16px;
-}
-.content-header h2.heading{
-padding-left:10px;
-float:left;
-}
-#login_content .form_content div.label{
-font-weight:bold;
-}
-.content-header, .content-body, .content-footer {}
-.form_content div.label {
-float:left;
-width:150px;
-}
-.form_content div textarea {
-height:100px;
-width:224px;
-}
-.form_content div.input_box {
-float:left;
-}
-#login_content .form_content div.input_box,#login_content .form_content div.label{
-margin:8px 0;
-}
-.form_content div {
-margin:0px;
-margin-bottom:5px;
-}
-.button {
-background:#EEEEEE none repeat scroll 0 0;
-border-color:#DDDDDD #C3C3C3 #8C8C8C;
-border-style:solid;
-border-width:1px;
-font-size:11px;
-font-weight:bold;
-line-height:normal;
-padding:6px 10px;
-color:#222222;
-}
-a.button{
-height:16px;
-margin-left:10px;
-padding:7px 10px 5px;
-position:absolute;
-}
-#admin_left_nav{
-margin-left:1%;
-width:20%;
-}
-#admin_content_area{
-width:79%;
-float:right;
-}
-.adminBox {
-border:1px solid #DDDDDD;
-}
-.adminGridHeading,.content-header {
-background-color:#DDDDDD;
-height:25px;
-}
-.dotted {
-border-bottom:2px solid #F5F5F5;
-}
-.homeLinkActive {
-color:#FF9900;
-font-family:Verdana,Arial,Helvetica,sans-serif;
-font-size:12px;
-font-weight:bold;
-text-decoration:none;
-}
-.form_content{
-border:1px solid #DDDDDD;
-}
-.form_content form, #mainArea{
-padding: 20px 45px 20px 45px;
-}
-#mainArea .label{
-font-weight:bold;
-width:140px;
-}
-.content-header a{
-float:right;
-margin-right:20px;
-}
-.string{
-width:224px;
-}
-#login_content{
-width:500px;
-margin-left:50px;
-margin-top:20px;
-}
-.content-body table{
-width:100%;
-}
-table tr.even {
-background:#F8F8F8 none repeat scroll 0 0;
-}
-.content-body table tr td {
-border-bottom:1px solid #E2E2E2;
-color:#666666;
-padding:6px 5px;
-}
-/* Table layout */
-.content-body table th{
-background-color:#999999;
-height:25px;
-text-align:left;
-padding-left:5px;
-font-weight:normal;
-vertical-align:middle;
-}
-.content-body table th a{
-background:none;
-border-bottom: 1px dotted #333;
-}
-#mainArea a{
-color:#A4B533;
-text-decoration:underline;
-}
-.content-body table td{
-text-align:left;
-padding-left:5px;
-vertical-align:middle;
-}
-.longFieldsForm .string{
-width:500px;
-}
-.longFieldsForm .select55width,.select55width{
-width:55px;
-}
-.width25px{
-width:25px;
-}
-/* error message */
-.form_content div.error-message,.error-message{ 
-color:red;
-margin:0px;
-}
-#flashMessage{
-margin:0px;
-}
-.success-message{
-background:#A4B533 none repeat scroll 0 0;
-border:1px solid #A4B535;
-color:#FFFFFF;
-padding:5px;
-}
-/* Footer */
-#footer{
-margin:10px 0px;
-text-align:center;
-background:#f5f5f5;
-color:#666;
-padding:10px 5px;
-}
-.defaultSkin .mceIframeContainer{
-padding:0px;
-}
-.note_text{
-font-size:11px;
-color:#999999;
-}
-.underline{
-text-decoration:underline;
-}
-.voteDisplay{
-border:0px;
-}
-.imagesBox{
-border:1px solid #dddddd;
-padding:3px;
-text-align:center;
-border-right:2px solid #dddddd;
-border-bottom:2px solid #dddddd;
-}
-.form_content div.mainImageBox{
-margin:5px;
-text-align:center;
-}
-.mainImageBox div.name{
-font-size:11px;
-} 
-.error-field {
-background-color:#FFCCCC;
-border:1px solid #FF9999;
-}
-.errmessage {
-background:#FFCCCC none repeat scroll 0 0;
-border:5px solid #FFEEEE;
-color:#FF4444;
-margin:5px 0;
-padding:5px 20px;
-}
-.form_content form.searchTable td.label,.content-body table tr td.label,.bold{
-font-weight:bold;
-}
-.content-body form.searchTable td,.content-body table tr td{
-border:none;
-white-space:normal;
-word-wrap:break-word;
-}
-.content-body form.searchTable td.label,.content-body table tr td.label{
-color:#A4B535;
-font-size:14px;
-} 
-.marginLeft130px{
-margin-left:130px;
-}
-.form_content form.searchTable{
-padding: 20px 35px 20px 35px;
-}
-.top_instructions{
-line-height:18px;
-padding:5px 45px;
-background:#fafafa;
-}
-.top_instructions span{
-font-style:italic;
-font-weight:bold;
-font-size:13px;
-color:#A4B535;
-}
-#mainArea span.label,#mainArea .bold{
-margin-right:10px;
-}
-.searchListing{
-padding:10px;
-}
-.licence_text{
-color:red;
-font-family:arial, verdana, sans-serif;
-font-weight:normal;
-letter-spacing:1px;
-}
-.star{
-color:red;
-}
-.partnerproducts{
-display: block;
-float: left;
-width: 225px;
-}
-.specification{
-font-weight:bold;
-}
-.spec:hover{
-border-bottom: 1px dotted #aaa; background: #f2f2f2; color: black;
-}
-.productcolor{
-margin-right:3px;
-}
-
+/*************************************************************************/
+/* Admin Panel CSS */
+/*************************************************************************/
+
+/* General Style Info */
+body {
+	width: 100%; margin: 0 auto; background:#ffffff; color: #222222;
+	font-size: 12px;
+	font-family: arial, Verdana, Arial, sans-serif;
+	line-height: 18px; margin-bottom: 20px;
+}
+a {
+	text-decoration: none; color: #222;
+	border-bottom: 1px dotted #ccc;
+}
+a:hover {
+	border-bottom: 1px dotted #aaa; background: #f2f2f2; color: black;
+}
+.clear{
+clear:both;
+}
+ul li{
+list-style-type:none;
+}
+h1 a, h2 a, h3 a {background: none; border: none;}
+h1, h2, h3 {font-weight: normal;}
+input.text, input.string, input.email_address, input.password, input.search, input.integer, input.float, textarea {
+	font-size:1.1em;
+	line-height:1.3em;
+	border-top:1px solid #7c7c7c;
+	border-left:1px solid #c3c3c3;
+	border-right:1px solid #c3c3c3;
+	border-bottom:1px solid #ddd;
+	
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite,
+del, dfn, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+}
+.float_left{
+float:left;
+}
+.float_right{
+float:right;
+}
+a.green_link:hover{
+color:#A4B535;
+}
+/* Login page */
+body.login-page {
+margin-top: 0px;
+}
+.page-header {color: white; background: black; margin-top: 0px; padding:10px 0px 10px 50px; position: relative;height:100px;background:#fafafa;height:100px;}
+.page-header h1 {margin: 0; padding: 0 30px 30px; font-family: "Arial Black", Verdana, Arial, sans-serif; font-size: 36px; letter-spacing: -1.5pt;}
+.page-header a, .page-header a:hover {color:#666666;
+display:block;
+font-size:20px;
+ border: none; background: none;}
+.page-content{
+background:#FFFFFF;
+padding-bottom:10px;
+}
+.admin_menu{
+background:#333;
+height:25px;
+color:#FFFFFF;
+font-size:16px;
+padding:3px 20px 3px 0px;
+text-align:right;
+}
+.login-page .content-header{padding-bottom: 0;}
+h2.heading {
+font-size:12px;
+font-weight:bold;
+line-height:18px;
+}
+#login_content h2.heading{
+font-size:16px;
+}
+.content-header h2.heading{
+padding-left:10px;
+float:left;
+}
+#login_content .form_content div.label{
+font-weight:bold;
+}
+.content-header, .content-body, .content-footer {}
+.form_content div.label {
+float:left;
+width:150px;
+}
+.form_content div textarea {
+height:100px;
+width:224px;
+}
+.form_content div.input_box {
+float:left;
+}
+#login_content .form_content div.input_box,#login_content .form_content div.label{
+margin:8px 0;
+}
+.form_content div {
+margin:0px;
+margin-bottom:5px;
+}
+.button {
+background:#EEEEEE none repeat scroll 0 0;
+border-color:#DDDDDD #C3C3C3 #8C8C8C;
+border-style:solid;
+border-width:1px;
+font-size:11px;
+font-weight:bold;
+line-height:normal;
+padding:6px 10px;
+color:#222222;
+}
+a.button{
+height:16px;
+margin-left:10px;
+padding:7px 10px 5px;
+position:absolute;
+}
+#admin_left_nav{
+margin-left:1%;
+width:20%;
+}
+#admin_content_area{
+width:79%;
+float:right;
+}
+.adminBox {
+border:1px solid #DDDDDD;
+}
+.adminGridHeading,.content-header {
+background-color:#DDDDDD;
+height:25px;
+}
+.dotted {
+border-bottom:2px solid #F5F5F5;
+}
+.homeLinkActive {
+color:#FF9900;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+font-size:12px;
+font-weight:bold;
+text-decoration:none;
+}
+.form_content{
+border:1px solid #DDDDDD;
+}
+.form_content form, #mainArea{
+padding: 20px 45px 20px 45px;
+}
+#mainArea .label{
+font-weight:bold;
+width:140px;
+}
+.content-header a{
+float:right;
+margin-right:20px;
+}
+.string{
+width:224px;
+}
+#login_content{
+width:500px;
+margin-left:50px;
+margin-top:20px;
+}
+.content-body table{
+width:100%;
+}
+table tr.even {
+background:#F8F8F8 none repeat scroll 0 0;
+}
+.content-body table tr td {
+border-bottom:1px solid #E2E2E2;
+color:#666666;
+padding:6px 5px;
+}
+/* Table layout */
+.content-body table th{
+background-color:#999999;
+height:25px;
+text-align:left;
+padding-left:5px;
+font-weight:normal;
+vertical-align:middle;
+}
+.content-body table th a{
+background:none;
+border-bottom: 1px dotted #333;
+}
+#mainArea a{
+color:#A4B533;
+text-decoration:underline;
+}
+.content-body table td{
+text-align:left;
+padding-left:5px;
+vertical-align:middle;
+}
+.longFieldsForm .string{
+width:500px;
+}
+.longFieldsForm .select55width,.select55width{
+width:55px;
+}
+.width25px{
+width:25px;
+}
+/* error message */
+.form_content div.error-message,.error-message{ 
+color:red;
+margin:0px;
+}
+#flashMessage{
+margin:0px;
+}
+.success-message{
+background:#A4B533 none repeat scroll 0 0;
+border:1px solid #A4B535;
+color:#FFFFFF;
+padding:5px;
+}
+/* Footer */
+#footer{
+margin:10px 0px;
+text-align:center;
+background:#f5f5f5;
+color:#666;
+padding:10px 5px;
+}
+.defaultSkin .mceIframeContainer{
+padding:0px;
+}
+.note_text{
+font-size:11px;
+color:#999999;
+}
+.underline{
+text-decoration:underline;
+}
+.voteDisplay{
+border:0px;
+}
+.imagesBox{
+border:1px solid #dddddd;
+padding:3px;
+text-align:center;
+border-right:2px solid #dddddd;
+border-bottom:2px solid #dddddd;
+}
+.form_content div.mainImageBox{
+margin:5px;
+text-align:center;
+}
+.mainImageBox div.name{
+font-size:11px;
+} 
+.error-field {
+background-color:#FFCCCC;
+border:1px solid #FF9999;
+}
+.errmessage {
+background:#FFCCCC none repeat scroll 0 0;
+border:5px solid #FFEEEE;
+color:#FF4444;
+margin:5px 0;
+padding:5px 20px;
+}
+.form_content form.searchTable td.label,.content-body table tr td.label,.bold{
+font-weight:bold;
+}
+.content-body form.searchTable td,.content-body table tr td{
+border:none;
+white-space:normal;
+word-wrap:break-word;
+}
+.content-body form.searchTable td.label,.content-body table tr td.label{
+color:#A4B535;
+font-size:14px;
+} 
+.marginLeft130px{
+margin-left:130px;
+}
+.form_content form.searchTable{
+padding: 20px 35px 20px 35px;
+}
+.top_instructions{
+line-height:18px;
+padding:5px 45px;
+background:#fafafa;
+}
+.top_instructions span{
+font-style:italic;
+font-weight:bold;
+font-size:13px;
+color:#A4B535;
+}
+#mainArea span.label,#mainArea .bold{
+margin-right:10px;
+}
+.searchListing{
+padding:10px;
+}
+.licence_text{
+color:red;
+font-family:arial, verdana, sans-serif;
+font-weight:normal;
+letter-spacing:1px;
+}
+.star{
+color:red;
+}
+.partnerproducts{
+display: block;
+float: left;
+width: 225px;
+}
+.specification{
+font-weight:bold;
+}
+.spec:hover{
+border-bottom: 1px dotted #aaa; background: #f2f2f2; color: black;
+}
+.productcolor{
+margin-right:3px;
+}
+

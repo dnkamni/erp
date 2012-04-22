@@ -7,7 +7,7 @@ function checkUserSession(){
         $action        =   $this->params["action"];
 		
 		// If User, check User session
-		if(!empty($this->params['prefix']) && $this->params['prefix'] == "admin"){
+		if(!empty($this->params['prefix']) && $this->params['prefix'] == "admin"){ 
 			$this->layout = "layout_admin";
 			$this->pageTitle = "Admin Panel";
 			$loggedInUser = $this->Session->read("SESSION_ADMIN");

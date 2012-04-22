@@ -148,8 +148,7 @@ var base_url = "<?php echo BASE_URL; ?>";
 		</li>
 		</ul>
 		
-		<div class="nav-divider">&nbsp;</div>
-		
+		<div class="nav-divider">&nbsp;</div>		
 		<ul class="select"><li><a href="#nogo2"><b>Sales</b><!--[if IE 7]><!--></a><!--<![endif]-->
 		<!--[if lte IE 6]><table><tr><td><![endif]-->
 		<div class="select_sub">
@@ -204,13 +203,13 @@ var base_url = "<?php echo BASE_URL; ?>";
 		<div class="select_sub">
 			<ul class="sub">
 				<li><a href="#nogo3">CMS</a></li>
-				<li><?php echo $html->link("Roles",
-				array('controller'=>'roles','action'=>'list')
-				);	
-				?></li>
+				<li><?php echo $html->link("Roles", array('controller'=>'roles','action'=>'list'));?></li>
 				<li><a href="#nogo3">Portfolio</a></li>
 				<li><a href="#nogo3">Testimonials</a></li>
 				<li><a href="#nogo3">News</a></li>
+				<li><a href="#nogo3">Galleries</a></li>
+				<li><?php echo $html->link("Credentials", array('controller'=>'credentials','action'=>'list'));?></li>
+				<li><a href="#nogo3">KRA</a></li>
 				<li><a href="#nogo3">Galleries</a></li>
 				<li><a href="#nogo3">Contact Us</a></li>
 			</ul>
@@ -281,7 +280,7 @@ var base_url = "<?php echo BASE_URL; ?>";
 <div id="footer">
 	<!--  start footer-left -->
 	<div id="footer-left">
-	 &copy; Copyright <?php echo SITE_NAME; ?> <?php echo $html->link(BASE_URL,BASE_URL);?>. All Rights Reserved.
+	 &copy; Copyright <?php echo SITE_NAME; ?>. All Rights Reserved.
 	</div>
 	<!--  end footer-left -->
 	<div class="clear">&nbsp;</div>

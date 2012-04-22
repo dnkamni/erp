@@ -1,238 +1,238 @@
-/*-----------------------------------------------------------------------------
-Web Site: Cello Electronics
-
-$CreatedDate: 2009-07-22 $
-$CreatedBy: annag $
-
-$Revision: 542 $
-$LastChangedDate: 2009-09-07 11:00:23 +0600 (Пн, 07 сен 2009) $
-$LastChangedBy: annag $
------------------------------------------------------------------------------*/
-
-
-/* = Products list
----------------------------------------- */
-.products-list .item {
-	margin: 0 0 10px;
-	}
-.products-list .item-inner {
-	width: 635px;
-	overflow: hidden;
-	padding: 16px 10px 6px 15px;
-	border-top: 1px solid #f0f0f0;
-}
-.products-list h4 {
-	padding: 0 0 10px;
-	display: block;
-}
-.products-list h4 a,
-.products-list h4 a:visited {
-	font-weight: bold;
-	font-size: 1.2em;
-}
-.products-list strong {
-	color: #000;
-} 		
-.products-list .item-image {
-	float: left;
-	padding: 0 35px 10px 0;
-	width: 100px;
-}				
-.products-list .item-summary {
-	width: 500px;
-	float: left;
-	padding: 0 0 10px 0;
-}				
-.products-list .item-model {
-	float: right;
-	font-size: 1.1em;
-}				
-.products-list .item-type {
-	padding: 0 0 3px 0;
-	font-size: 0.9em;
-}				
-.products-list .item-type span {
-	width: 250px;
-	float: left;
-	padding: 0;
-}				
-
-/* = Category details
----------------------------------------- */
-.category-details  {
-	width: 325px;
-	float: left;
-}				
-.category-details .category-type {
-	padding: 0 0 18px 0;
-	font-size: 0.9em;
-}				
-.category-details .category-type span {
-	float: left;
-	padding: 0 30px 0 0;
-}				
-.category-details strong {
-	color: #000;
-} 		
-.category-details .category-model {
-	padding: 0 0 8px 0;
-} 		
-.category-details .category-model label {
-	color: #000;
-	font-size: 0.9em;
-	font-weight: bold;
-	width: 50px;
-	float: left;
-	margin: 0 0 10px 0;
-} 		
-.category-details .category-model br {clear:both; height: 0; line-height:0; font-size: 0px;}
-
-.category-details .category-color {
-	font-size: 0.9em;
-	padding: 0 0 18px 0;
-	line-height: 19px;
-} 		
-.category-details .category-color strong {
-	float: left;
-	display: block;
-	width: 50px;
-} 		
-.category-details .category-color a,
-.category-details .category-color a:visited,
-.category-details .category-color a:hover {
-	float: left;
-	display: block;
-	margin: 0 5px 0 0;
-	width: 19px;
-	height: 19px;
-	overflow: hidden;
-} 		
-.category-summary {
-	padding: 0 0 18px 0;
-}
-
-/* = Product details
----------------------------------------- */
-.product-details h2 ,
-.retailer-products h2{
-	color: #e9d519;
-} 
-
-/* = Product Sales Features & Sales Assets
----------------------------------------- */
-.product-sales-features,
-.product-sales-assets {
-	width: 340px;
-	padding: 1px 0 18px 0;
-	float: left;
-} 
-.product-sales-features {
-	padding: 1px 20px 18px 0;
-} 
-.product-sales-features h2,
-.product-sales-assets h2 {
-	border-bottom: 1px solid #f0f0f0;
-	padding: 10px 0 6px;
-	margin: 0 0 15px;
-} 
-.content .product-sales-features ul {
-	padding: 0 0 0 10px;
-	margin: 0;
-	list-style-type: none;
-} 
-.content .product-sales-features ul li {
-	padding: 0 20px 0 0;
-	margin: 0;
-	display: block;
-	float: left;
-} 
-.content .product-sales-assets ul {
-	padding: 0 0 0 10px;
-	margin: 0;
-	list-style-type: none;
-} 
-.content .product-sales-assets ul li {
-	padding: 0 0 10px 0;
-	margin: 0;
-	display: block;
-	line-height: 25px;
-} 
-.content .product-sales-assets ul li a {
-	display: block;
-	padding: 0 0 0 45px;
-} 
-.content .product-sales-assets ul li a.asst-pdf {
-	background: url(../images/asst-pdf.jpg) no-repeat left;
-} 
-.content .product-sales-assets ul li a.asst-barcode {
-	background: url(../images/asst-barcode.jpg) no-repeat left;
-} 
-.content .product-sales-assets ul li a.asst-label {
-	background: url(../images/asst-label.jpg) no-repeat left;
-} 
-
-/* = Product Specification
----------------------------------------- */
-.product-specification .specification-block {
-	width: 220px;
-	padding: 0 20px 0 0;
-	float: left;
-}
-.product-specification .specification-block.last {
-	padding: 0;
-}
-.product-specification h3 {
-	border-bottom: 1px solid #f0f0f0;
-	padding: 10px 0 4px;
-	margin: 0 0 5px;
-} 
-
-/* = Product Media Gallery
----------------------------------------- */
-.product-media-gallery {
-	padding: 0 0 18px 0;
-	margin: 0 0 0 -10px;
-}
-.retailer-products .product-media-gallery {
-	margin: 20px 0 0 -3px;
-} 
-.product-media-gallery .gallery-outer {
-    background: url(../images/media-gallery-top-bg.gif) no-repeat left top;
-	padding: 5px 0 0;
-	width: 700px;
-} 
-.product-media-gallery .gallery-inner {
-    background: url(../images/media-gallery-top-bg.gif) no-repeat right bottom;
-	width: 700px;
-	padding: 0 0 5px;
-} 
-.product-media-gallery .gallery-second-inner {
-    background: url(../images/media-gallery-bg.gif) repeat-y left top;
-	width: 650px;
-	padding: 10px 25px;
-} 
-.gallery-content .download-link {
-	padding: 10px 0 0;
-	width: 350px;
-} 
-.gallery-content .download-link a,
-.gallery-content .download-link a:visited,
-.gallery-content .download-link a:hover {
-	/*width: 120px;*/
-	float: right;
-	padding: 0;
-} 
-.gallery-content .download-link a span,
-.gallery-content .download-link a:visited span,
-.gallery-content .download-link a:hover span {
-	padding: 0;
-} 
-
-
-
-
-
-
-
-
-
+/*-----------------------------------------------------------------------------
+Web Site: Cello Electronics
+
+$CreatedDate: 2009-07-22 $
+$CreatedBy: annag $
+
+$Revision: 542 $
+$LastChangedDate: 2009-09-07 11:00:23 +0600 (Пн, 07 сен 2009) $
+$LastChangedBy: annag $
+-----------------------------------------------------------------------------*/
+
+
+/* = Products list
+---------------------------------------- */
+.products-list .item {
+	margin: 0 0 10px;
+	}
+.products-list .item-inner {
+	width: 635px;
+	overflow: hidden;
+	padding: 16px 10px 6px 15px;
+	border-top: 1px solid #f0f0f0;
+}
+.products-list h4 {
+	padding: 0 0 10px;
+	display: block;
+}
+.products-list h4 a,
+.products-list h4 a:visited {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.products-list strong {
+	color: #000;
+} 		
+.products-list .item-image {
+	float: left;
+	padding: 0 35px 10px 0;
+	width: 100px;
+}				
+.products-list .item-summary {
+	width: 500px;
+	float: left;
+	padding: 0 0 10px 0;
+}				
+.products-list .item-model {
+	float: right;
+	font-size: 1.1em;
+}				
+.products-list .item-type {
+	padding: 0 0 3px 0;
+	font-size: 0.9em;
+}				
+.products-list .item-type span {
+	width: 250px;
+	float: left;
+	padding: 0;
+}				
+
+/* = Category details
+---------------------------------------- */
+.category-details  {
+	width: 325px;
+	float: left;
+}				
+.category-details .category-type {
+	padding: 0 0 18px 0;
+	font-size: 0.9em;
+}				
+.category-details .category-type span {
+	float: left;
+	padding: 0 30px 0 0;
+}				
+.category-details strong {
+	color: #000;
+} 		
+.category-details .category-model {
+	padding: 0 0 8px 0;
+} 		
+.category-details .category-model label {
+	color: #000;
+	font-size: 0.9em;
+	font-weight: bold;
+	width: 50px;
+	float: left;
+	margin: 0 0 10px 0;
+} 		
+.category-details .category-model br {clear:both; height: 0; line-height:0; font-size: 0px;}
+
+.category-details .category-color {
+	font-size: 0.9em;
+	padding: 0 0 18px 0;
+	line-height: 19px;
+} 		
+.category-details .category-color strong {
+	float: left;
+	display: block;
+	width: 50px;
+} 		
+.category-details .category-color a,
+.category-details .category-color a:visited,
+.category-details .category-color a:hover {
+	float: left;
+	display: block;
+	margin: 0 5px 0 0;
+	width: 19px;
+	height: 19px;
+	overflow: hidden;
+} 		
+.category-summary {
+	padding: 0 0 18px 0;
+}
+
+/* = Product details
+---------------------------------------- */
+.product-details h2 ,
+.retailer-products h2{
+	color: #e9d519;
+} 
+
+/* = Product Sales Features & Sales Assets
+---------------------------------------- */
+.product-sales-features,
+.product-sales-assets {
+	width: 340px;
+	padding: 1px 0 18px 0;
+	float: left;
+} 
+.product-sales-features {
+	padding: 1px 20px 18px 0;
+} 
+.product-sales-features h2,
+.product-sales-assets h2 {
+	border-bottom: 1px solid #f0f0f0;
+	padding: 10px 0 6px;
+	margin: 0 0 15px;
+} 
+.content .product-sales-features ul {
+	padding: 0 0 0 10px;
+	margin: 0;
+	list-style-type: none;
+} 
+.content .product-sales-features ul li {
+	padding: 0 20px 0 0;
+	margin: 0;
+	display: block;
+	float: left;
+} 
+.content .product-sales-assets ul {
+	padding: 0 0 0 10px;
+	margin: 0;
+	list-style-type: none;
+} 
+.content .product-sales-assets ul li {
+	padding: 0 0 10px 0;
+	margin: 0;
+	display: block;
+	line-height: 25px;
+} 
+.content .product-sales-assets ul li a {
+	display: block;
+	padding: 0 0 0 45px;
+} 
+.content .product-sales-assets ul li a.asst-pdf {
+	background: url(../images/asst-pdf.jpg) no-repeat left;
+} 
+.content .product-sales-assets ul li a.asst-barcode {
+	background: url(../images/asst-barcode.jpg) no-repeat left;
+} 
+.content .product-sales-assets ul li a.asst-label {
+	background: url(../images/asst-label.jpg) no-repeat left;
+} 
+
+/* = Product Specification
+---------------------------------------- */
+.product-specification .specification-block {
+	width: 220px;
+	padding: 0 20px 0 0;
+	float: left;
+}
+.product-specification .specification-block.last {
+	padding: 0;
+}
+.product-specification h3 {
+	border-bottom: 1px solid #f0f0f0;
+	padding: 10px 0 4px;
+	margin: 0 0 5px;
+} 
+
+/* = Product Media Gallery
+---------------------------------------- */
+.product-media-gallery {
+	padding: 0 0 18px 0;
+	margin: 0 0 0 -10px;
+}
+.retailer-products .product-media-gallery {
+	margin: 20px 0 0 -3px;
+} 
+.product-media-gallery .gallery-outer {
+    background: url(../images/media-gallery-top-bg.gif) no-repeat left top;
+	padding: 5px 0 0;
+	width: 700px;
+} 
+.product-media-gallery .gallery-inner {
+    background: url(../images/media-gallery-top-bg.gif) no-repeat right bottom;
+	width: 700px;
+	padding: 0 0 5px;
+} 
+.product-media-gallery .gallery-second-inner {
+    background: url(../images/media-gallery-bg.gif) repeat-y left top;
+	width: 650px;
+	padding: 10px 25px;
+} 
+.gallery-content .download-link {
+	padding: 10px 0 0;
+	width: 350px;
+} 
+.gallery-content .download-link a,
+.gallery-content .download-link a:visited,
+.gallery-content .download-link a:hover {
+	/*width: 120px;*/
+	float: right;
+	padding: 0;
+} 
+.gallery-content .download-link a span,
+.gallery-content .download-link a:visited span,
+.gallery-content .download-link a:hover span {
+	padding: 0;
+} 
+
+
+
+
+
+
+
+
+
