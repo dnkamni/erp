@@ -49,8 +49,7 @@ $paginator->options(array('url'=>$urlArray));
 			<td width="40%"><br/>
 				<?php
 				echo $form->button("Search", array('class'=>'form-search','id'=>'search','onclick'=>'setSubmitMode(this.id)'))."&nbsp;&nbsp;&nbsp;";
-				echo $form->button("Reset",array('type'=>'button','class'=>"form-reset",'div'=>false,'onclick'=>"location.href='".BASE_URL."admin/credentials/list'"));
-				
+				echo $form->button("Reset",array('type'=>'button','class'=>"form-reset",'div'=>false,'onclick'=>"location.href='".BASE_URL."admin/credentials/list'"));				
 				?>
 			</td>
 		</tr>
@@ -63,7 +62,7 @@ $paginator->options(array('url'=>$urlArray));
 					<th class="table-header-repeat line-left minwidth-1"  width="16%"><?php echo $paginator->sort('Type', 'Credential.type');?></th>
 					<th class="table-header-repeat line-left minwidth-1"  width="20%"><?php echo $paginator->sort('Keyword', 'Credential.keyword');?></th>
 					<th class="table-header-repeat line-left minwidth-1"  width="30%"><?php echo $paginator->sort('Description', 'Credential.description');?></th>
-					<th class="table-header-repeat line-left" width="10%"><?php echo $paginator->sort('Created', 'Credential.created');?></th>
+					<th class="table-header-repeat line-left" width="10%"><?php echo $paginator->sort('Modified', 'Credential.modified');?></th>
 					<th class="table-header-options line-left" width="12%"><a href="#A">Options</a></th>
 				</tr>
 				<?php if(count($resultData)>0){
@@ -75,8 +74,8 @@ $paginator->options(array('url'=>$urlArray));
 					<td><?php echo $result['Credential']['username']; ?><br/><a class="addLinks fancybox" href="<?php echo BASE_URL.'admin/credentials/sendemail/'.$result['Credential']['id'];?>">Send Credentials</a></td>
 					<td><?php echo $result['Credential']['type']; ?></td>
 					<td><?php echo $result['Credential']['keyword']; ?></td>
-					<td><?php echo $result['Credential']['description']; ?></td>
-					<td><?php echo date(DATE_FORMAT, strtotime($result['Credential']['created'])); ?></td>
+					<td><?php echo nl2br($result['Credential']['description']); ?></td>
+					<td><?php echo date(DATE_FORMAT, strtotime($result['Credential']['modified'])); ?></td>
 					<td class="options-width" align="center">
 						<?php
 						echo $html->link("",
@@ -159,13 +158,21 @@ $paginator->options(array('url'=>$urlArray));
             );	
             ?>
             </li> 
-						<li><a href="">Download Search Result</a> </li>
-						<li><a href="">Download Odesk Credentials</a> </li>
-						<li><a href="">Download Elance Credentials</a> </li>
-						<li><a href="">Download Gmail Credentials</a> </li>
-						<li><a href="">Download Skype Credentials</a> </li>
-						<li><a href="">Download Webmail Credentials</a> </li>
-						<li><a href="">Download Other Credentials</a> </li>
+						<li><a href="">Download Search Result : CSV</a> </li>
+						<li><a href="">Download Search Result : PDF</a> </li>
+						<li><a href="">Download Odesk  : CSV </a> </li>
+						<li><a href="">Download Odesk  : PDF</a> </li>
+						<li><a href="">Download Elance  : CSV</a> </li>
+						<li><a href="">Download Elance  : PDF</a> </li>
+						<li><a href="">Download Gmail  : CSV </a> </li>
+						<li><a href="">Download Gmail  : PDF </a> </li>
+						<li><a href="">Download Skype : CSV</a> </li>
+						<li><a href="">Download Skype : PDF</a> </li>
+						<li><a href="">Download Webmail  : CSV</a> </li>
+						<li><a href="">Download Webmail  : PDF</a> </li>
+						<li><a href="">Download Other : CSV</a> </li>
+						<li><a href="">Download Other : PDF</a> </li>
+						
 					</ul>
 				</div>
 				<div class="clear"></div>

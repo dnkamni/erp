@@ -1,4 +1,4 @@
-	<!--  start content-table-inner -->
+  <!--  start content-table-inner -->
 	<div id="content-table-inner">
 	<?php echo $form->create('Credential',array('action'=>'sendemail','method'=>'POST','onsubmit' => '',"class"=>"login")); ?>
 	<?php $session->flash(); ?>
@@ -14,6 +14,37 @@
             ?><span class="">enter multiple email addresses seperated by comma<span></td>
 			<td></td>
 		</tr>
+		<tr>
+			<th valign="top">Username:</th>
+			<td><?php
+				 echo nl2br($crData['Credential']['username']);
+            ?></td>
+			<td></td>
+		</tr>	
+		<tr>
+			<th valign="top">Password:</th>
+			<td><?php
+				 echo nl2br($crData['Credential']['password']);
+            ?></td>
+			<td></td>
+		</tr>	
+		<tr>
+			<th valign="top">Description:</th>
+			<td><?php
+				 echo nl2br($crData['Credential']['description']);
+            ?>
+      </td>
+			<td></td>
+		</tr>	
+		<tr>
+			<th valign="top">keyword(s):</th>
+			<td><?php
+				 echo nl2br($crData['Credential']['keyword']);
+            ?>
+      </td>
+			<td></td>
+		</tr>		
+		
 		<tr>
 			<th valign="top">Message:</th>
 			<td><?php

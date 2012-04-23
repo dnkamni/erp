@@ -201,7 +201,7 @@ class CredentialsController extends AppController {
 	    'keyword', 	  
       'description',
       'status',      
-      'created'           
+      'modified'           
       ),      
       'page'=> 1,'limit' => 4,      
       'order' => array('id' => 'desc')      
@@ -225,7 +225,23 @@ class CredentialsController extends AppController {
     **/  
         
 	function  admin_sendemail($id) {
-		$this->layout= false;
+		if(!empty($id)){       
+			$crData = $this->Credential->find('first', array('conditions'=>array('id'=>Sanitize::escape($id))));	                                                
+			if(!$this->data){                                                         
+			$this->set('crData',$crData); //Setting Credential Data                             
+			}                                                                         
+		} 
+	
+	$this->layout= false; // setting layout to false as we have to open the same in fancy box
+		
+		if(!empty($id)){       
+			$this->data = $this->Credential->find('first', array('conditions'=>array('id'=>Sanitize::escape($id))));	                                                
+			if(!$this->data){                                                         
+				pr ($this->data);die();                             
+			}                                                                         
+		}    
+		
+		
     }
 
 

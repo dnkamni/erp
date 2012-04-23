@@ -90,18 +90,24 @@
           <div class="lines-dotted-short"></div>
 					<ul class="greyarrow">
   					<li>
-            <?php echo $html->link("Add New Credential",
-            array('controller'=>'credentials','action'=>'add')
+            <?php echo $html->link("Go to Listing",
+            array('controller'=>'credentials','action'=>'list')
             );	
             ?>
             </li> 
-						<li><a href="">Download Search Result</a> </li>
-						<li><a href="">Download Odesk Credentials</a> </li>
-						<li><a href="">Download Elance Credentials</a> </li>
-						<li><a href="">Download Gmail Credentials</a> </li>
-						<li><a href="">Download Skype Credentials</a> </li>
-						<li><a href="">Download Webmail Credentials</a> </li>
-						<li><a href="">Download Other Credentials</a> </li>
+						<li><a href="">Download Odesk  : CSV </a> </li>
+						<li><a href="">Download Odesk  : PDF</a> </li>
+						<li><a href="">Download Elance  : CSV</a> </li>
+						<li><a href="">Download Elance  : PDF</a> </li>
+						<li><a href="">Download Gmail  : CSV </a> </li>
+						<li><a href="">Download Gmail  : PDF </a> </li>
+						<li><a href="">Download Skype : CSV</a> </li>
+						<li><a href="">Download Skype : PDF</a> </li>
+						<li><a href="">Download Webmail  : CSV</a> </li>
+						<li><a href="">Download Webmail  : PDF</a> </li>
+						<li><a href="">Download Other : CSV</a> </li>
+						<li><a href="">Download Other : PDF</a> </li>
+						
 					</ul>
 				</div>
 				<div class="clear"></div>
