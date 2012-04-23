@@ -136,8 +136,51 @@ $paginator->options(array('url'=>$urlArray));
 
 	</td>
 	<td>
-
-	<?php echo $this->element('user_sidebar'); ?>
+<!--  start related-activities -->
+	<div id="related-activities">
+	<?php $user = $session->read("SESSION_ADMIN"); ?>
+		<!--  start related-act-top -->
+		<div id="related-act-top">
+		<?php echo $html->image(BASE_URL."images/forms/header_related_act.gif", array("alt"=>"Edit",'width'=>"271", 'height'=>"43")); ?>
+		</div>
+		<!-- end related-act-top -->
+		
+		<!--  start related-act-bottom -->
+		<div id="related-act-bottom">
+		
+			<!--  start related-act-inner -->
+			<div id="related-act-inner">				
+				<div class="left"><a href=""><?php $html->image(BASE_URL."images/forms/icon_edit.gif", array("alt"=>"Edit",'width'=>"21",'height'=>"21"))?></a></div>
+				<div class="right">
+					<h5>Credentials Management</h5>
+          This section is used by Admin and PM only to view senstive credentials.
+          <div class="lines-dotted-short"></div>
+					<ul class="greyarrow">
+  					<li>
+            <?php echo $html->link("Add New Credential",
+            array('controller'=>'credentials','action'=>'add')
+            );	
+            ?>
+            </li> 
+						<li><a href="">Download Search Result</a> </li>
+						<li><a href="">Download Odesk Credentials</a> </li>
+						<li><a href="">Download Elance Credentials</a> </li>
+						<li><a href="">Download Gmail Credentials</a> </li>
+						<li><a href="">Download Skype Credentials</a> </li>
+						<li><a href="">Download Webmail Credentials</a> </li>
+						<li><a href="">Download Other Credentials</a> </li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- end related-act-inner -->
+			<div class="clear"></div>
+		
+		</div>
+		<!-- end related-act-bottom -->
+	
+	</div>
+	<!-- end related-activities -->
 
 </td>
 </tr>
