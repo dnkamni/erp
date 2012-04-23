@@ -15,7 +15,7 @@
 <meta content="index, follow" name="robots" />
 <?php print $html->charset('UTF-8') ?>
 <?php echo $html->css("screen"); ?>
-<?php echo $javascript->link(array('jquery-1.4.1.min','custom_jquery','jquery.pngFix.pack','common','listing')); ?>
+<?php echo $javascript->link(array('jquery-1.4.1.min','custom_jquery','jquery.pngFix.pack')); ?>
 <link rel="shortcut icon" href="/img/favicon.ico">
 <script>
 var base_url = "<?php echo BASE_URL; ?>";
@@ -35,7 +35,7 @@ $(document).pngFix( );
 	<div id="logo-login">
 		<?php echo $session->flash(); ?>
 		<?php echo $html->link(
-			$html->image(BASE_URL."images/shared/logo.png",array("class"=>"logoalign","height"=>"100px","alt" => SITE_NAME)),
+			$html->image(BASE_URL."images/shared/logo.png",array("height"=>"100px","alt" => SITE_NAME)),
 			array('controller'=>'users','action'=>'login'),
 			array('escape'=>false,'title'=>SITE_NAME)
 			);			

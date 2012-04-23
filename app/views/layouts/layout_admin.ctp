@@ -199,7 +199,7 @@ var base_url = "<?php echo BASE_URL; ?>";
 		
 		<div class="nav-divider">&nbsp;</div>
 		
-		<ul class="select"><li><a href="#nogo3"><b>Website</b><!--[if IE 7]><!--></a><!--<![endif]-->
+		<ul class="select"><li><a href="#nogo3"><b>Admin</b><!--[if IE 7]><!--></a><!--<![endif]-->
 		<!--[if lte IE 6]><table><tr><td><![endif]-->
 		<div class="select_sub">
 			<ul class="sub">
@@ -213,6 +213,10 @@ var base_url = "<?php echo BASE_URL; ?>";
 				<li><a href="#nogo3">News</a></li>
 				<li><a href="#nogo3">Galleries</a></li>
 				<li><a href="#nogo3">Contact Us</a></li>
+				<li><?php echo $html->link("Credentials",
+				array('controller'=>'credentials','action'=>'list')
+				);	
+				?></li>
 			</ul>
 		</div>
 		<!--[if lte IE 6]></td></tr></table></a><![endif]-->

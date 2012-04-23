@@ -8,32 +8,32 @@
 		<!-- start id-form -->
 		<table border="0" cellpadding="0" cellspacing="0"  id="id-form">
 		<tr>
-			<th valign="top">Employee name:</th>
+			<th valign="top">Product name:</th>
 			<td><input type="text" class="inp-form" /></td>
 			<td></td>
 		</tr>
 		<tr>
-			<th valign="top">Email:</th>
-			<td><input type="text" class="inp-form" /></td>
-			<!--<td>
+			<th valign="top">Product name:</th>
+			<td><input type="text" class="inp-form-error" /></td>
+			<td>
 			<div class="error-left"></div>
 			<div class="error-inner">This field is required.</div>
-			</td>-->
+			</td>
 		</tr>
 		<tr>
-		<th valign="top">Role:</th>
+		<th valign="top">Category:</th>
 		<td>	
 		<select  class="styledselect_form_1">
-			<option value="">HR</option>
-			<option value="">Project Manager</option>
-			<option value="">Developer</option>
-			<option value="">Sales</option>
-			<option value="">Operation</option>
+			<option value="">All</option>
+			<option value="">Products</option>
+			<option value="">Categories</option>
+			<option value="">Clients</option>
+			<option value="">News</option>
 		</select>
 		</td>
 		<td></td>
 		</tr>
-		<!--<tr>
+		<tr>
 		<th valign="top">Sub Category:</th>
 		<td>	
 		<select  class="styledselect_form_1">
@@ -45,14 +45,14 @@
 		</select>
 		</td>
 		<td></td>
-		</tr> -->
+		</tr> 
 		<tr>
-			<th valign="top">Salary:</th>
+			<th valign="top">Price:</th>
 			<td><input type="text" class="inp-form" /></td>
 			<td></td>
 		</tr>
 		<tr>
-		<th valign="top">Date of Joining:</th>
+		<th valign="top">Select a date:</th>
 		<td class="noheight">
 		
 			<table border="0" cellpadding="0" cellspacing="0">
@@ -132,7 +132,7 @@
 		<td></td>
 	</tr>
 	<tr>
-		<th valign="top">Address:</th>
+		<th valign="top">Description:</th>
 		<td><textarea rows="" cols="" class="form-textarea"></textarea></td>
 		<td></td>
 	</tr>
@@ -140,24 +140,24 @@
 	<th>Image 1:</th>
 	<td><input type="file" class="file_1" /></td>
 	<td>
-	<!--<div class="bubble-left"></div>
+	<div class="bubble-left"></div>
 	<div class="bubble-inner">JPEG, GIF 5MB max per image</div>
-	<div class="bubble-right"></div>-->
+	<div class="bubble-right"></div>
 	</td>
 	</tr>
 	<tr>
 	<th>Image 2:</th>
 	<td>  <input type="file" class="file_1" /></td>
-	<td><!--<div class="bubble-left"></div>
+	<td><div class="bubble-left"></div>
 	<div class="bubble-inner">JPEG, GIF 5MB max per image</div>
-	<div class="bubble-right"></div>-->
+	<div class="bubble-right"></div></td>
 	</tr>
 	<tr>
 	<th>Image 3:</th>
 	<td><input type="file" class="file_1" /></td>
-	<td><!--<div class="bubble-left"></div>
+	<td><div class="bubble-left"></div>
 	<div class="bubble-inner">JPEG, GIF 5MB max per image</div>
-	<div class="bubble-right"></div>-->
+	<div class="bubble-right"></div></td>
 	</tr>
 	<tr>
 		<th>&nbsp;</th>
