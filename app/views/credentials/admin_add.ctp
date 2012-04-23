@@ -82,24 +82,26 @@
 		<div id="related-act-bottom">
 		
 			<!--  start related-act-inner -->
-			<div id="related-act-inner">
-				<?php $destination=realpath('../../app/webroot/img/employee_image'). DS;
-				$userId = $user[0];
-			    $profileImage = $common->file_exists_in_directory($destination,"/^".$userId."_/i");
-				if(!empty($profileImage)){
-					echo $html->image(BASE_URL."img/employee_image/".$profileImage ,array("title" => $user[1],"alt" => $user[1],"id"=>"profileImg"));
-				}else{
-					echo $html->image(BASE_URL."images/shared/no_image.png",array("title" => $user[1],"alt" => $user[1],"id"=>"profileImg"));
-				}?>
-				<div class="lines-dotted-short"></div>
-				
+			<div id="related-act-inner">				
 				<div class="left"><a href=""><?php $html->image(BASE_URL."images/forms/icon_edit.gif", array("alt"=>"Edit",'width'=>"21",'height'=>"21"))?></a></div>
 				<div class="right">
-					<h5>Profile</h5>
-					User can see his account info here
+					<h5>Credentials Management</h5>
+          This section is used by Admin and PM only to view senstive credentials.
+          <div class="lines-dotted-short"></div>
 					<ul class="greyarrow">
-						<li><a href="">Click here to visit</a></li> 
-						<li><a href="">Click here to visit</a> </li>
+  					<li>
+            <?php echo $html->link("Add New Credential",
+            array('controller'=>'credentials','action'=>'add')
+            );	
+            ?>
+            </li> 
+						<li><a href="">Download Search Result</a> </li>
+						<li><a href="">Download Odesk Credentials</a> </li>
+						<li><a href="">Download Elance Credentials</a> </li>
+						<li><a href="">Download Gmail Credentials</a> </li>
+						<li><a href="">Download Skype Credentials</a> </li>
+						<li><a href="">Download Webmail Credentials</a> </li>
+						<li><a href="">Download Other Credentials</a> </li>
 					</ul>
 				</div>
 				<div class="clear"></div>
