@@ -1,9 +1,10 @@
 <!-- start loginbox -->
 <?php echo $form->create('User',array('action'=>'login','method'=>'POST','onsubmit' => '',"class"=>"login")); ?>
 	<div id="loginbox">
-	
+
 	<!--  start login-inner -->
 	<div id="login-inner">
+	<?php echo $session->flash(); ?><br/><br/>
 		<table border="0" cellpadding="0" cellspacing="0">
 		<tr>
 			<th>Email</th>
@@ -16,7 +17,7 @@
 		</tr>
 		<tr>
 			<th></th>
-			<td valign="top"><input type="checkbox" class="checkbox-size" id="login-check" /><label for="login-check">Remember me</label></td>
+			<td valign="top">&nbsp;</td>
 		</tr>
 		<tr>
 			<th></th>
@@ -26,9 +27,6 @@
 	</div>
  	<!--  end login-inner -->
 	<div class="clear"></div>
-	<?php 
-		echo $html->link("Forgot Password?","forgot_password",array("class"=>"forgot-pwd"));
-    ?>
  </div>
  <!--  end loginbox -->
 <?php echo $form->end();?>

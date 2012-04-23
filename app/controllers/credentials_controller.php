@@ -203,7 +203,7 @@ class CredentialsController extends AppController {
       'status',      
       'modified'           
       ),      
-      'page'=> 1,'limit' => 4,      
+      'page'=> 1,'limit' => 10,      
       'order' => array('id' => 'desc')      
       );
       
@@ -282,5 +282,49 @@ class CredentialsController extends AppController {
 				$this->redirect(array('action' => 'list'));                             
 			}                                                                         
 		}                                                                           
-	}                                                                             
+	}
+  
+ /**
+   * @method      : download
+   * @description : Used to download credentials record
+   * @param       : type
+   * return       : none
+**/
+	function admin_download()
+	{              
+	
+	 if(empty($this->params['pass'][0]))
+	   $crData = $this->Credential->find('all'); //fetching all data
+   else                                                           
+    $crData = $this->Credential->find('all' , array('conditions'=>array('type'=>$this->params['pass'][0]),'order'=>'username')); //fetching all related data                                           
+		
+    $this->set('crData',$crData); //Setting Credential Data                             
+	  $this->layout = 'pdf'; //this will use the pdf.ctp layout
+	 $this->render();	
+	} // end of download function
+	
+   #_________________________________________________________________________#
+
+
+    /**
+    * @Date: 23-Apr-2012
+    * @Method : export
+    * @Purpose: This function is used to show Credential Report in Excel format
+    * @Param: none
+    * @Return: none
+    **/
+    function admin_exportci(){
+
+ 
+	 if(empty($this->params['pass'][0]))
+	   $crData = $this->Credential->find('all'); //fetching all data
+   else                                                           
+    $crData = $this->Credential->find('all' , array('conditions'=>array('type'=>$this->params['pass'][0]),'order'=>'username')); //fetching all related data                                           
+		
+	//setting excel parametres
+	$this->set('filename',"CredentialReport_".date("Ymd"));
+  $this->set('crData',$crData); //Setting Credential Data
+	$this->layout = "export_xls";
+    }
+                                                                               
 }
