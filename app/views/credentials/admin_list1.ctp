@@ -1,5 +1,3 @@
-<?php echo $javascript->link(array('jquery.mousewheel-3.0.4.pack.js','jquery.fancybox-1.3.4.js')); ?>
-<?php echo $html->css(array("jquery.fancybox-1.3.4.css")); ?>
 <?php
 $newUrl = "list".$urlString;
 $urlArray = array(
@@ -22,10 +20,10 @@ $paginator->options(array('url'=>$urlArray));
 			<table cellspacing="0" cellpadding="4" border="0" align="center" class="top-search" style="margin-left:40px;">
 		<tr>
 			<td width="14%">
-				<b>Search by:</b>
+				<b>Search by:<b><br/>
 				<?php
 				$fieldsArray = array(
-				''				          => '---',
+				''				                => '---',
 				'Credential.username'     => 'Username',
 				'Credential.type'         => 'Type',
 				'Credential.keyword'  => 'Keyword',
@@ -72,7 +70,7 @@ $paginator->options(array('url'=>$urlArray));
 			if($i%2)$class = "alternate-row"; else $class = "";  ?>
 				<tr class="<?php echo $class; ?>">
 					<td><input  type="checkbox" name="IDs[]" value="<?php echo $result['Credential']['id'];?>"/></td>
-					<td><?php echo $result['Credential']['username']; ?><br/><a class="addLinks fancybox" href="<?php echo BASE_URL.'admin/credentials/sendemail/'.$result['Credential']['id'];?>">Send Credentials</a></td>
+					<td><?php echo $result['Credential']['username']; ?><br/><a class="addLinks" href="">Send</a></td>
 					<td><?php echo $result['Credential']['type']; ?></td>
 					<td><?php echo $result['Credential']['keyword']; ?></td>
 					<td><?php echo $result['Credential']['description']; ?></td>
@@ -86,7 +84,7 @@ $paginator->options(array('url'=>$urlArray));
 						?>
 						<?php
 						echo $html->link("",
-						array('controller'=>'credentials','action'=>'list','delete',$result['Credential']['id']),
+						array('controller'=>'credentials','action'=>'delete',$result['Credential']['id']),
 						array('class'=>'icon-2 info-tooltip delete','title'=>'Delete')
 					);
 						?>
@@ -132,8 +130,7 @@ $paginator->options(array('url'=>$urlArray));
 
 	</td>
 	<td>
-
-	<!--  start related-activities -->
+<!--  start related-activities -->
 	<div id="related-activities">
 	<?php $user = $session->read("SESSION_ADMIN"); ?>
 		<!--  start related-act-top -->

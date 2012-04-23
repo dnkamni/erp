@@ -17,7 +17,7 @@
 		<tr>
 			<th valign="top">Password:</th>
 			<td><?php
-				 echo $form->input("password",array("class"=>"inp-form","label"=>false,"div"=>false));
+				 echo $form->input("password",array("type"=>"text","class"=>"inp-form","label"=>false,"div"=>false));
             ?></td>
 			<td></td>
 		</tr>

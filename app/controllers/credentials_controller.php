@@ -104,9 +104,9 @@ class CredentialsController extends AppController {
       }
       
       if(!empty($deleteString)){      
-        $this->Credential->deleteAll("Credential.id in ('".$deleteString."')");      
-        $this->Session->setFlash("<div class='success-message flash notice'>Credential(s) deleted successfully.</div>");                                    
-        $this->redirect('list');                                                  
+        $this->Credential->deleteAll("Credential.id in ('".$deleteString."')");
+        $this->Session->setFlash("<div class='success-message flash notice'>Credential(s) deleted successfully.</div>", 'layout_success');
+		$this->redirect('list');                                                  
       }
       
       }                  
@@ -174,11 +174,10 @@ class CredentialsController extends AppController {
       $this->set('urlString',$urlString);      
       if(isset($this->params['form']['publish'])){      
       $setValue = array('status' => "'1'");             
-      $messageStr = "<div class='success-message flash notice'>Selected Credential(s) have been activated.</div>";              
+      $messageStr = "Selected Credential(s) have been activated.";              
       }elseif(isset($this->params['form']['unpublish'])){
-      
       $setValue = array('status' => "'0'");             
-      $messageStr = "<div class='success-message flash notice'>Selected Credential(s) have been deactivated.</div>";            
+      $messageStr = "Selected Credential(s) have been deactivated.";            
       }
                                                        
       
@@ -189,7 +188,7 @@ class CredentialsController extends AppController {
       
       if($saveString != ""){                                          
       $this->Credential->updateAll($setValue,"Credential.id in ('".$saveString."')");                                                                 
-      $this->Session->setFlash($messageStr);                          
+      $this->Session->setFlash($messageStr, 'layout_success');                          
       }
       
       }
@@ -216,19 +215,16 @@ class CredentialsController extends AppController {
 
     /**
 
-    * @Date: 19-Apr-2012        
-    * @Method : admin_add       
-    * @Purpose: This function is to add/edit Credentials from admin section.
+    * @Date: 22-Apr-2012        
+    * @Method : admin_sendemail       
+    * @Purpose: This function is to send credentials to users
     * @Param: $id                                       
     * @Return: none
     * @Return: none
     **/  
         
-	function  admin_delete($id) {
-    if ($this->Credential->delete($id)) {
-    $this->Session->setFlash('The credential with id: ' . $id . ' has been deleted.');
-    $this->redirect(array('action' => 'list'));
-    }
+	function  admin_sendemail($id) {
+		$this->layout= false;
     }
 
 
@@ -254,9 +250,9 @@ class CredentialsController extends AppController {
 				   $data=$this->data['Credential'];//post
 				   $this->Credential->save($this->data['Credential'], array('validate'=>false));                                         
 					if($mode == "add"){                    
-						$this->Session->setFlash("<div class='success-message flash notice'>Credential has been created successfully.</div>");
+						$this->Session->setFlash("Credential has been created successfully.",'layout_success');
 					}else{                                  
-						$this->Session->setFlash("<div class='success-message flash notice'>Credential has been updated successfully.</div>");
+						$this->Session->setFlash("Credential has been updated successfully.",'layout_success');
 					}                                       
 				  $this->redirect('list');                
 			}else{                                      
