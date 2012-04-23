@@ -198,8 +198,9 @@ class CredentialsController extends AppController {
       'id',      
       'type',      
       'username', 
-	  'keyword', 	  
-      'description',      
+	    'keyword', 	  
+      'description',
+      'status',      
       'created'           
       ),      
       'page'=> 1,'limit' => 4,      

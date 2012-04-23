@@ -34,7 +34,7 @@ class Credential extends AppModel {
 			'type' => array(
 				'rule' => 'notEmpty',
 				'message' => "Enter Type."
-			),
+			), 
 			
     );
 	

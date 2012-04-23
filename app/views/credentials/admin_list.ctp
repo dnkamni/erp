@@ -68,8 +68,8 @@ $paginator->options(array('url'=>$urlArray));
 				</tr>
 				<?php if(count($resultData)>0){
 			$i = 1;
-			foreach($resultData as $result): 
-			if($i%2)$class = "alternate-row"; else $class = "";  ?>
+			foreach($resultData as $result):
+			if(!$result['Credential']['status']%2)$class = "alternate-row"; else $class = "";  ?>
 				<tr class="<?php echo $class; ?>">
 					<td><input  type="checkbox" name="IDs[]" value="<?php echo $result['Credential']['id'];?>"/></td>
 					<td><?php echo $result['Credential']['username']; ?><br/><a class="addLinks fancybox" href="<?php echo BASE_URL.'admin/credentials/sendemail/'.$result['Credential']['id'];?>">Send Credentials</a></td>
