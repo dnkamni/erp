@@ -4,16 +4,11 @@
 	<table border="0" width="100%" cellpadding="0" cellspacing="0">
 	<tr valign="top">
 	<td width="70%">
-		<!--  start message-blue -->
+		<!--  start message-red -->
 				<div id="message-blue">
-				<table border="0" width="100%" cellpadding="0" cellspacing="0">
-				<tr>
-					<td class="blue-left">Welcome back. <a href="">View my account.</a> </td>
-					<td class="blue-right"><a class="close-blue"><img src="../../images/table/icon_close_blue.gif"   alt="" /></a></td>
-				</tr>
-				</table>
+        <?php echo $session->flash(); ?>
 				</div>
-				<!--  end message-blue -->
+				<!--  end message-red -->
 		<!-- start id-form -->
 		<table border="0" cellpadding="0" cellspacing="0"  id="id-form" width="100%">
 		
