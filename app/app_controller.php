@@ -10,7 +10,7 @@ function checkUserSession(){
     //Defining Permissions (Conroller Level Settings)
     $permission_arr =    array(
     'credentials'   =>   array(1,2),
-    'users'         =>   array(4)
+    'users'         =>   array(1,2,3,4,5)
     );
 		
 		// If User, check User session

@@ -34,53 +34,48 @@ class Credential extends AppModel {
 			'type' => array(
 				'rule' => 'notEmpty',
 				'message' => "Enter Type."
-			), 
-			
+			),
+			'email_address' => array(
+				'ruleName' => array(
+				'rule' => 'notEmpty',
+				'message' => "Enter email address(s).",
+				'last' => true
+				),
+				'ruleName2' => array(
+				'rule' => array('verifyEmails'),
+				'message' => 'Some of the email addresses is not valid.'
+				)
+            )
     );
 	
-	
-    /**
-    * @Date: 20-Aug-2011
-    * @Method : matchPasswords
-    * @Purpose: Check if password entered by User is equal to confirm password
-    * @Param: $field, $compare_field
-    * @Return: boolean
-    **/
-	
-	function matchPasswords($field = array(),$compare_field = null) {
-        foreach($field as $key => $value){
-        $v1 = trim($value);
-		$v2 = trim($this->data[$this->name][ $compare_field ]);
-        if($v1 != "" && $v2 !="" && $v1 != $v2){
-            return false; 
-        }
-         return true;
-      }
-    }
-   
+	/**
 
-   
-   /**
-    * @Date: 20-Aug-2011
-    * @Method : isOldPasswordExists
-    * @Purpose: Check if old password verified
+    * @Date: 25-April-2012
+
+    * @Method : verifyEmails
+
+    * @Purpose: Validate Comma seperated email address
+
     * @Param: $field
+
     * @Return: boolean
+
     **/
-	
-	function isOldPasswordExists($field = array()) {
-	// Import Session Component
-		App::import('Component', 'SessionComponent');
-		$this->Session = new SessionComponent();
-		$userSession = $this->Session->read("SESSION_ADMIN");
-        foreach( $field as $key => $value ){
-			$v1 = md5(trim($value));
-			$result = $this->find('first', array('conditions' => array('id' => $userSession[0], 'password'=>$v1),'fields'=>array('id')));
-			if(!is_array($result)){
-				return false; 
-			 }
-			return true;
+
+	function verifyEmails($field = array()) {
+
+        foreach($field as $key => $value){
+
+        $v1 = explode(",",$value);
+		foreach($v1 as $value){
+        if($value != "" && !eregi("^[\'+\\./0-9A-Z^_\`a-z{|}~\-]+@[a-zA-Z0-9_\-]+(\.[a-zA-Z0-9_\-]+){1,3}$",trim($value))){
+			break;
+			return false;
+         }
 		}
-    }
+		return true;
+		}
+	}
+	
 }
 ?>

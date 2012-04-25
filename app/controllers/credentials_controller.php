@@ -86,13 +86,13 @@ class CredentialsController extends AppController {
     * @Return: none                                                       
     **/
 
-    function admin_list(){                                                
+    function admin_list(){
       $this->set('title_for_layout','Credentials Listing');      
       $this->set("pageTitle","Credentials Listing");             
       $this->set("search1", "");                                 
       $this->set("search2", "");                                 
       $criteria = "1"; //All Searching
-
+	  $this->Session->delete('SESSION_SEARCH');
 	
 
       // Delete user and its licences and orders(single/multiple)      
@@ -136,7 +136,7 @@ class CredentialsController extends AppController {
       /* Searching starts from here */                                               
       if(!empty($search1) && (!empty($search2) || $search1 == "Credential.status")){                                                                           
       $criteria = $search1." LIKE '%".Sanitize::escape($search2)."%'"; 
-      
+      $this->Session->write('SESSION_SEARCH', $criteria);
       }else{      
       $this->set("search1","");      
       $this->set("search2","");      
@@ -166,10 +166,7 @@ class CredentialsController extends AppController {
           foreach($completeUrl as $key=>$value){                      
           $urlString.= $key.":".$value."/";                           
           }
-      
       }
-      
-      
       
       $this->set('urlString',$urlString);      
       if(isset($this->params['form']['publish'])){      
@@ -224,26 +221,38 @@ class CredentialsController extends AppController {
     * @Return: none
     **/  
         
-	function  admin_sendemail($id) {
-		if(!empty($id)){       
-			$crData = $this->Credential->find('first', array('conditions'=>array('id'=>Sanitize::escape($id))));	                                                
-			if(!$this->data){                                                         
-			$this->set('crData',$crData); //Setting Credential Data                             
+	function  admin_sendemail($id = null) {
+		$this->layout= false; // setting layout to false as we have to open the same in fancy box
+		
+		if(!empty($id) || !empty($this->data['Credential']['id'])){
+			$id = (!empty($this->data['Credential']['id'])?$this->data['Credential']['id']:$id);
+			$crData = $this->Credential->find('first', array('conditions'=>array('id'=>Sanitize::escape($id))));
+			if($crData){                                                         
+				$this->set('crData',$crData); //Setting Credential Data                             
 			}                                                                         
-		} 
-	
-	$this->layout= false; // setting layout to false as we have to open the same in fancy box
-		
-		if(!empty($id)){       
-			$this->data = $this->Credential->find('first', array('conditions'=>array('id'=>Sanitize::escape($id))));	                                                
-			if(!$this->data){                                                         
-				pr ($this->data);die();                             
-			}                                                                         
-		}    
-		
-		
-    }
+		}
 
+		if($this->data){
+			$this->Credential->set($this->data['Credential']);
+			$isValidated=$this->Credential->validates();
+			if($isValidated){
+				$result = explode(",",$this->data['Credential']['email_address']);
+				$subject = $crData['Credential']['type']." Credentials";
+				foreach($result as $value){
+					$this->Email->to       = trim($value);
+					$this->Email->subject  = $subject;
+					$this->Email->replyTo  = ADMIN_EMAIL;
+					$this->Email->from     = ADMIN_EMAIL;
+					$this->Email->fromName = ADMIN_NAME;
+					$this->Email->sendAs   = 'html';
+					$message = "Dear User,<br/><br/>Please find below credentials.<br/>Username: ".$crData['Credential']['username']."<br/>Password: ".$crData['Credential']['password']."<br/>Message: ".$this->data['Credential']['message']."<br/>Thanks, <br/>".SITE_NAME."<br/>".BASE_URL;
+					$this->Email->send($message);
+				}
+				$this->Session->setFlash("Credential has been sent successfully.", 'layout_success');
+				$this->set('success','1');
+			}
+		}
+    }
 
 	function admin_add($id = null) {
 		if(!empty($id) || !empty($this->data['Credential']['id'])){
@@ -261,7 +270,7 @@ class CredentialsController extends AppController {
 			if($this->data){
 
 			$this->Credential->set($this->data['Credential']);
-		  $isValidated=$this->Credential->validates();
+			$isValidated=$this->Credential->validates();
 		 
         if($isValidated){
 				   $data=$this->data['Credential'];//post
@@ -293,15 +302,16 @@ class CredentialsController extends AppController {
 	function admin_download()
 	{              
 	
-	 if(empty($this->params['pass'][0]))
-	   $crData = $this->Credential->find('all'); //fetching all data
-   else                                                           
+	 if(empty($this->params['pass'][0])){
+		$search = $this->Session->read('SESSION_SEARCH');
+	   $crData = $this->Credential->find('all', array('conditions'=>$search)); //fetching all data
+   }else{
     $crData = $this->Credential->find('all' , array('conditions'=>array('type'=>$this->params['pass'][0]),'order'=>'username')); //fetching all related data                                           
-		
+	}	
     $this->set('crData',$crData); //Setting Credential Data                             
-	  $this->layout = 'pdf'; //this will use the pdf.ctp layout
-	 $this->render();	
-	} // end of download function
+	$this->layout = 'pdf'; //this will use the pdf.ctp layout
+	$this->render();	
+	}	// end of download function
 	
    #_________________________________________________________________________#
 
@@ -316,14 +326,15 @@ class CredentialsController extends AppController {
     function admin_exportci(){
 
  
-	 if(empty($this->params['pass'][0]))
-	   $crData = $this->Credential->find('all'); //fetching all data
-   else                                                           
+	 if(empty($this->params['pass'][0])){
+	   $search = $this->Session->read('SESSION_SEARCH');
+	   $crData = $this->Credential->find('all', array('conditions'=>$search)); //fetching all data
+   }else{                                              
     $crData = $this->Credential->find('all' , array('conditions'=>array('type'=>$this->params['pass'][0]),'order'=>'username')); //fetching all related data                                           
-		
+	}
 	//setting excel parametres
 	$this->set('filename',"CredentialReport_".date("Ymd"));
-  $this->set('crData',$crData); //Setting Credential Data
+    $this->set('crData',$crData); //Setting Credential Data
 	$this->layout = "export_xls";
     }
                                                                                

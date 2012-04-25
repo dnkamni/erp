@@ -101,7 +101,7 @@ $('a.delete').click(function(){
 	
 	$(document).ready(function() {
 		$(".fancybox").fancybox({
-		'width' : '75%',
+		'width' : '65%',
 		'height' : '100%',
 		'autoScale' : false,
 		'transitionIn' : 'none',

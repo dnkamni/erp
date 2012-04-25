@@ -17,8 +17,9 @@
 		<tr>
 			<th valign="top">Password:</th>
 			<td><?php
-				 echo $form->input("password",array("type"=>"text","class"=>"inp-form","label"=>false,"div"=>false));
-            ?></td>
+				 echo $form->input("password",array("type"=>"text","id"=>"crpass","class"=>"inp-form","label"=>false,"div"=>false));
+            ?>    	
+            <a style="color:red" href="#A" onclick="$('#crpass').val($.password(12,true));">Generate Password</a></td>
 			<td></td>
 		</tr>
 		<tr>
@@ -86,27 +87,102 @@
 				<div class="left"><a href=""><?php $html->image(BASE_URL."images/forms/icon_edit.gif", array("alt"=>"Edit",'width'=>"21",'height'=>"21"))?></a></div>
 				<div class="right">
 					<h5>Credentials Management</h5>
-          This section is used by Admin and PM only to view senstive credentials.
+          This section is used by Admin and PM only to Manage senstive credentials.
           <div class="lines-dotted-short"></div>
 					<ul class="greyarrow">
   					<li>
-            <?php echo $html->link("Go to Listing",
+            <?php 
+            echo $html->link("Go To Listing",
             array('controller'=>'credentials','action'=>'list')
             );	
             ?>
             </li> 
-						<li><a href="">Download Odesk  : CSV </a> </li>
-						<li><a href="">Download Odesk  : PDF</a> </li>
-						<li><a href="">Download Elance  : CSV</a> </li>
-						<li><a href="">Download Elance  : PDF</a> </li>
-						<li><a href="">Download Gmail  : CSV </a> </li>
-						<li><a href="">Download Gmail  : PDF </a> </li>
-						<li><a href="">Download Skype : CSV</a> </li>
-						<li><a href="">Download Skype : PDF</a> </li>
-						<li><a href="">Download Webmail  : CSV</a> </li>
-						<li><a href="">Download Webmail  : PDF</a> </li>
-						<li><a href="">Download Other : CSV</a> </li>
-						<li><a href="">Download Other : PDF</a> </li>
+  					<li>
+            <?php echo $html->link("Download Odesk : Excel",
+            array('controller'=>'credentials','action'=>'exportci/odesk')
+            );	
+            ?>
+            </li>
+  					<li>
+            <?php echo $html->link("Download Odesk : PDF",
+            array('controller'=>'credentials','action'=>'download/odesk')
+            );	
+            ?>
+            </li>
+  					<li>
+            <?php echo $html->link("Download Elance : Excel",
+            array('controller'=>'credentials','action'=>'exportci/elance')
+            );	
+            ?>
+            </li>
+  					<li>
+            <?php echo $html->link("Download Elance : PDF",
+            array('controller'=>'credentials','action'=>'download/elance')
+            );	
+            ?>
+            </li>
+						<li><a href="">Download Gmail  : Excel </a> </li>
+  					<li>
+            <?php echo $html->link("Download Gmail : PDF",
+            array('controller'=>'credentials','action'=>'download/gmail')
+            );	
+            ?>
+            </li>
+						<li><a href="">Download Skype : Excel</a> </li>
+  					<li>
+            <?php echo $html->link("Download Skype : PDF",
+            array('controller'=>'credentials','action'=>'download/skype')
+            );	
+            ?>
+            </li>
+  					<li>
+            <?php echo $html->link("Download Webmail : Excel",
+            array('controller'=>'credentials','action'=>'exportci/webmail')
+            );	
+            ?>
+            </li>
+  					<li>
+            <?php echo $html->link("Download Webmail : PDF",
+            array('controller'=>'credentials','action'=>'download/webmail')
+            );	
+            ?>
+            </li>
+  					<li>
+            <?php echo $html->link("Download Domain : Excel",
+            array('controller'=>'credentials','action'=>'exportci/domain')
+            );	
+            ?>
+            </li>
+  					<li>
+            <?php echo $html->link("Download Domain : PDF",
+            array('controller'=>'credentials','action'=>'download/domain')
+            );	
+            ?>
+            </li>
+  					<li>
+            <?php echo $html->link("Download MSN : Excel",
+            array('controller'=>'credentials','action'=>'exportci/msn')
+            );	
+            ?>
+            </li>
+  					<li>
+            <?php echo $html->link("Download MSN : PDF",
+            array('controller'=>'credentials','action'=>'download/msn')
+            );	
+            ?>
+            </li>
+  					<li>
+            <?php echo $html->link("Download Other : Excel",
+            array('controller'=>'credentials','action'=>'exportci/other')
+            );	
+            ?>
+            </li>
+  					<li>
+            <?php echo $html->link("Download Other : PDF",
+            array('controller'=>'credentials','action'=>'download/other')
+            );	
+            ?>
+            </li>
 						
 					</ul>
 				</div>

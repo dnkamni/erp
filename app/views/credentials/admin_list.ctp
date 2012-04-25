@@ -47,7 +47,7 @@ $paginator->options(array('url'=>$urlArray));
 				?>
 			</td>
 			<td width="40%"><br/>
-				<?php
+		  		<?php
 				echo $form->button("Search", array('class'=>'form-search','id'=>'search','onclick'=>'setSubmitMode(this.id)'))."&nbsp;&nbsp;&nbsp;";
 				echo $form->button("Reset",array('type'=>'button','class'=>"form-reset",'div'=>false,'onclick'=>"location.href='".BASE_URL."admin/credentials/list'"));				
 				?>
@@ -161,7 +161,7 @@ $paginator->options(array('url'=>$urlArray));
             </li> 
   					<li>
             <?php echo $html->link("Download Search Result : Excel",
-            array('controller'=>'credentials','action'=>'exportci')
+            array('controller'=>'credentials','action'=>'exportci','onclick'=>'return false;')
             );	
             ?>
             </li>
