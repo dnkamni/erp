@@ -5,23 +5,14 @@
 class News extends AppModel {
     var $name = 'News';
     var $validate = array(
-			'category_id' => array(
-				'rule' => 'notEmpty',
-				'message' => "Select category for the news."
-		),
-		   'summary' => array(
-				'rule' => 'notEmpty',
-				'message' => "Add summary of the news."
-    	),
+			'title' => array(				'rule' => 'notEmpty',				'message' => "Select Title."		),		'description' => array(				'rule' => 'notEmpty',				'message' => "Select Description."		),
+		  
 		'image' => array(
 				'rule' => array('extension', array('gif', 'jpeg', 'png', 'jpg')),
 				'message' => "Select valid Product image.",
 				'allowEmpty' => true
 		),
-            'cat' => array(
-				'rule' => 'notEmpty',
-				'message' => "Add category."
-		),
+            
 		 'published' => array(
   				'rule1'=>array(
 				       'rule' => 'notEmpty',

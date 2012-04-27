@@ -49,7 +49,7 @@ class TestimonialsController extends AppController {
     **/
 
     function beforeFilter(){ // This  function is called first before parsing this controller file
-		//$this->checkUserSession(); // Checking valid Session.
+		$this->checkUserSession(); // Checking valid Session.
 		$this->set('common',$this->Common);                  
 		$this->layout = "layout_admin";
 	}

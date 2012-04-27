@@ -100,7 +100,6 @@ class UsersController extends AppController
     **/
 
 	function admin_index() {
-echo "hgjhg"; die;
 			$this->render('admin_login');
 		if($this->Session->read("SESSION_ADMIN") != ""){
 

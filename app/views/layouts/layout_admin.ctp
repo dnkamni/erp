@@ -155,6 +155,10 @@ var base_url = "<?php echo BASE_URL; ?>";
 		<div class="select_sub">
 			<ul class="sub">
 				<li><a href="#nogo2">Clients</a></li>
+				<li><?php echo $html->link("Testimonials",
+				array('controller'=>'testimonials','action'=>'list')
+				);	
+				?></li>
 				<li><a href="#nogo2">Billing</a></li>
 				<li><a href="#nogo2">Leads</a></li>
 				<li><a href="#nogo2">Payments</a></li>
@@ -209,7 +213,6 @@ var base_url = "<?php echo BASE_URL; ?>";
 				);	
 				?></li>
 				<li><a href="#nogo3">Portfolio</a></li>
-				<li><a href="#nogo3">Testimonials</a></li>
 				<li><a href="#nogo3">News</a></li>
 				<li><a href="#nogo3">Galleries</a></li>
 				<li><a href="#nogo3">Contact Us</a></li>
