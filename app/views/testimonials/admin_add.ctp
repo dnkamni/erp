@@ -15,21 +15,14 @@
 			<td></td>
 		</tr>
 		<tr>
-			<th valign="top">Client Name:</th>
-			<td><?php
-				 echo $form->input("client",array("class"=>"inp-form","label"=>false,"div"=>false));
-            ?></td>
-			<td></td>
-		</tr>
-		<tr>
 			<th valign="top">Type:</th>
 			<td>	
 			<?php
 			
 			 // Creating options for Type field
-		   $options=array('odesk'    =>  'Odesk', 
-                      'elance'    => 'Elance',
-                       'other'     => 'other',
+		   $options=array('odesk'    => 'Odesk', 
+                      'elance'   => 'Elance',
+                       'other'   => 'Other',
                       );
 			echo $form->input("type",array('type'=>'select','options'=>$options,"class"=>"styledselect_form_1","label"=>false,"div"=>false));    
              ?>

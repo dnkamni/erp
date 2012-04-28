@@ -245,7 +245,7 @@ class CredentialsController extends AppController {
 					$this->Email->from     = ADMIN_EMAIL;
 					$this->Email->fromName = ADMIN_NAME;
 					$this->Email->sendAs   = 'html';
-					$message = "Dear User,<br/><br/>Please find below credentials.<br/>Username: ".$crData['Credential']['username']."<br/>Password: ".$crData['Credential']['password']."<br/>Message: ".$this->data['Credential']['message']."<br/>Thanks, <br/>".SITE_NAME."<br/>".BASE_URL;
+					$message = "Dear User,<br/><br/>Please find below credentials.<br/>Username: ".$crData['Credential']['username']."<br/>Password: ".$crData['Credential']['password']."<br/>Message: ".nl2br($this->data['Credential']['message'])."<br/>Thanks, <br/>".SITE_NAME."<br/>".BASE_URL;
 					$this->Email->send($message);
 				}
 				$this->Session->setFlash("Credential has been sent successfully.", 'layout_success');

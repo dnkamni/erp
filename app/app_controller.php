@@ -11,9 +11,10 @@ function checkUserSession(){
     $permission_arr =    array(
     'credentials'   =>   array(1,2),
     'users'         =>   array(1,2,3,4,5),
-    'testimonials'  =>   array(1,5)
+    'testimonials'  =>   array(1,5),
+    'news'          =>   array(1)
     );                                                                        
-		
+
 		// If User, check User session
 		if(!empty($this->params['prefix']) && $this->params['prefix'] == "admin"){ 
 			$this->layout    = "layout_admin";

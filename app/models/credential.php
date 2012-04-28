@@ -69,12 +69,12 @@ class Credential extends AppModel {
         $v1 = explode(",",$value);
 		foreach($v1 as $value){
         if($value != "" && !eregi("^[\'+\\./0-9A-Z^_\`a-z{|}~\-]+@[a-zA-Z0-9_\-]+(\.[a-zA-Z0-9_\-]+){1,3}$",trim($value))){
-			break;
 			return false;
+			break;
          }
 		}
-		return true;
 		}
+		return true;
 	}
 	
 }

@@ -21,17 +21,10 @@ class Testimonial extends AppModel {
 				'rule' => 'notEmpty',
 				'message' => "Enter description."
 			),
-			'client_id' => array(
-				'rule' => 'notEmpty',
-				'message' => "Enter client id."
-			),
 			'keyword' => array(
 				'rule' => 'notEmpty',
 				'message' => "Enter keyword."
-						),
-			
-    
-			
+						),			
 			'email_address' => array(
 				'ruleName' => array(
 				'rule' => 'notEmpty',
@@ -51,34 +44,6 @@ class Testimonial extends AppModel {
       'foreignKey' =>'client_id'
      ),	 
 );
-	
-	/**
-
-    * @Date: 25-April-2012
-
-    * @Method : verifyEmails
-
-    * @Purpose: Validate Comma seperated email address
-
-    * @Param: $field
-
-    * @Return: boolean
-
-    **/
-
-	function verifyEmails($field = array()) {
-
-        foreach($field as $key => $value){
-
-        $v1 = explode(",",$value);
-		foreach($v1 as $value){
-        if($v1 != "" && !eregi("^[\'+\\./0-9A-Z^_\`a-z{|}~\-]+@[a-zA-Z0-9_\-]+(\.[a-zA-Z0-9_\-]+){1,3}$",trim($value))){
-			return false;
-         }
-         return true;
-		}
-		}
-	}
 	
 }
 ?>

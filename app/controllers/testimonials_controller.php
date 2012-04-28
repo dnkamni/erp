@@ -209,49 +209,6 @@ class TestimonialsController extends AppController {
 
 	#_________________________________________________________________________#
 
-    /**
-
-    * @Date: 22-Apr-2012        
-    * @Method : admin_sendemail       
-    * @Purpose: This function is to send Testimonials to users
-    * @Param: $id                                       
-    * @Return: none
-    * @Return: none
-    **/  
-        
-	/*function  admin_sendemail($id = null) {
-		$this->layout= false; // setting layout to false as we have to open the same in fancy box
-		
-		if(!empty($id) || !empty($this->data['Testimonial']['id'])){
-			$id = (!empty($this->data['Testimonial']['id'])?$this->data['Testimonial']['id']:$id);
-			$crData = $this->Testimonial->find('first', array('conditions'=>array('id'=>Sanitize::escape($id))));
-			if($crData){                                                         
-				$this->set('crData',$crData); //Setting Testimonial Data                             
-			}                                                                         
-		}
-
-		if($this->data){
-			$this->Testimonial->set($this->data['Testimonial']);
-			$isValidated=$this->Testimonial->validates();
-			if($isValidated){
-				$result = explode(",",$this->data['Testimonial']['email_address']);
-				$subject = $crData['Testimonial']['type']." Testimonials";
-				foreach($result as $value){
-					$this->Email->to       = trim($value);
-					$this->Email->subject  = $subject;
-					$this->Email->replyTo  = ADMIN_EMAIL;
-					$this->Email->from     = ADMIN_EMAIL;
-					$this->Email->fromName = ADMIN_NAME;
-					$this->Email->sendAs   = 'html';
-					$message = "Dear User,<br/><br/>Please find below testimonial.<br/>Author: ".$crData['Testimonial']['author']."<br/>Description: ".$crData['Testimonial']['description']."<br/>Message: ".$this->data['Testimonial']['message']."<br/>Thanks, <br/>".SITE_NAME."<br/>".BASE_URL;
-					$this->Email->send($message);
-				}
-				$this->Session->setFlash("Testimonial has been sent successfully.", 'layout_success');
-				$this->set('success','1');
-			}
-		}
-    }*/
-
 	function admin_add($id = null) {
 		if(!empty($id) || !empty($this->data['Testimonial']['id'])){
 		   $this->set('title_for_layout','Edit Testimonial');      
@@ -321,9 +278,7 @@ class TestimonialsController extends AppController {
     * @Param: none
     * @Return: none
     **/
-    function admin_exportci(){
-
- 
+    function admin_exportci(){ 
 	 if(empty($this->params['pass'][0])){
 	   $search = $this->Session->read('SESSION_SEARCH');
 	   $crData = $this->Testimonial->find('all', array('conditions'=>$search)); //fetching all data

@@ -1,5 +1,3 @@
-<?php echo $javascript->link(array('jquery.mousewheel-3.0.4.pack.js','jquery.fancybox-1.3.4.js')); ?>
-<?php echo $html->css(array("jquery.fancybox-1.3.4.css")); ?>
 <?php
 $newUrl = "list".$urlString;
 $urlArray = array(
@@ -14,8 +12,7 @@ $paginator->options(array('url'=>$urlArray));
 	<?php $user = $session->read("SESSION_ADMIN"); ?>
 	<table border="0" width="100%" cellpadding="0" cellspacing="0">
 	<tr valign="top">
-	<td>
-	
+	<td>                                              	
 	<!--  start table-content  -->
 			<div id="table-content">
 			<?php echo $session->flash(); ?>
@@ -24,12 +21,12 @@ $paginator->options(array('url'=>$urlArray));
 			<td width="14%">
 				<b>Search by:</b>
 				<?php
-				$fieldsArray = array(
-				''				          => 'Select',
-				'Testimonial.author'     => 'Author',
-				'Testimonial.keyword'  => 'Keyword',
-				'Testimonial.type'         => 'Type',
-				'Testimonial.description'  => 'Description'
+				$fieldsArray              = array(
+				''				                => 'Select',
+				'Testimonial.author'      => 'Author',
+				'Testimonial.keyword'     => 'Keyword',
+				'Testimonial.type'        => 'Type',
+				'Testimonial.description' => 'Description'
 				);
 				echo $form->select("Testimonial.fieldName",$fieldsArray,$search1,array("id"=>"searchBy","label"=>false,"style"=>"width:200px","class"=>"styledselect","empty"=>false),false); ?>
 			</td>
@@ -72,7 +69,7 @@ $paginator->options(array('url'=>$urlArray));
 				<tr class="<?php echo $class; ?>">
 					<td><input  type="checkbox" name="IDs[]" value="<?php echo $result['Testimonial']['id'];?>"/></td>
 					<td><?php echo $result['Testimonial']['author']; ?></td>
-					<td><?php echo $result['Testimonial']['type']; ?></td>
+					<td><?php echo ucfirst($result['Testimonial']['type']); ?></td>
 					<td><?php echo $result['Testimonial']['keyword']; ?></td>
 					<td><?php echo nl2br($result['Testimonial']['description']); ?></td>
 					<td><?php echo date(DATE_FORMAT, strtotime($result['Testimonial']['modified'])); ?></td>
@@ -106,15 +103,13 @@ $paginator->options(array('url'=>$urlArray));
 			<!--  start actions-box ............................................... -->
 			<div id="actions-box">
 				<a href="" class="action-slider"></a>
-				<div id="actions-box-slider">
-					
+				<div id="actions-box-slider">					
 					<?php echo $form->submit("Activate",array("div"=>false,"class"=>"action-activate","name"=>"publish",'onclick' => "return atleastOneChecked('Activate selected records?');")); ?>
 					<?php echo $form->submit("Deactivate",array("div"=>false,"class"=>"action-deactivate","name"=>"unpublish",'onclick' => "return atleastOneChecked('Deactivate selected records?');")); ?>
 				</div>
 				<div class="clear"></div>
 			</div>
-			<!-- end actions-box........... -->
-			
+			<!-- end actions-box........... -->			
 			<!--  start paging..................................................... -->
 			<table border="0" cellpadding="0" cellspacing="0" id="paging-table">
 			<tr>
@@ -125,13 +120,10 @@ $paginator->options(array('url'=>$urlArray));
 			</td>
 			</tr>
 			</table>
-			<!--  end paging................ -->
-			
-			<div class="clear"></div>
-
+			<!--  end paging................ -->			
+			<div class="clear"></div>           
 	</td>
-	<td>
-
+	<td>                                    
 	<!--  start related-activities -->
 	<div id="related-activities">
 	<?php $user = $session->read("SESSION_ADMIN"); ?>
@@ -194,9 +186,7 @@ $paginator->options(array('url'=>$urlArray));
             array('controller'=>'testimonials','action'=>'download/elance')
             );	
             ?>
-            </li>
-					
-  					
+            </li>     
   					<li>
             <?php echo $html->link("Download Other : Excel",
             array('controller'=>'testimonials','action'=>'exportci/other')
@@ -225,11 +215,8 @@ $paginator->options(array('url'=>$urlArray));
 
 </td>
 </tr>
-</table>
- 
+</table>                  
 <div class="clear"></div>
- 
-
 </div>
 <?php echo $form->end(); ?>
 <!--  end content-table-inner  -->

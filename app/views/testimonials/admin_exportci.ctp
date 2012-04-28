@@ -1,16 +1,14 @@
 <table border="1">
 	<tr> 
-		<td colspan='5' align='center'><b>Testimonial(s) Report<b></td> 
+		<td colspan='4' align='center'><b>Testimonial(s) Report<b></td> 
 	</tr>
 	<tr>		
 		<td class="tableTd">&nbsp;</td>
 		<td class="tableTd">&nbsp;</td>
 		<td class="tableTd">&nbsp;</td>
 		<td class="tableTd">&nbsp;</td>
-		<td class="tableTd">&nbsp;</td>
 	</tr>
 	<tr>		
-		<td class="tableTd">&nbsp;</td>
 		<td class="tableTd">&nbsp;</td>
 		<td class="tableTd">&nbsp;</td>
 		<td class="tableTd">&nbsp;</td>
