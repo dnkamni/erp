@@ -1,4 +1,4 @@
-	<!--  start content-table-inner -->
+<!-- start content-table-inner -->
 	<div id="content-table-inner">
 	<?php echo $form->create('News',array('action'=>'add','method'=>'POST','onsubmit' => '',"class"=>"login",'enctype'=>"multipart/form-data")); ?>
 	<?php $session->flash(); ?>
@@ -13,18 +13,14 @@
 				 echo $form->input("title",array("class"=>"inp-form","label"=>false,"div"=>false));
             ?></td>
 			<td></td>
-		</tr>
-		
-		
+		</tr>		
 		<tr>
 			<th valign="top">Type:</th>
 			<td>	
-			<?php
-			
+			<?php                                             			
 			 // Creating options for Type field
 		   $options=array('news'    =>  'news', 
-                      'information'    => 'information',
-                      
+                      'information'    => 'information',                      
                       );
 			echo $form->input("type",array('type'=>'select','options'=>$options,"class"=>"styledselect_form_1","label"=>false,"div"=>false));    
              ?>
@@ -38,21 +34,6 @@
 				 echo $form->hidden("id");
             ?></td>
 		</tr>
-    <tr>
-		<th valign="top">Image:</th>
-	
-      <td>
-       <?php
-     	
-	    echo $form->input("News.image", array("value"=>$this->data['News']['image'],"type"=>'file',"label"=>false,"div"=>false));
-		
-        echo ( !empty($Error['image']))?"<div class='error-message'>".$Error['image']."</div>":"";
-       ?>
-     
-		
-			 
-            </td>
-		</tr>
 		<tr>
 			<th>&nbsp;</th>
 			<td valign="top">
@@ -64,7 +45,6 @@
 		</tr>
 	</table>
 	<!-- end id-form  -->
-
 			</td>
 			<td>
 <!--  start related-activities -->
@@ -74,17 +54,15 @@
 		<div id="related-act-top">
 		<?php echo $html->image(BASE_URL."images/forms/header_related_act.gif", array("alt"=>"Edit",'width'=>"271", 'height'=>"43")); ?>
 		</div>
-		<!-- end related-act-top -->
-		
+		<!-- end related-act-top -->		
 		<!--  start related-act-bottom -->
-		<div id="related-act-bottom">
-		
+		<div id="related-act-bottom">		
 			<!--  start related-act-inner -->
 			<div id="related-act-inner">				
 				<div class="left"><a href=""><?php $html->image(BASE_URL."images/forms/icon_edit.gif", array("alt"=>"Edit",'width'=>"21",'height'=>"21"))?></a></div>
 				<div class="right">
 					<h5>News Management</h5>
-          This section is used by Admin and PM only to Manage senstive news.
+          This section is used by Admin only, Here all information, news, Very Important Contacts should be saved.
           <div class="lines-dotted-short"></div>
 					<ul class="greyarrow">
   					<li>
@@ -93,19 +71,15 @@
             array('controller'=>'news','action'=>'list')
             );	
             ?>
-            </li> 
-  					
-						
+            </li>               						
 					</ul>
 				</div>
 				<div class="clear"></div>
 			</div>
 			<!-- end related-act-inner -->
-			<div class="clear"></div>
-		
+			<div class="clear"></div> 		
 		</div>
-		<!-- end related-act-bottom -->
-	
+		<!-- end related-act-bottom -->	
 	</div>
 	<!-- end related-activities -->
 			</td>

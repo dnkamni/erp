@@ -20,8 +20,7 @@
 <script>
 var base_url = "<?php echo BASE_URL; ?>";
 </script>
-<![if !IE 7]>
-
+<![if !IE 7]>      
 <!--  styled select box script version 1 -->
 <?php echo $javascript->link(array('jquery.selectbox-0.5')); ?>
 
@@ -89,8 +88,7 @@ var base_url = "<?php echo BASE_URL; ?>";
 <div class="nav-outer"> 
 
 		<!-- start nav-right -->
-		<div id="nav-right">
-		
+		<div id="nav-right">   		
 			<div class="nav-divider">&nbsp;</div>
 			<div class="showhide-account"><?php echo $html->link(
 				$html->image(BASE_URL."images/shared/nav/nav_myaccount.gif",array("alt" => 'Logout')),
@@ -182,10 +180,8 @@ var base_url = "<?php echo BASE_URL; ?>";
 		</div>
 		<!--[if lte IE 6]></td></tr></table></a><![endif]-->
 		</li>
-		</ul>
-		
-		<div class="nav-divider">&nbsp;</div>
-		
+		</ul>                                       		
+		<div class="nav-divider">&nbsp;</div>       		
 		<ul class="select"><li><a href="#nogo3"><b>Project Management</b><!--[if IE 7]><!--></a><!--<![endif]-->
 		<!--[if lte IE 6]><table><tr><td><![endif]-->
 		<div class="select_sub">
@@ -199,10 +195,8 @@ var base_url = "<?php echo BASE_URL; ?>";
 		</div>
 		<!--[if lte IE 6]></td></tr></table></a><![endif]-->
 		</li>
-		</ul>
-		
-		<div class="nav-divider">&nbsp;</div>
-		
+		</ul>		
+		<div class="nav-divider">&nbsp;</div>		
 		<ul class="select"><li><a href="#nogo3"><b>Admin</b><!--[if IE 7]><!--></a><!--<![endif]-->
 		<!--[if lte IE 6]><table><tr><td><![endif]-->
 		<div class="select_sub">
@@ -213,7 +207,10 @@ var base_url = "<?php echo BASE_URL; ?>";
 				);	
 				?></li>
 				<li><a href="#nogo3">Portfolio</a></li>
-				<li><a href="#nogo3">News</a></li>
+        <li><?php echo $html->link("Info",
+        				array('controller'=>'news','action'=>'list')
+        				);	
+        ?></li>
 				<li><a href="#nogo3">Galleries</a></li>
 				<li><a href="#nogo3">Contact Us</a></li>
 				<li><?php echo $html->link("Credentials",
@@ -224,33 +221,24 @@ var base_url = "<?php echo BASE_URL; ?>";
 		</div>
 		<!--[if lte IE 6]></td></tr></table></a><![endif]-->
 		</li>
-		</ul>
-		
-		<div class="nav-divider">&nbsp;</div>
-		
+		</ul>                                		
+		<div class="nav-divider">&nbsp;</div>		
 		<div class="clear"></div>
 		</div>
 		<div class="clear"></div>
 		</div>
-		<!--  start nav -->
-
+		<!--  start nav -->                  
 </div>
 <div class="clear"></div>
 <!--  start nav-outer -->
 </div>
-<!--  start nav-outer-repeat................................................... END -->
- 
- <div class="clear"></div>
- 
+<!--  start nav-outer-repeat................................................... END -->                                   
+ <div class="clear"></div>                
 <!-- start content-outer -->
 <div id="content-outer">
 <!-- start content -->
-<div id="content">
-
-
+<div id="content">                       
 <div id="page-heading"><h1><?php echo $title_for_layout; ?></h1></div>
-
-
 <table border="0" width="100%" cellpadding="0" cellspacing="0" id="content-table">
 <tr>
 	<th rowspan="3" class="sized"><?php $html->image(BASE_URL."images/shared/side_shadowleft.jpg", array("alt"=>"Activated","width"=>"20", "height"=>"300"))?></th>
@@ -272,18 +260,13 @@ var base_url = "<?php echo BASE_URL; ?>";
 	<th class="sized bottomright"></th>
 </tr>
 </table>
-<div class="clear">&nbsp;</div>
-
+<div class="clear">&nbsp;</div>            
 </div>
 <!--  end content -->
 <div class="clear">&nbsp;</div>
 </div>
-<!--  end content-outer -->
-
- 
-
-<div class="clear">&nbsp;</div>
-    
+<!--  end content-outer -->                                           
+<div class="clear">&nbsp;</div>                                           
 <!-- start footer -->         
 <div id="footer">
 	<!--  start footer-left -->
@@ -293,8 +276,7 @@ var base_url = "<?php echo BASE_URL; ?>";
 	<!--  end footer-left -->
 	<div class="clear">&nbsp;</div>
 </div>
-<!-- end footer -->
- 
+<!-- end footer -->                                                    
 </body>
 </html>
 <?php echo $this->element("sql_dump"); ?>

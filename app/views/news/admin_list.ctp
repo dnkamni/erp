@@ -1,5 +1,3 @@
-<?php echo $javascript->link(array('jquery.mousewheel-3.0.4.pack.js','jquery.fancybox-1.3.4.js')); ?>
-<?php echo $html->css(array("jquery.fancybox-1.3.4.css")); ?>
 <?php
 $newUrl = "list".$urlString;
 $urlArray = array(
@@ -14,8 +12,7 @@ $paginator->options(array('url'=>$urlArray));
 	<?php $user = $session->read("SESSION_ADMIN"); ?>
 	<table border="0" width="100%" cellpadding="0" cellspacing="0">
 	<tr valign="top">
-	<td>
-	
+	<td>    	
 	<!--  start table-content  -->
 			<div id="table-content">
 			<?php echo $session->flash(); ?>
@@ -149,7 +146,7 @@ $paginator->options(array('url'=>$urlArray));
 				<div class="left"><a href=""><?php $html->image(BASE_URL."images/forms/icon_edit.gif", array("alt"=>"Edit",'width'=>"21",'height'=>"21"))?></a></div>
 				<div class="right">
 					<h5>News Management</h5>
-          This section is used by Admin and PM only to Manage senstive news.
+          This section is used by Admin only, Here all information, news, Very Important Contacts should be saved.
           <div class="lines-dotted-short"></div>
 					<ul class="greyarrow">
   					<li>
@@ -176,11 +173,8 @@ $paginator->options(array('url'=>$urlArray));
 
 </td>
 </tr>
-</table>
- 
+</table> 
 <div class="clear"></div>
- 
-
 </div>
 <?php echo $form->end(); ?>
 <!--  end content-table-inner  -->
