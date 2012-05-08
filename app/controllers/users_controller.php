@@ -100,6 +100,7 @@ class UsersController extends AppController
     **/
 
 	function admin_index() {
+echo "hgjhg"; die;
 			$this->render('admin_login');
 		if($this->Session->read("SESSION_ADMIN") != ""){
 
@@ -133,7 +134,7 @@ class UsersController extends AppController
 		if($isValidated){
 
 // validates user login information
-			$password    = md5($this->data['User']['password']);
+			$password    = $this->data['User']['password'];
 			$condition = "(username='".Sanitize::escape($this->data['User']['user_name'])."' OR email='".Sanitize::escape($this->data['User']['user_name'])."') AND password='".$password."' AND id != '1' AND status = '1'";
 			$user_details = $this->User->find('first', array("conditions" => $condition, "fields" => array("id","first_name","username")));				if(is_array($user_details) && count($user_details) > 0){
 			$this->Session->write("SESSION_USER", array($user_details['User']['id'],$user_details['User']['first_name'],$user_details['User']['username']));
@@ -227,8 +228,8 @@ class UsersController extends AppController
 			
 
 // validates user login information
-
-			$password    = md5($this->data['User']['password']);
+			
+			$password    = $this->data['User']['password'];
 			$condition   = "(username='".Sanitize::escape($this->data['User']['user_name'])."' OR email='".Sanitize::escape($this->data['User']['user_name'])."') AND password='".$password."'  AND status = '1'";
 			$user_details = $this->User->find('first', array("conditions" => $condition, "fields" => array("id","first_name","role_id")));
 		if(is_array($user_details) && count($user_details) > 0){

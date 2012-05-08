@@ -404,5 +404,17 @@ class GeneralHelper extends Helper
 	);
 	return $ques;
 	}
+	
+	  //Retrieve user roles
+    function getUserRoles(){
+	App::import('Model','Role');
+	$this->Role= new Role;
+	$result= $this->Role->find('list',array(
+	'conditions'=>array('status'=>'1'),
+	'fields'=>array('id','role'),
+	'order'=>'role ASC'
+	));
+	return $result;
+	}
 }
 ?>

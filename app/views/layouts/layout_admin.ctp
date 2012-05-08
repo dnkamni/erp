@@ -16,7 +16,7 @@
 <?php print $html->charset('UTF-8') ?>
 <?php echo $html->css(array("screen","datePicker")); ?>
 <?php echo $javascript->link(array('jquery-1.4.1.min','ui.core','ui.checkbox','jquery.bind','common','listing')); ?>
-<link rel="shortcut icon" href="/img/favicon.ico">
+<link rel="shortcut icon" href="<?php echo BASE_URL?>img/favicon.ico">
 <script>
 var base_url = "<?php echo BASE_URL; ?>";
 </script>
@@ -119,7 +119,7 @@ var base_url = "<?php echo BASE_URL; ?>";
 			<ul class="sub">
 				<li>
 				<?php echo $html->link("Employees",
-				array('controller'=>'users','action'=>'list')
+				array('controller'=>'employees','action'=>'list')
 				);	
 				?></li>
 				<li><a href="#nogo">Attendances</a></li>

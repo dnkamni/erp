@@ -185,6 +185,24 @@ class CommonComponent extends Object { //cake extends Object for creating compon
       }
       return $array;
    }
+   
+   /**
+    * @Date: 29-April-2012
+    *@Method : getDaysArray
+    *@Purpose: Get an array of years
+   **/
+
+   function getCustomYearsArray(){
+
+      $i 	= 2011;
+      $array 	= array();
+      while($i<=date("Y")){
+	  $array[$i] = $i;
+	  $i++;
+      }
+      return $array;
+   }
+   
    /** @Date: 11-Jan-2009
     *@Method : getRandomString
     *@Purpose: generates random number.
@@ -445,6 +463,12 @@ class CommonComponent extends Object { //cake extends Object for creating compon
 		}
 		rmdir($basicPath.$dir);
 		}
+	}
+	
+	function file_extension($filename)
+	{
+		$path_info = pathinfo($filename);
+		return $path_info['extension'];
 	}
 }
 

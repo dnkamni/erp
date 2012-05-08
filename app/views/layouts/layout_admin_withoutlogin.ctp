@@ -16,7 +16,7 @@
 <?php print $html->charset('UTF-8') ?>
 <?php echo $html->css("screen"); ?>
 <?php echo $javascript->link(array('jquery-1.4.1.min','custom_jquery','jquery.pngFix.pack')); ?>
-<link rel="shortcut icon" href="/img/favicon.ico">
+<link rel="shortcut icon" href="<?php echo BASE_URL?>img/favicon.ico">
 <script>
 var base_url = "<?php echo BASE_URL; ?>";
 </script>

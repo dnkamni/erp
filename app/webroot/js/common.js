@@ -14,7 +14,7 @@ $("#searchBy").change(function(){
 		$('#search_selecttype').hide();
 		$('#search_input').show();
 	}
-});
+});$('.number').keyup(function(){		if(isEmpty($(this).val()) == false && isNumber($(this).val()) == false){			$(this).val('0');		}	});	
 });
 
 //disabling enter key

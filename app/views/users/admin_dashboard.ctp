@@ -151,7 +151,62 @@
 	</td>
 	<td width="30%">
 
-	<?php echo $this->element('user_sidebar'); ?>
+	<!--  start related-activities -->
+	<div id="related-activities">
+	<?php $user = $session->read("SESSION_ADMIN"); ?>
+		<!--  start related-act-top -->
+		<div id="related-act-top">
+		<?php echo $html->image(BASE_URL."images/forms/header_related_act.gif", array("alt"=>"Edit",'width'=>"271", 'height'=>"43")); ?>
+		</div>
+		<!-- end related-act-top -->
+		
+		<!--  start related-act-bottom -->
+		<div id="related-act-bottom">
+		
+			<!--  start related-act-inner -->
+			<div id="related-act-inner">
+				<div class="right">
+					<h5>Profile</h5>
+          Manage your profile from here
+		  <?php $destination=realpath('../../app/webroot/img/employee_image'). DS;
+				$userId = $user[0];
+			    $profileImage = $common->file_exists_in_directory($destination,"/^".$userId."_/i");
+				if(!empty($profileImage)){
+					echo $html->image(BASE_URL."img/employee_image/".$profileImage ,array("title" => $user[1],"alt" => $user[1],"id"=>"profileImg"));
+				}else{
+					echo $html->image(BASE_URL."images/shared/no_image.png",array("title" => $user[1],"alt" => $user[1],"id"=>"profileImg"));
+				}?>
+          <div class="lines-dotted-short"></div>
+					<ul class="greyarrow">
+  					<li>
+            <?php 
+            //echo $html->link("Change Profile Pic", array('controller'=>'employees','action'=>'uploadPic'), array('class'=>'fancybox'));	
+            ?>
+            </li>
+  					<li>
+            <?php echo $html->link("Change Password",
+            array('controller'=>'employees','action'=>'exportci','onclick'=>'return false;')
+            );	
+            ?>
+            </li>
+  					<li>
+            <?php echo $html->link("Update my profile",
+            array('controller'=>'employees','action'=>'download')
+            );	
+            ?>
+            </li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- end related-act-inner -->
+			<div class="clear"></div>
+		
+		</div>
+		<!-- end related-act-bottom -->
+	
+	</div>
+	<!-- end related-activities -->
 
 </td>
 </tr>

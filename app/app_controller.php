@@ -11,10 +11,10 @@ function checkUserSession(){
     $permission_arr =    array(
     'credentials'   =>   array(1,2),
     'users'         =>   array(1,2,3,4,5),
-    'testimonials'  =>   array(1,5),
-    'news'          =>   array(1)
-    );                                                                        
-
+    'news'          =>   array(1),
+	  'employees'     =>   array(1,2)
+    );
+		
 		// If User, check User session
 		if(!empty($this->params['prefix']) && $this->params['prefix'] == "admin"){ 
 			$this->layout    = "layout_admin";
@@ -47,5 +47,45 @@ function checkUserSession(){
 			}
 		}
 }
+
+#_________________________________________________________________________#
+
+
+    /**
+    * @Date: 30-Apr-2012
+    * @Method : uploadDocs
+    * @Purpose: This function is used to upload docs
+    * @Param: $id
+    * @Return: none
+    **/
+	
+	function uploadDocs($id = null){
+		if (!empty($_FILES)) {
+			$destination = realpath('../../app/webroot/img/all_docs/'.$this->params['controller']). DS;					
+			$file = $_FILES['uploadfile'];
+			$filename = $id.'_'.$file['name'];
+			//$filename = $file['name'];
+			$size=$_FILES['uploadfile']['size'];
+			if($size>0){
+				
+				//if(preg_match("/pdf|xls|xlsx|doc|docx|ppt|txt|gif|jpg|jpeg|png/i",$this->Common->file_extension($file['name'])) > 0){
+					$result = $this->Upload->upload($file, $destination, $filename);
+					echo "success";
+					die;
+				//}
+			}
+		}
+	}
+	
+	function delete_doc($val = null){
+		if (!empty($val)) {
+			$value = base64_decode($val);
+			$id = preg_replace("/^([0-9]+)_(.*)/i",'$1',$value);
+			$destination = realpath('../../app/webroot/img/all_docs/'.$this->params['controller']). DS;					
+			@unlink($destination.$value);
+			//$this->redirect(array('controller'=>$this->params['controller'],'action'=>'add', $id), array('admin'=>true));
+			$this->redirect('/admin/'.$this->params['controller'].'/add/'.$id);
+		}
+	}
 }
 ?>
